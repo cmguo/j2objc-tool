@@ -1,0 +1,6 @@
+module JSR305 {
+  umbrella header "JSR305.h"
+
+  export *
+  module * { export * }
+}
