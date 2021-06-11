@@ -91,14 +91,12 @@ def apply_target(proj, target)
 
   headers = ["../Libraries/JRE.framework/Headers", "../Libraries/JSR305.framework/Headers"]
   j2objc_deps.each { |d| 
-    if d == "ThirdParty"
-      headers << "../ThirdParty/objc"
-    else
+    if d != "ThirdParty"
       headers << "${BUILT_PRODUCTS_DIR}/#{d}.framework/Headers"
     end
   }
   if !java_dirs.empty?
-    headers << "${DERIVED_FILE_DIR}/objc"
+    headers << "${BUILT_PRODUCTS_DIR}/#{target.name}.framework/Headers"
   end
 
   # J2objc framework headers

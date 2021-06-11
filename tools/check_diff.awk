@@ -11,13 +11,11 @@ BEGIN {
     close(cmd)
     times[$1] = time
     diff = diff + 1
-    # print diff
   } else {
     # print "time " $1
     if ($1 in times) {
       if ($2 == times[$1]) {
         diff = diff - 1
-        # print diff
         md5s[$1] = $3
       } else {
         cmd = "md5 -q " $1
@@ -26,7 +24,8 @@ BEGIN {
         md5s[$1] = md5
         if ($3 == md5) {
           diff = diff - 1
-          # print diff
+        } else {
+          print $1 " -> " md5 > "/dev/stderr"
         }
       }
     } else {
