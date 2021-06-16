@@ -4,7 +4,7 @@ require 'find'
 require 'xcodeproj'
 
 
-def merge_array(a, b)
+def merge_array(a, b, force = false)
   if a == nil
     return b
   elif b == nil
@@ -19,7 +19,7 @@ def merge_array(a, b)
   r = a | b
   if r.size == 0
     return nil
-  elif r.size == 1
+  elif !force && r.size == 1
     return r[0]
   else
     return r
@@ -67,19 +67,20 @@ def apply_target(proj, target)
 
   # read config
 
-  settings = target.build_settings("Debug")
-  java_dirs = settings['JAVA_SOURCES']
+  java_dirs = target.build_configuration_list.get_setting("JAVA_SOURCES", true)["Debug"]
   if java_dirs == nil
+    java_dirs = []
     if File.exists? "src/main/java"
-      java_dirs = ["src/main/java"]
-    else
-      java_dirs = []
+      java_dirs << "src/main/java"
+    end
+    if File.exists? "#{target.name}/java"
+      java_dirs << "#{target.name}/java"
     end
   else
-    java_dirs = java_dirs.split(" ")
+    java_dirs = java_dirs.split(" ").select{ |d| File.exists?(d) }
   end
 
-  j2objc_deps = settings['J2OBJC_DEPENDS']
+  j2objc_deps = target.build_configuration_list.get_setting("J2OBJC_DEPENDS", true)["Debug"]
   if j2objc_deps == nil
     j2objc_deps = []
   else
@@ -89,9 +90,19 @@ def apply_target(proj, target)
 
   # Config headers seach paths
 
-  headers = ["../Libraries/JRE.framework/Headers", "../Libraries/JSR305.framework/Headers"]
-  j2objc_deps.each { |d| 
-    if d != "ThirdParty"
+  frameworks = target.build_configuration_list.get_setting("FRAMEWORK_SEARCH_PATHS", true)["Debug"]
+  frameworks = merge_array(["../Libraries"], frameworks, true)
+  frameworks = frameworks.map { |f| f.tr("\"", "") }
+  headers = ["$(inherited)"]
+  merge_array(["JRE", "JSR305"], j2objc_deps).each { |d| 
+    if d == "ThirdParty"
+      next
+    end
+    f = frameworks.find { |f| File.exists?("#{f}/#{d}.framework") }
+    if f != nil
+      headers << "#{f}/#{d}.framework/Headers"
+    else
+      puts "Not found frmawork \"#{d}\", use build product as default!!"
       headers << "${BUILT_PRODUCTS_DIR}/#{d}.framework/Headers"
     end
   }
@@ -99,11 +110,12 @@ def apply_target(proj, target)
     headers << "${BUILT_PRODUCTS_DIR}/#{target.name}.framework/Headers"
   end
 
-  # J2objc framework headers
-
   target.build_configurations.each { |c| 
     c.build_settings["HEADER_SEARCH_PATHS"] = merge_array(headers, c.build_settings["HEADER_SEARCH_PATHS"])
   }
+
+
+  # if not java sources, we can stop here
 
   if java_dirs.empty?
     return false
@@ -240,7 +252,11 @@ proj.build_configurations.each { |c|
     bs["JAVA_HOME"] = ENV["JAVA_HOME"]
     bs["J2OBJC_HOME"] = ENV["J2OBJC_HOME"]
   end
-  bs["FRAMEWORK_SEARCH_PATHS"] = merge_array("../Libraries", bs["FRAMEWORK_SEARCH_PATHS"])
+  frameworks = []
+  if File.exists?("../Libraries")
+    frameworks << "../Libraries"
+  end
+  bs["FRAMEWORK_SEARCH_PATHS"] = merge_array(frameworks, bs["FRAMEWORK_SEARCH_PATHS"])
 }
 
 proj.save

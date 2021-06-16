@@ -14,9 +14,12 @@ WORKSPACE=$(dirname ${PROJECT_DIR})
 THIRDPARTY="${WORKSPACE}/ThirdParty"
 LIBRARIES="${WORKSPACE}/Libraries"
 
-for i in $JAVA_SOURCES
+for i in ${JAVA_SOURCES-src/main/java $TARGET_NAME/java}
 do
-  JAVA_DIRS="$JAVA_DIRS ${SRCROOT}/$i"
+  if [ -d ${SRCROOT}/$i ]
+  then
+    JAVA_DIRS="$JAVA_DIRS ${SRCROOT}/$i"
+  fi
 done
 
 # Check if javas are changed
@@ -48,12 +51,20 @@ then
 else
   for d in ${J2OBJC_DEPENDS}
   do
-    JARS="$JARS -cp ${BUILT_PRODUCTS_DIR}/$d.framework/classes.jar"
-    FRMS="$FRMS ${BUILT_PRODUCTS_DIR}/$d.framework"
-    if [ -f ${BUILT_PRODUCTS_DIR}/$d.framework/prefixes.txt ]
-    then
-      PREFIXES="$PREFIXES ${BUILT_PRODUCTS_DIR}/$d.framework/prefixes.txt"
-    fi
+    for p in $FRAMEWORK_SEARCH_PATHS
+    do
+      p=${p#\"}
+      p=${p%\"}
+      if [ -d $p/$d.framework ]
+      then
+        JARS="$JARS -cp $p/$d.framework/classes.jar"
+        FRMS="$FRMS $p/$d.framework"
+        if [ -f $p/$d.framework/prefixes.txt ]
+        then
+          PREFIXES="$PREFIXES $p/$d.framework/prefixes.txt"
+        fi
+      fi
+    done
   done
 fi
 
