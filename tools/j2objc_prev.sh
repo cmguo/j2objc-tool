@@ -32,6 +32,19 @@ then
 fi
 if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/JavaList.d > ${DERIVED_FILE_DIR}/JavaList.d1
 then
+  # Install headers to framework
+  if [ ! -f ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h ]
+  then
+    if [ -f ${DERIVED_FILE_DIR}/J2ObjcHeader1 ]
+    then
+      tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+    fi
+    tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+    if [ -f ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ]
+    then
+      cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h
+    fi
+  fi
   exit 0
 fi
 
