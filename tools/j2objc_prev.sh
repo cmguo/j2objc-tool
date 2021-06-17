@@ -137,7 +137,7 @@ if [[ $(java --version) =~ 11\. ]]
 then
   jar cf ${DERIVED_FILE_DIR}/classes.jar -C ${DERIVED_FILE_DIR}/classes . ${STATIC_CLASSES}
 else
-  if ![ -z ${STATIC_CLASSES} ]
+  if [ ! -z "${STATIC_CLASSES}" ]
   then
     cp -rf ${THIRDPARTY}/classes ${DERIVED_FILE_DIR}
   fi

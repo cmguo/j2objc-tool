@@ -3,11 +3,13 @@
 require 'find'
 require 'xcodeproj'
 
+puts "Xcodeproj #{Xcodeproj::VERSION}"
 
 def merge_array(a, b, force = false)
   if a == nil
     return b
-  elif b == nil
+  end
+  if b == nil
     return a
   end
   if !a.is_a? Array
@@ -82,6 +84,9 @@ def apply_target(proj, target)
 
   j2objc_deps = target.build_configuration_list.get_setting("J2OBJC_DEPENDS", true)["Debug"]
   if j2objc_deps == nil
+    if java_dirs.empty?
+      return false
+    end
     j2objc_deps = []
   else
     j2objc_deps = j2objc_deps.split(" ")
@@ -248,15 +253,19 @@ end
 
 proj.build_configurations.each { |c|
   bs = c.build_settings
-  if has_j2objc
-    bs["JAVA_HOME"] = ENV["JAVA_HOME"]
-    bs["J2OBJC_HOME"] = ENV["J2OBJC_HOME"]
-  end
   frameworks = []
   if File.exists?("../Libraries")
     frameworks << "../Libraries"
   end
-  bs["FRAMEWORK_SEARCH_PATHS"] = merge_array(frameworks, bs["FRAMEWORK_SEARCH_PATHS"])
+  if has_j2objc
+    #bs["JAVA_HOME"] = ENV["JAVA_HOME"]
+    #bs["J2OBJC_HOME"] = ENV["J2OBJC_HOME"]
+    bs["JAVA_HOME"] = "${PROJECT_DIR}/../jdk"
+    bs["J2OBJC_HOME"] = "${PROJECT_DIR}/../j2objc-2.7"
+    bs["FRAMEWORK_SEARCH_PATHS"] = merge_array(frameworks, bs["FRAMEWORK_SEARCH_PATHS"])
+  end
 }
 
-proj.save
+if has_j2objc
+  proj.save
+end
