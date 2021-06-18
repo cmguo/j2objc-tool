@@ -26,11 +26,12 @@ done
 
 mkdir -p ${DERIVED_FILE_DIR}
 find $JAVA_DIRS -name "*.java" > ${DERIVED_FILE_DIR}/JavaList
+find ${SRCROOT} -name "*.txt" -depth 1 > ${DERIVED_FILE_DIR}/TxtList
 if [ ! -f ${DERIVED_FILE_DIR}/JavaList.d ]
 then
   touch ${DERIVED_FILE_DIR}/JavaList.d
 fi
-if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/JavaList.d > ${DERIVED_FILE_DIR}/JavaList.d1
+if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/JavaList.d ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/TxtList > ${DERIVED_FILE_DIR}/JavaList.d1
 then
   # Install headers to framework
   if [ ! -f ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h ]
@@ -94,6 +95,7 @@ PREFIXES="--prefixes ${DERIVED_FILE_DIR}/prefixes.txt"
 
 rm -rf ${DERIVED_FILE_DIR}/classes
 rm -rf ${DERIVED_FILE_DIR}/objc
+rm -f ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h
 mkdir -p ${DERIVED_FILE_DIR}/classes
 
 "${TOOLS}/j2objc.sh" -arc $J2OBJC_FLAGS \
