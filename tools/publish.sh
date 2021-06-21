@@ -11,3 +11,4 @@ git add -f Frameworks
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "publish $V")
 git push -f origin $COMMIT:refs/tags/$V
+git push -f origin $COMMIT:refs/heads/publish/$V
