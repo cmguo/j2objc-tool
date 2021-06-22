@@ -5,7 +5,7 @@ BEGIN {
   file = 0
 }
 
-FILEBEIN {
+BEGINFILE {
   file = file + 1
 }
 
@@ -29,12 +29,13 @@ FILEBEIN {
         if (md5 == md5s[$1]) {
           diff = diff - 1
         } else {
-          print $1 " -> " md5 > "/dev/stderr"
+          print "*** " $1 " -> " md5 > "/dev/stderr"
           md5s[$1] = md5
         }
       }
+      delete times[$1]
     } else {
-      print $1 " -> " time > "/dev/stderr"
+      print "+++ " $1 " -> " time > "/dev/stderr"
       diff = diff + 1
     }
   }
@@ -49,6 +50,9 @@ END {
       cmd | getline md5
       close(cmd)
       print f "\t" newtimes[f] "\t" md5
+    }
+    for (f in times) {
+      print "--- " f  > "/dev/stderr"
     }
   }
   exit diff
