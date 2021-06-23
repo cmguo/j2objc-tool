@@ -5,6 +5,7 @@ set -e
 
 # default settings
 
+UPDATE_THIRDPARTY=
 CONFIGURATION=Debug
 SDK=
 
@@ -13,6 +14,9 @@ do
   case $1 in
     -r)
       CONFIGURATION=Release
+      ;;
+    -u)
+      UPDATE_THIRDPARTY=true
       ;;
     -sim)
       SDK=iphonesimulator
@@ -33,6 +37,11 @@ do
   esac
   shift
 done
+
+if [ ! -z $UPDATE_THIRDPARTY ]
+then
+  $(dirname $0)/thirdparty.sh
+fi
 
 if [ ! -z $1 ]
 then

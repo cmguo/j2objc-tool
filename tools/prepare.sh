@@ -27,6 +27,8 @@ then
   exit
 fi
   
+$(dirname $0)/thirdparty.sh ${DEPEND_THIRDPARTIES}
+
 rm -f j2objc-2.7
 ln -sf $J2OBJC_HOME j2objc-2.7
 
