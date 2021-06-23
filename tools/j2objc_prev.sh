@@ -14,6 +14,8 @@ WORKSPACE=$(dirname ${PROJECT_DIR})
 THIRDPARTY="${WORKSPACE}/ThirdParty"
 LIBRARIES="${WORKSPACE}/Libraries"
 
+PUBLIC_HEADERS_FOLDER=${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}
+
 for i in ${JAVA_SOURCES-src/main/java $TARGET_NAME/java}
 do
   if [ -d ${SRCROOT}/$i ]
@@ -25,6 +27,7 @@ done
 # Check if javas are changed
 
 mkdir -p ${DERIVED_FILE_DIR}
+mkdir -p ${PUBLIC_HEADERS_FOLDER}
 find $JAVA_DIRS -name "*.java" > ${DERIVED_FILE_DIR}/JavaList
 find ${SRCROOT} -name "*.txt" -depth 1 > ${DERIVED_FILE_DIR}/TxtList
 if [ ! -f ${DERIVED_FILE_DIR}/JavaList.d ]
@@ -34,16 +37,16 @@ fi
 if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/JavaList.d ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/TxtList > ${DERIVED_FILE_DIR}/JavaList.d1
 then
   # Install headers to framework
-  if [ ! -f ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h ]
+  if [ ! -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h ]
   then
     if [ -f ${DERIVED_FILE_DIR}/J2ObjcHeader1 ]
     then
-      tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+      tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
     fi
-    tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+    tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
     if [ -f ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ]
     then
-      cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h
+      cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
     fi
   fi
   exit 0
@@ -95,7 +98,7 @@ PREFIXES="--prefixes ${DERIVED_FILE_DIR}/prefixes.txt"
 
 rm -rf ${DERIVED_FILE_DIR}/classes
 rm -rf ${DERIVED_FILE_DIR}/objc
-rm -f ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h
+rm -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
 mkdir -p ${DERIVED_FILE_DIR}/classes
 
 "${TOOLS}/j2objc.sh" -arc $J2OBJC_FLAGS \
@@ -151,12 +154,12 @@ fi
 
 if [ -f ${DERIVED_FILE_DIR}/J2ObjcHeader1 ]
 then
-  tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+  tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
 fi
-tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${METAL_LIBRARY_OUTPUT_DIR}/Headers
+tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
 if [ -f ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ]
 then
-  cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${METAL_LIBRARY_OUTPUT_DIR}/Headers/${TARGET_NAME}-J2objc.h
+  cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
 fi
 
 

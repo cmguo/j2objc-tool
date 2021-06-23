@@ -112,7 +112,7 @@ def apply_target(proj, target)
     end
   }
   if !java_dirs.empty?
-    headers << "${BUILT_PRODUCTS_DIR}/#{target.name}.framework/Headers"
+    headers << "${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}"
   end
 
   target.build_configurations.each { |c| 
@@ -169,6 +169,12 @@ def apply_target(proj, target)
     target.build_phases << phase
   end
 
+
+  # Remove "[CP] Copy Pods Resources"
+
+  if target.symbol_type == :framework
+    target.build_phases.delete_if { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[CP] Copy Pods Resources" }
+  end
 
   # Java sources
 

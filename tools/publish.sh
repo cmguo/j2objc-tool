@@ -16,9 +16,10 @@ do
       then
         echo $0: unknown option $1 !!
       fi
-      echo Usage $0 [flags...] <ModuleName>
+      echo Usage $0 [flags...]
       echo " -s:" Sync to ThirdPartyiOS
       exit 0
+      ;;
   esac
   shift
 done

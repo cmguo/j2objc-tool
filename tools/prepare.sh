@@ -44,13 +44,15 @@ do
       echo Usage $0 [flags...] [Scheme]
       echo " -u:" Force update Pods ...
       exit 0
+      ;;
   esac
   shift
 done
 
 $(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
 
-if [ ! -z $FORCE_UPDATE]
+if [ ! -z $FORCE_UPDATE ]
+then
   $(dirname $0)/thirdparty.sh update
   rm -f j2objc-2.7
   rm -f jdk
@@ -58,12 +60,12 @@ if [ ! -z $FORCE_UPDATE]
   rm -rf */Pods
 fi
 
-if [ ! -f j2objc-2.7 ]
+if [ ! -e j2objc-2.7 ]
 then
   ln -sf $J2OBJC_HOME j2objc-2.7
 fi
 
-if [ ! -f jdk ]
+if [ ! -e jdk ]
 then
   ln -sf $JAVA_HOME jdk
 fi
