@@ -3,33 +3,45 @@
 set -x
 set -e
 
-if [ -z $J2OBJC_HOME ]
-then
-  echo J2OBJC_HOME not config!!
-  exit 1
-fi
-
-if [ ! -f $J2OBJC_HOME/j2objc ]
-then
-  echo "J2OBJC_HOME is not correctly defined, currently set to '${J2OBJC_HOME}'"
-  exit 1
-fi
-
 cd ..
 
-if [ ! -d ThirdPartyiOS ]
+if [ "$1" == "prepare" ]
 then
+
+  if [ -d ThirdPartyiOS ]
+  then
+    exit 0
+  fi
+
   git clone -b develop git@gitlab.xiaoheiban.cn:xhb_base/thirdpartyios.git ThirdPartyiOS
   cd ThirdPartyiOS
   rm -f LogicBase/j2objc-2.7
   ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
-else
+  if [ ! -z $* ]
+  then
+    git submodule init $*
+  fi
+
+elif [ "$1" == "update" ]
+then
+
+  shift
   cd ThirdPartyiOS
   git pull --rebase
-fi
+  git submodule update
 
-if [ ! -z $DEPEND_THIRDPARTIES ]
+elif [ "$1" == "publish" ]
 then
-  git submodule init $*
+
+  shift
+  cd ThirdPartyiOS
+  git submodule update --remote
+  git add -u $1
+  git commit -m "Update $1" 
+
+else
+
+  echo unkown command $1
+  exit 1
+
 fi
-git submodule update

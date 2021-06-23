@@ -29,7 +29,7 @@ do
       then
         echo $0: unknown option $1 !!
       fi
-      echo Usage $0 "[flags]" Scheme
+      echo Usage $0 [flags...] [Scheme]
       echo " -r:" Build with Release configuration, default Debug
       echo " -sim:" Build iphonesimulator only
       echo " -os:" Build iphoneos only
@@ -40,7 +40,7 @@ done
 
 if [ ! -z $UPDATE_THIRDPARTY ]
 then
-  $(dirname $0)/thirdparty.sh
+  $(dirname $0)/thirdparty.sh update
 fi
 
 if [ ! -z $1 ]

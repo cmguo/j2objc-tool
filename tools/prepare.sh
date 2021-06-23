@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 
 set -e
 set -x
@@ -26,14 +26,47 @@ then
   echo "gawk not installed, install with 'brew install gawk'"
   exit
 fi
-  
-$(dirname $0)/thirdparty.sh ${DEPEND_THIRDPARTIES}
 
-rm -f j2objc-2.7
-ln -sf $J2OBJC_HOME j2objc-2.7
 
-rm -f jdk
-ln -sf $JAVA_HOME jdk
+FORCE_UPDATE= 
+
+while [[ $1 =~ ^-.+ ]]
+do
+  case $1 in
+    -u)
+      FORCE_UPDATE=true
+      ;;
+    *)
+      if [ $1 != -h ]
+      then
+        echo $0: unknown option $1 !!
+      fi
+      echo Usage $0 [flags...] [Scheme]
+      echo " -u:" Force update Pods ...
+      exit 0
+  esac
+  shift
+done
+
+$(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
+
+if [ ! -z $FORCE_UPDATE]
+  $(dirname $0)/thirdparty.sh update
+  rm -f j2objc-2.7
+  rm -f jdk
+  rm -rf ThirdParty/classes
+  rm -rf */Pods
+fi
+
+if [ ! -f j2objc-2.7 ]
+then
+  ln -sf $J2OBJC_HOME j2objc-2.7
+fi
+
+if [ ! -f jdk ]
+then
+  ln -sf $JAVA_HOME jdk
+fi
 
 if [ -d ThirdParty -a ! -d ThirdParty/classes ]
 then
