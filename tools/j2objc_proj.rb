@@ -95,6 +95,7 @@ def apply_target(proj, target)
 
   # Config headers seach paths
 
+  pwd="#{Dir.pwd}/"
   frameworks = target.build_configuration_list.get_setting("FRAMEWORK_SEARCH_PATHS", true)["Debug"]
   frameworks = merge_array(["../Libraries"], frameworks, true)
   frameworks = frameworks.map { |f| f.tr("\"", "") }
@@ -105,6 +106,8 @@ def apply_target(proj, target)
     end
     f = frameworks.find { |f| File.exists?("#{f}/#{d}.framework") }
     if f != nil
+      f = f.sub(pwd, "")
+      f = Pathname.new(f).cleanpath
       headers << "#{f}/#{d}.framework/Headers"
     else
       puts "Not found frmawork \"#{d}\", use build product as default!!"
