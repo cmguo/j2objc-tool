@@ -9,24 +9,28 @@ then
   exit 1
 fi
 
-if [ -z $JAVA_HOME ]
+if [ -f build.gradle ]
 then
-  echo JAVA_HOME not config!!
-  exit 1
-fi
 
-if [ ! -f $J2OBJC_HOME/j2objc ]
-then
-  echo "J2OBJC_HOME is not correctly defined, currently set to '${J2OBJC_HOME}'"
-  exit 1
-fi
+  if [ -z $JAVA_HOME ]
+  then
+    echo JAVA_HOME not config!!
+    exit 1
+  fi
+  
+  if [ ! -f $J2OBJC_HOME/j2objc ]
+  then
+    echo "J2OBJC_HOME is not correctly defined, currently set to '${J2OBJC_HOME}'"
+    exit 1
+  fi
+  
+  if [ ! -f /usr/local/bin/gawk ]
+  then
+    echo "gawk not installed, install with 'brew install gawk'"
+    exit
+  fi
 
-if [ ! -f /usr/local/bin/gawk ]
-then
-  echo "gawk not installed, install with 'brew install gawk'"
-  exit
 fi
-
 
 FORCE_UPDATE= 
 
@@ -60,21 +64,26 @@ then
   rm -rf */Pods
 fi
 
-if [ ! -e j2objc-2.7 ]
+if [ -f build.gradle ]
 then
-  ln -sf $J2OBJC_HOME j2objc-2.7
-fi
 
-if [ ! -e jdk ]
-then
-  ln -sf $JAVA_HOME jdk
-fi
+  if [ ! -e j2objc-2.7 ]
+  then
+    ln -sf $J2OBJC_HOME j2objc-2.7
+  fi
+  
+  if [ ! -e jdk ]
+  then
+    ln -sf $JAVA_HOME jdk
+  fi
+  
+  if [ -d ThirdParty -a ! -d ThirdParty/classes ]
+  then
+    cd ThirdParty/sources
+    ./source.sh
+    cd ../..
+  fi
 
-if [ -d ThirdParty -a ! -d ThirdParty/classes ]
-then
-  cd ThirdParty/sources
-  ./source.sh
-  cd ../..
 fi
 
 trap 'rm -rf Pods' ERR
@@ -90,9 +99,14 @@ do
 done
 trap '' ERR
 
-for i in */*.xcodeproj
-do
-  cd $(dirname $i)
-  ${J2OBJC_HOME}/tools/j2objc_proj.rb
-  cd ..
-done
+if [ -f build.gradle ]
+then
+
+  for i in */*.xcodeproj
+  do
+    cd $(dirname $i)
+    ${J2OBJC_HOME}/tools/j2objc_proj.rb
+    cd ..
+  done
+
+fi
