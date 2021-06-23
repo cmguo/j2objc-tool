@@ -40,7 +40,7 @@ done
 
 if [ ! -z $UPDATE_THIRDPARTY ]
 then
-  $(dirname $0)/thirdparty.sh update
+  ${J2OBJC_HOME}/tools/thirdparty.sh update
 fi
 
 if [ ! -z $1 ]
