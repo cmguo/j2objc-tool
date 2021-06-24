@@ -1,7 +1,7 @@
 #!/usr/local/bin/gawk -F "' '" -f
 
 BEGINFILE {
-  print FILENAME
+  # print FILENAME
   h = substr(FILENAME, length(FILENAME) - 1) == ".h"
   h = h || substr(FILENAME, length(FILENAME) - 1) == ".m"
   f = FILENAME
@@ -17,7 +17,7 @@ BEGINFILE {
       i = $2
       gsub("\"", "", i)
       if (i in map) {
-        print "   " i " -> " map[i]
+        # print "   " i " -> " map[i]
         $2 = "<" map[i] "/" i ">"
       }
     }
