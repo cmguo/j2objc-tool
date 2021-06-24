@@ -57,7 +57,7 @@ $(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
 
 if [ ! -z $FORCE_UPDATE ]
 then
-  $(dirname $0)/thirdparty.sh update
+  $(dirname $0)/thirdparty.sh update ${DEPEND_THIRDPARTIES}
   rm -f j2objc-2.7
   rm -f jdk
   rm -rf ThirdParty/classes

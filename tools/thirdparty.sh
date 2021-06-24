@@ -29,6 +29,10 @@ then
   shift
   cd ThirdPartyiOS
   git pull --rebase
+  if [ ! -z $* ]
+  then
+    git submodule init $*
+  fi
   git submodule update
 
 elif [ "$1" == "publish" ]
