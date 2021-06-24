@@ -31,6 +31,7 @@ do
       fi
       echo Usage $0 [flags...] [Scheme]
       echo " -r:" Build with Release configuration, default Debug
+      echo " -u:" Update ThirdPartyiOS before build
       echo " -sim:" Build iphonesimulator only
       echo " -os:" Build iphoneos only
       exit 0
