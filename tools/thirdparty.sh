@@ -18,7 +18,7 @@ then
   cd ThirdPartyiOS
   rm -f LogicBase/j2objc-2.7
   ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
-  if [ ! -z $* ]
+  if [ ! -z "$*" ]
   then
     git submodule init $*
   fi
@@ -29,7 +29,7 @@ then
   shift
   cd ThirdPartyiOS
   git pull --rebase
-  if [ ! -z $* ]
+  if [ ! -z "$*" ]
   then
     git submodule init $*
   fi
