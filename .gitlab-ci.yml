@@ -3,7 +3,10 @@ stages:
 
 update-job:
   stage: update
-  only:
-    - pushes
   script:
     - pwd
+    - cd ~/Library/j2objc
+    - pwd
+    - git pull
+    - git branch -a
+    - git log --oneline
