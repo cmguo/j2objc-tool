@@ -31,8 +31,9 @@ trap 'git rm -r --quiet --cached Frameworks' EXIT
 git add -f Frameworks
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "publish $V")
-git push -f origin $COMMIT:refs/tags/$V
-git push -f origin $COMMIT:refs/heads/publish/$V
+ORIGIN=${GIT_ORIGIN-origin}
+git push -f $ORIGIN $COMMIT:refs/tags/$V
+git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 
 if [ ! -z $SYNC ]
 then
