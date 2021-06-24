@@ -13,6 +13,7 @@ then
     exit 0
   fi
 
+  shift
   git clone -b develop --depth 1 git@gitlab.xiaoheiban.cn:xhb_base/thirdpartyios.git ThirdPartyiOS
   cd ThirdPartyiOS
   rm -f LogicBase/j2objc-2.7
