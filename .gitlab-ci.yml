@@ -1,0 +1,11 @@
+stages:
+  - update
+
+update-job:
+  stage: update
+  only:
+    - pushes
+  script:
+    - cd ~/Library/j2objc
+    - pwd
+    - git pull
