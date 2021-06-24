@@ -6,6 +6,4 @@ update-job:
   only:
     - pushes
   script:
-    - cd ~/Library/j2objc
     - pwd
-    - git pull
