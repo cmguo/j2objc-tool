@@ -43,6 +43,8 @@ then
   git submodule update --remote
   git add -u $1
   git commit -m "Update $1" 
+  git pull --rebse
+  git push
 
 else
 
