@@ -25,6 +25,10 @@ do
 done
 
 V=`grep ".version " $1.podspec | cut -d "'" -f 2`
+if [[ $V =~ "\"" ]]
+then
+  V=`echo $V  | cut -d '"' -f 2`
+fi
 
 trap 'git rm -r --quiet --cached Frameworks' EXIT
 
