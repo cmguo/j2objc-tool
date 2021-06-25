@@ -59,6 +59,8 @@ COMMAND="xcrun xcodebuild SYMROOT=${PWD}/output -scheme ${SCHEME} -configuration
 COMMAND_IOS="${COMMAND} -sdk iphoneos"
 COMMAND_SIM="${COMMAND} -sdk iphonesimulator"
 
+mkdir -p Frameworks
+
 if [ -z $SDK ]
 then
 
