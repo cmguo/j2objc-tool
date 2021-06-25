@@ -176,7 +176,10 @@ def apply_target(proj, target)
   # Remove "[CP] Copy Pods Resources"
 
   if target.symbol_type == :framework
-    target.build_phases.delete_if { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[CP] Copy Pods Resources" }
+    index = target.build_phases.find_index { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[CP] Copy Pods Resources" }
+    if index != nil
+      target.build_phases.delete_at(index).remove_from_project()
+    end
   end
 
   # Java sources
