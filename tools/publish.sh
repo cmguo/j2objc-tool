@@ -28,9 +28,11 @@ V=`grep ".version " $1.podspec | cut -d "'" -f 2`
 
 trap 'git rm -r --quiet --cached Frameworks' EXIT
 
+REV=`git rev-parse HEAD`
+
 git add -f Frameworks
 TREE=$(git write-tree)
-COMMIT=$(git commit-tree $TREE -m "publish $V")
+COMMIT=$(git commit-tree $TREE -m "build with $REV, publish $V")
 ORIGIN=${GIT_ORIGIN-origin}
 git push -f $ORIGIN $COMMIT:refs/tags/$V
 git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
