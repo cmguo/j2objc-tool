@@ -42,7 +42,7 @@ then
   cd ThirdPartyiOS
   git submodule update --remote
   git add -u $1
-  git commit -m "Update $1" 
+  git commit -m "Update $1 to $2"
   git pull --rebase
   git push
 

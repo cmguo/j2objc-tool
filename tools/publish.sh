@@ -32,7 +32,7 @@ fi
 
 trap 'git rm -r --quiet --cached Frameworks' EXIT
 
-REV=`git rev-parse HEAD`
+REV=`git log -1 --pretty=format:"%h %ad %s [%an]" --date=short`
 
 git add -f Frameworks
 TREE=$(git write-tree)
@@ -43,5 +43,5 @@ git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 
 if [ ! -z $SYNC ]
 then
-  $(dirname $0)/thirdparty.sh publish ${PUBLISH_NAME-$1}
+  $(dirname $0)/thirdparty.sh publish ${PUBLISH_NAME-$1} "$REV"
 fi
