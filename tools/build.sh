@@ -6,6 +6,7 @@ set -e
 # default settings
 
 UPDATE_THIRDPARTY=
+CLEAN=
 CONFIGURATION=Debug
 SDK=
 
@@ -17,6 +18,9 @@ do
       ;;
     -u)
       UPDATE_THIRDPARTY=true
+      ;;
+    -c)
+      CLEAN=true
       ;;
     -sim)
       SDK=iphonesimulator
@@ -38,6 +42,12 @@ do
   esac
   shift
 done
+
+if [ ! -z $CLEAN ]
+then
+  xcrun xcodebuild SYMROOT=${PWD}/output -configuration ${CONFIGURATION} clean
+  exit 0
+fi
 
 if [ ! -z $UPDATE_THIRDPARTY ]
 then
