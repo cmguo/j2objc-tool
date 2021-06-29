@@ -43,7 +43,12 @@ REV=`git log -1 --pretty=format:"%h %ad %s [%an]" --date=short`
 git add -f Frameworks
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "build with $REV, publish $V")
-ORIGIN=${GIT_ORIGIN-origin}
+ORIGIN=`git remote get-url origin`
+if [[ $ORIGIN =~ ^http ]]
+then
+  ORIGIN=git@${ORIGIN#*@}
+  ORIGIN=${ORIGIN/\//:}
+fi
 git push -f $ORIGIN $COMMIT:refs/tags/$V
 git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 
