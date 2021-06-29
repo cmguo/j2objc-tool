@@ -55,7 +55,9 @@ then
   SCHEMES="$SCHEME $SCHEMES"
 fi
 
-COMMAND="xcrun xcodebuild SYMROOT=${PWD}/output -scheme ${SCHEME} -configuration ${CONFIGURATION}"
+VERSION=`git log -1 --format=%h`
+VERSION=$((16#$VERSION))
+COMMAND="xcrun xcodebuild SYMROOT=${PWD}/output -scheme ${SCHEME} -configuration ${CONFIGURATION} CURRENT_PROJECT_VERSION=${VERSION}"
 COMMAND_IOS="${COMMAND} -sdk iphoneos"
 COMMAND_SIM="${COMMAND} -sdk iphonesimulator"
 
