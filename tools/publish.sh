@@ -24,6 +24,12 @@ do
   shift
 done
 
+if [ ! -d Frameworks ]
+then
+  echo Directory "'Frameworks'" not exists
+  exit 1
+fi
+
 V=`grep ".version " $1.podspec | cut -d "'" -f 2`
 if [[ $V =~ "\"" ]]
 then
