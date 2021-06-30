@@ -16,12 +16,13 @@ then
   shift
   git clone -b develop --depth 1 git@gitlab.xiaoheiban.cn:xhb_base/thirdpartyios.git ThirdPartyiOS
   cd ThirdPartyiOS
-  rm -f LogicBase/j2objc-2.7
-  ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
   if [ ! -z "$*" ]
   then
     git submodule init $*
   fi
+  git submodule update
+  rm -f LogicBase/j2objc-2.7
+  ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
 
 elif [ "$1" == "update" ]
 then
