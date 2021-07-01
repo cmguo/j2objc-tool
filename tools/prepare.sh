@@ -87,14 +87,14 @@ then
 fi
 
 trap 'rm -rf Pods' ERR
-for i in */Podfile
+for i in `find . -name Podfile`
 do
   i=$(dirname $i)
   if [ ! -d $i/Pods ]
   then
     cd $i
     pod install
-    cd ..
+    cd -
   fi
 done
 trap '' ERR
