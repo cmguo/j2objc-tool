@@ -40,8 +40,13 @@ elif [ "$1" == "publish" ]
 then
 
   shift
+
+  if [ ! git submodule init $1 ]
+  then
+    git submodule add -b publish/$VERSION $ORIGIN $1
+  fi
   cd ThirdPartyiOS
-  git submodule update --remote
+  git submodule update --remote $1
   git add -u $1
   git commit -m "Update $1 to $2"
   git pull --rebase

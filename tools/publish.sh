@@ -54,5 +54,7 @@ git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 
 if [ ! -z $SYNC ]
 then
+  export ORIGIN=${ORIGIN}
+  export VERSION=${V}
   $(dirname $0)/thirdparty.sh publish ${PUBLISH_NAME-$1} "$REV"
 fi
