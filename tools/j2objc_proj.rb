@@ -138,7 +138,7 @@ def apply_target(proj, target)
     rule.compiler_spec = "com.apple.compilers.proxy.script"
     rule.is_editable = "0"
     rule.run_once_per_architecture = "0"
-    rule.add_input_file("$(INPUT_FILE_PATH)")
+    (rule.input_files ||= []) << "$(INPUT_FILE_PATH)"
     rule.add_output_file("$(DERIVED_FILE_DIR)/J2objc/${INPUT_FILE_BASE}.m")
     rule.script = "PACKET_FILE=${INPUT_FILE_PATH##*/java/}\nOBJC_FILE=${PACKET_FILE/.java/.m}\nif [ -f  ${DERIVED_FILE_DIR}/objc/${OBJC_FILE} ]; then\n  mkdir -p ${DERIVED_FILE_DIR}/J2objc\n  mv -f ${DERIVED_FILE_DIR}/objc/${OBJC_FILE} ${DERIVED_FILE_DIR}/J2objc\nfi\n"
     target.build_rules << rule
