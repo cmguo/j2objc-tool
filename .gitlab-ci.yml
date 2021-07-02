@@ -7,6 +7,6 @@ update-job:
     - pwd
     - cd ~/Library/j2objc
     - pwd
-    - git pull
+    - git pull --rebase
     - git branch -a
     - git log --oneline
