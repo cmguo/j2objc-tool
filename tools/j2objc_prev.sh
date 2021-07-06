@@ -55,26 +55,29 @@ fi
 
 # Analyze depends 
 
-if [ "$J2OBJC_DEPENDS" == "ThirdParty" ]
-then
-  # Headers from StaticLibraries
-  find ${THIRDPARTY}/objc -name "*.h" | awk "{ sub(\"${THIRDPARTY}/objc/\", \"\", \$0); print \$0 }" > ${DERIVED_FILE_DIR}/J2ObjcHeader1
-  STATIC_CLASSES="-C ${THIRDPARTY}/classes ."
-  JARS="-cp ${THIRDPARTY}/classes"
-  if [ -f ${THIRDPARTY}/sources/prefixes.txt ]
+for d in ${J2OBJC_DEPENDS} JRE
+do
+  if [ "$d" == "ThirdParty" ]
   then
-    PREFIXES="${THIRDPARTY}/sources/prefixes.txt"
-  fi
-else
-  for d in ${J2OBJC_DEPENDS}
-  do
+    # Headers from StaticLibraries
+    find ${THIRDPARTY}/objc -name "*.h" | awk "{ sub(\"${THIRDPARTY}/objc/\", \"\", \$0); print \$0 }" > ${DERIVED_FILE_DIR}/J2ObjcHeader1
+    STATIC_CLASSES="-C ${THIRDPARTY}/classes ."
+    JARS="-cp ${THIRDPARTY}/classes"
+    if [ -f ${THIRDPARTY}/sources/prefixes.txt ]
+    then
+      PREFIXES="${THIRDPARTY}/sources/prefixes.txt"
+    fi
+  else
     for p in $FRAMEWORK_SEARCH_PATHS
     do
       p=${p#\"}
       p=${p%\"}
       if [ -d $p/$d.framework ]
       then
-        JARS="$JARS -cp $p/$d.framework/classes.jar"
+        if [ -f $p/$d.framework/classes.jar ]
+        then
+          JARS="$JARS -cp $p/$d.framework/classes.jar"
+        fi
         FRMS="$FRMS $p/$d.framework"
         if [ -f $p/$d.framework/prefixes.txt ]
         then
@@ -82,8 +85,8 @@ else
         fi
       fi
     done
-  done
-fi
+  fi
+done
 
 if [ -f ${SRCROOT}/prefixes.txt ]
 then
@@ -116,7 +119,6 @@ fi
 
 # Fix modular include
 
-FRMS="$FRMS ${LIBRARIES}/JRE.framework"
 ${TOOLS}/fix_include.sh ${DERIVED_FILE_DIR}/objc $FRMS
 
 
