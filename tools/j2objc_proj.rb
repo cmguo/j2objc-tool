@@ -93,36 +93,6 @@ def apply_target(proj, target)
   end
 
 
-  # Config headers seach paths
-
-  pwd="#{Dir.pwd}/"
-  frameworks = target.build_configuration_list.get_setting("FRAMEWORK_SEARCH_PATHS", true)["Debug"]
-  frameworks = merge_array(["../Libraries"], frameworks, true)
-  frameworks = frameworks.map { |f| f.tr("\"", "") }
-  headers = ["$(inherited)"]
-  merge_array(["JRE", "JSR305"], j2objc_deps).each { |d| 
-    if d == "ThirdParty"
-      next
-    end
-    f = frameworks.find { |f| File.exists?("#{f}/#{d}.framework") }
-    if f != nil
-      f = f.sub(pwd, "")
-      f = Pathname.new(f).cleanpath
-      headers << "#{f}/#{d}.framework/Headers"
-    else
-      puts "Not found frmawork \"#{d}\", use build product as default!!"
-      headers << "${BUILT_PRODUCTS_DIR}/#{d}.framework/Headers"
-    end
-  }
-  if !java_dirs.empty?
-    headers << "${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}"
-  end
-
-  target.build_configurations.each { |c| 
-    c.build_settings["HEADER_SEARCH_PATHS"] = merge_array(headers, c.build_settings["HEADER_SEARCH_PATHS"])
-  }
-
-
   # if not java sources, we can stop here
 
   if java_dirs.empty?
