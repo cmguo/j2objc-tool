@@ -39,15 +39,7 @@ then
   # Install headers to framework
   if [ ! -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h ]
   then
-    if [ -f ${DERIVED_FILE_DIR}/J2ObjcHeader1 ]
-    then
-      tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
-    fi
-    tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
-    if [ -f ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ]
-    then
-      cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
-    fi
+    source ${TOOLS}/j2objc_headers.sh
   fi
   exit 0
 fi
@@ -67,6 +59,7 @@ do
     then
       PREFIXES="${THIRDPARTY}/sources/prefixes.txt"
     fi
+    FRMS="$FRMS ${TARGET_NAME}=${DERIVED_FILE_DIR}/J2ObjcHeader1"
   else
     for p in $FRAMEWORK_SEARCH_PATHS
     do
@@ -119,7 +112,7 @@ fi
 
 # Fix modular include
 
-${TOOLS}/fix_include.sh ${DERIVED_FILE_DIR}/objc $FRMS
+${TOOLS}/fix_include.sh -s ${TARGET_NAME} ${DERIVED_FILE_DIR}/objc $FRMS
 
 
 # Headers from Project java
@@ -129,7 +122,7 @@ find ${DERIVED_FILE_DIR}/objc -name "*.h" | awk "{ sub(\"${DERIVED_FILE_DIR}/obj
 
 # collect includes
 
-awk '{ print "#include \"" $0 "\"" }' ${DERIVED_FILE_DIR}/J2ObjcHeader? > ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h
+awk "{ print \"#include <${TARGET_NAME}/\" \$0 \">\" }" ${DERIVED_FILE_DIR}/J2ObjcHeader? > ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h
 
 
 # make dependancy files
@@ -154,15 +147,7 @@ fi
 
 # Install headers to framework
 
-if [ -f ${DERIVED_FILE_DIR}/J2ObjcHeader1 ]
-then
-  tar -c - -C ${THIRDPARTY}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader1 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
-fi
-tar -c - -C ${DERIVED_FILE_DIR}/objc -T ${DERIVED_FILE_DIR}/J2ObjcHeader2 | tar -x -C ${PUBLIC_HEADERS_FOLDER}
-if [ -f ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ]
-then
-  cp ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
-fi
+source ${TOOLS}/j2objc_headers.sh
 
 
 # Update java state file
