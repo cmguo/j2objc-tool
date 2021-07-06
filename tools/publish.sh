@@ -50,10 +50,12 @@ then
   ORIGIN=${ORIGIN/\//:}
 fi
 git push -f $ORIGIN $COMMIT:refs/tags/$V
-git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 
 if [ ! -z $SYNC ]
 then
+  # update to reduce conflict
+  $(dirname $0)/thirdparty.sh update ${PUBLISH_NAME-$1}
+  git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
   export ORIGIN=${ORIGIN}
   export VERSION=${V}
   $(dirname $0)/thirdparty.sh publish ${PUBLISH_NAME-$1} "$REV"
