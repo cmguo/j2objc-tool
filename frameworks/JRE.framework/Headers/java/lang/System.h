@@ -3,7 +3,7 @@
 //  source: Classes/java/lang/System.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangSystem")
 #ifdef RESTRICT_JavaLangSystem

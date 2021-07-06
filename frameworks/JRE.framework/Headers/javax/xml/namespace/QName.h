@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/namespace/QName.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlNamespaceQName")
 #ifdef RESTRICT_JavaxXmlNamespaceQName
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 /*!
  @brief <p><code>QName</code> represents a <strong>qualified name</strong>

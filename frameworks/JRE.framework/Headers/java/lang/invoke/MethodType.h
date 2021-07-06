@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/lambda/java/java/lang/invoke/MethodType.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangInvokeMethodType")
 #ifdef RESTRICT_JavaLangInvokeMethodType
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @class IOSObjectArray;

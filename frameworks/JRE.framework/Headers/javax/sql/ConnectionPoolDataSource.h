@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/sql/ConnectionPoolDataSource.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSqlConnectionPoolDataSource")
 #ifdef RESTRICT_JavaxSqlConnectionPoolDataSource
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxSqlCommonDataSource 1
 #define INCLUDE_JavaxSqlCommonDataSource 1
-#include "javax/sql/CommonDataSource.h"
+#include <JRE/javax/sql/CommonDataSource.h>
 
 @protocol JavaxSqlPooledConnection;
 

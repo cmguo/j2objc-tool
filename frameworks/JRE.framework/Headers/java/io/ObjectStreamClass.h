@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/ObjectStreamClass.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoObjectStreamClass")
 #ifdef RESTRICT_JavaIoObjectStreamClass
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSByteArray;
 @class IOSClass;
@@ -572,7 +572,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaIoObjectStreamClass_DefaultSUIDCompatibilityListe
 
 #define RESTRICT_JavaLangRefWeakReference 1
 #define INCLUDE_JavaLangRefWeakReference 1
-#include "java/lang/ref/WeakReference.h"
+#include <JRE/java/lang/ref/WeakReference.h>
 
 @class IOSClass;
 @class JavaLangRefReferenceQueue;

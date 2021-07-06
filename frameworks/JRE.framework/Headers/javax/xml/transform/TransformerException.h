@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/TransformerException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformTransformerException")
 #ifdef RESTRICT_JavaxXmlTransformTransformerException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangException 1
 #define INCLUDE_JavaLangException 1
-#include "java/lang/Exception.h"
+#include <JRE/java/lang/Exception.h>
 
 @class JavaIoPrintStream;
 @class JavaIoPrintWriter;

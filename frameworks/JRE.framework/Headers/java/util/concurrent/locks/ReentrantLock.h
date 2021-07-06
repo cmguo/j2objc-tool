@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/locks/ReentrantLock.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentLocksReentrantLock")
 #ifdef RESTRICT_JavaUtilConcurrentLocksReentrantLock
@@ -33,11 +33,11 @@
 
 #define RESTRICT_JavaUtilConcurrentLocksLock 1
 #define INCLUDE_JavaUtilConcurrentLocksLock 1
-#include "java/util/concurrent/locks/Lock.h"
+#include <JRE/java/util/concurrent/locks/Lock.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaLangThread;
 @class JavaUtilConcurrentTimeUnit;
@@ -532,7 +532,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksReentrantLock)
 
 #define RESTRICT_JavaUtilConcurrentLocksAbstractQueuedSynchronizer 1
 #define INCLUDE_JavaUtilConcurrentLocksAbstractQueuedSynchronizer 1
-#include "java/util/concurrent/locks/AbstractQueuedSynchronizer.h"
+#include <JRE/java/util/concurrent/locks/AbstractQueuedSynchronizer.h>
 
 @class JavaLangThread;
 @class JavaUtilConcurrentLocksAbstractQueuedSynchronizer_ConditionObject;

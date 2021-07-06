@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/ObjectOutput.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoObjectOutput")
 #ifdef RESTRICT_JavaIoObjectOutput
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaIoDataOutput 1
 #define INCLUDE_JavaIoDataOutput 1
-#include "java/io/DataOutput.h"
+#include <JRE/java/io/DataOutput.h>
 
 #define RESTRICT_JavaLangAutoCloseable 1
 #define INCLUDE_JavaLangAutoCloseable 1
-#include "java/lang/AutoCloseable.h"
+#include <JRE/java/lang/AutoCloseable.h>
 
 @class IOSByteArray;
 

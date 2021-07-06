@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/TimeUnit.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilTimeUnit")
 #ifdef RESTRICT_AndroidIcuUtilTimeUnit
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilMeasureUnit 1
 #define INCLUDE_AndroidIcuUtilMeasureUnit 1
-#include "android/icu/util/MeasureUnit.h"
+#include <JRE/android/icu/util/MeasureUnit.h>
 
 @class IOSObjectArray;
 

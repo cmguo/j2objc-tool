@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/Path.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFilePath")
 #ifdef RESTRICT_JavaNioFilePath
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 #define RESTRICT_JavaLangIterable 1
 #define INCLUDE_JavaLangIterable 1
-#include "java/lang/Iterable.h"
+#include <JRE/java/lang/Iterable.h>
 
 #define RESTRICT_JavaNioFileWatchable 1
 #define INCLUDE_JavaNioFileWatchable 1
-#include "java/nio/file/Watchable.h"
+#include <JRE/java/nio/file/Watchable.h>
 
 @class IOSObjectArray;
 @class JavaIoFile;

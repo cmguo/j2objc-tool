@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/PKIXReason.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertPKIXReason")
 #ifdef RESTRICT_JavaSecurityCertPKIXReason
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 #define RESTRICT_JavaSecurityCertCertPathValidatorException 1
 #define INCLUDE_JavaSecurityCertCertPathValidatorException_Reason 1
-#include "java/security/cert/CertPathValidatorException.h"
+#include <JRE/java/security/cert/CertPathValidatorException.h>
 
 @class IOSObjectArray;
 

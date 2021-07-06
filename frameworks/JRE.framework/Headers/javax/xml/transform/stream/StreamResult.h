@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/stream/StreamResult.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformStreamStreamResult")
 #ifdef RESTRICT_JavaxXmlTransformStreamStreamResult
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformResult 1
 #define INCLUDE_JavaxXmlTransformResult 1
-#include "javax/xml/transform/Result.h"
+#include <JRE/javax/xml/transform/Result.h>
 
 @class JavaIoFile;
 @class JavaIoOutputStream;

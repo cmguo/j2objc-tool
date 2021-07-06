@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/format/FormatStyle.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeFormatFormatStyle")
 #ifdef RESTRICT_JavaTimeFormatFormatStyle
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/FileSystem.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileFileSystem")
 #ifdef RESTRICT_JavaNioFileFileSystem
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoCloseable 1
 #define INCLUDE_JavaIoCloseable 1
-#include "java/io/Closeable.h"
+#include <JRE/java/io/Closeable.h>
 
 @class IOSObjectArray;
 @class JavaNioFileAttributeUserPrincipalLookupService;

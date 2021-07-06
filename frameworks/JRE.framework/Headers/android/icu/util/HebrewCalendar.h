@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/HebrewCalendar.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilHebrewCalendar")
 #ifdef RESTRICT_AndroidIcuUtilHebrewCalendar
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilCalendar 1
 #define INCLUDE_AndroidIcuUtilCalendar 1
-#include "android/icu/util/Calendar.h"
+#include <JRE/android/icu/util/Calendar.h>
 
 @class AndroidIcuUtilTimeZone;
 @class AndroidIcuUtilULocale;

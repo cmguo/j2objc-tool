@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/sax/TransformerHandler.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformSaxTransformerHandler")
 #ifdef RESTRICT_JavaxXmlTransformSaxTransformerHandler
@@ -27,15 +27,15 @@
 
 #define RESTRICT_OrgXmlSaxContentHandler 1
 #define INCLUDE_OrgXmlSaxContentHandler 1
-#include "org/xml/sax/ContentHandler.h"
+#include <JRE/org/xml/sax/ContentHandler.h>
 
 #define RESTRICT_OrgXmlSaxExtLexicalHandler 1
 #define INCLUDE_OrgXmlSaxExtLexicalHandler 1
-#include "org/xml/sax/ext/LexicalHandler.h"
+#include <JRE/org/xml/sax/ext/LexicalHandler.h>
 
 #define RESTRICT_OrgXmlSaxDTDHandler 1
 #define INCLUDE_OrgXmlSaxDTDHandler 1
-#include "org/xml/sax/DTDHandler.h"
+#include <JRE/org/xml/sax/DTDHandler.h>
 
 @class JavaxXmlTransformTransformer;
 @protocol JavaxXmlTransformResult;

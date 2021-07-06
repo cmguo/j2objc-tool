@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/SNIHostName.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslSNIHostName")
 #ifdef RESTRICT_JavaxNetSslSNIHostName
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxNetSslSNIServerName 1
 #define INCLUDE_JavaxNetSslSNIServerName 1
-#include "javax/net/ssl/SNIServerName.h"
+#include <JRE/javax/net/ssl/SNIServerName.h>
 
 @class IOSByteArray;
 @class JavaxNetSslSNIMatcher;

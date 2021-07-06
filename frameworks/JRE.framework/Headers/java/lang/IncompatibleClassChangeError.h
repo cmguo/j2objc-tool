@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/IncompatibleClassChangeError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangIncompatibleClassChangeError")
 #ifdef RESTRICT_JavaLangIncompatibleClassChangeError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangLinkageError 1
 #define INCLUDE_JavaLangLinkageError 1
-#include "java/lang/LinkageError.h"
+#include <JRE/java/lang/LinkageError.h>
 
 @class JavaLangThrowable;
 

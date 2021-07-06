@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/TimeZoneNames.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextTimeZoneNames")
 #ifdef RESTRICT_AndroidIcuTextTimeZoneNames
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class AndroidIcuTextTimeZoneNames_NameType;
 @class AndroidIcuUtilULocale;
@@ -267,7 +267,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextTimeZoneNames)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

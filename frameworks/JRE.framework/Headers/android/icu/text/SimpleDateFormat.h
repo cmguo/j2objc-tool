@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/SimpleDateFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextSimpleDateFormat")
 #ifdef RESTRICT_AndroidIcuTextSimpleDateFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextDateFormat 1
 #define INCLUDE_AndroidIcuTextDateFormat 1
-#include "android/icu/text/DateFormat.h"
+#include <JRE/android/icu/text/DateFormat.h>
 
 @class AndroidIcuTextDateFormatSymbols;
 @class AndroidIcuTextDateFormat_Field;

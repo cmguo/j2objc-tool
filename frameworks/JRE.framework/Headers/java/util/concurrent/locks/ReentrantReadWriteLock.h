@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/locks/ReentrantReadWriteLock.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentLocksReentrantReadWriteLock")
 #ifdef RESTRICT_JavaUtilConcurrentLocksReentrantReadWriteLock
@@ -33,11 +33,11 @@
 
 #define RESTRICT_JavaUtilConcurrentLocksReadWriteLock 1
 #define INCLUDE_JavaUtilConcurrentLocksReadWriteLock 1
-#include "java/util/concurrent/locks/ReadWriteLock.h"
+#include <JRE/java/util/concurrent/locks/ReadWriteLock.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaLangThread;
 @class JavaUtilConcurrentLocksReentrantReadWriteLock_ReadLock;
@@ -472,7 +472,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksReentrantReadWriteLock)
 
 #define RESTRICT_JavaUtilConcurrentLocksAbstractQueuedSynchronizer 1
 #define INCLUDE_JavaUtilConcurrentLocksAbstractQueuedSynchronizer 1
-#include "java/util/concurrent/locks/AbstractQueuedSynchronizer.h"
+#include <JRE/java/util/concurrent/locks/AbstractQueuedSynchronizer.h>
 
 @class JavaLangThread;
 @class JavaUtilConcurrentLocksAbstractQueuedSynchronizer_ConditionObject;
@@ -627,7 +627,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksReentrantReadWriteLock_Sync_Ho
 
 #define RESTRICT_JavaLangThreadLocal 1
 #define INCLUDE_JavaLangThreadLocal 1
-#include "java/lang/ThreadLocal.h"
+#include <JRE/java/lang/ThreadLocal.h>
 
 @class JavaUtilConcurrentLocksReentrantReadWriteLock_Sync_HoldCounter;
 
@@ -728,11 +728,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksReentrantReadWriteLock_FairSyn
 
 #define RESTRICT_JavaUtilConcurrentLocksLock 1
 #define INCLUDE_JavaUtilConcurrentLocksLock 1
-#include "java/util/concurrent/locks/Lock.h"
+#include <JRE/java/util/concurrent/locks/Lock.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaUtilConcurrentLocksReentrantReadWriteLock;
 @class JavaUtilConcurrentTimeUnit;
@@ -926,11 +926,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksReentrantReadWriteLock_ReadLoc
 
 #define RESTRICT_JavaUtilConcurrentLocksLock 1
 #define INCLUDE_JavaUtilConcurrentLocksLock 1
-#include "java/util/concurrent/locks/Lock.h"
+#include <JRE/java/util/concurrent/locks/Lock.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaUtilConcurrentLocksReentrantReadWriteLock;
 @class JavaUtilConcurrentTimeUnit;

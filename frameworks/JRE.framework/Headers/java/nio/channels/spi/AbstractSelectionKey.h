@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/spi/AbstractSelectionKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsSpiAbstractSelectionKey")
 #ifdef RESTRICT_JavaNioChannelsSpiAbstractSelectionKey
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsSelectionKey 1
 #define INCLUDE_JavaNioChannelsSelectionKey 1
-#include "java/nio/channels/SelectionKey.h"
+#include <JRE/java/nio/channels/SelectionKey.h>
 
 /*!
  @brief Base implementation class for selection keys.

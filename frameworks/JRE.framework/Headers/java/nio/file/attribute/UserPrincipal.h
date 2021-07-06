@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/UserPrincipal.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeUserPrincipal")
 #ifdef RESTRICT_JavaNioFileAttributeUserPrincipal
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityPrincipal 1
 #define INCLUDE_JavaSecurityPrincipal 1
-#include "java/security/Principal.h"
+#include <JRE/java/security/Principal.h>
 
 /*!
  @brief A <code>Principal</code> representing an identity used to determine access rights

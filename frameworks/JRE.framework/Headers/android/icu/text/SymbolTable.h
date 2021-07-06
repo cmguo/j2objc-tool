@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/SymbolTable.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextSymbolTable")
 #ifdef RESTRICT_AndroidIcuTextSymbolTable

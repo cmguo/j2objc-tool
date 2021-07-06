@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/PublicKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityPublicKey")
 #ifdef RESTRICT_JavaSecurityPublicKey
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityKey 1
 #define INCLUDE_JavaSecurityKey 1
-#include "java/security/Key.h"
+#include <JRE/java/security/Key.h>
 
 /*!
  @brief <p>A public key.

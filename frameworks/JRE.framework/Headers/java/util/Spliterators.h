@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Spliterators.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilSpliterators")
 #ifdef RESTRICT_JavaUtilSpliterators
@@ -625,7 +625,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilComparator;
@@ -704,7 +704,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_ArraySpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class IOSIntArray;
 @protocol JavaUtilComparator;
@@ -784,7 +784,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_IntArraySpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class IOSLongArray;
 @protocol JavaUtilComparator;
@@ -864,7 +864,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_LongArraySpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class IOSDoubleArray;
 @protocol JavaUtilComparator;
@@ -944,7 +944,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_DoubleArraySpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1020,7 +1020,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractSpliterator)
 
 #define RESTRICT_JavaUtilFunctionConsumer 1
 #define INCLUDE_JavaUtilFunctionConsumer 1
-#include "java/util/function/Consumer.h"
+#include <JRE/java/util/function/Consumer.h>
 
 @interface JavaUtilSpliterators_AbstractSpliterator_HoldingConsumer : NSObject < JavaUtilFunctionConsumer > {
  @public
@@ -1056,7 +1056,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractSpliterator_HoldingConsu
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1133,7 +1133,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractIntSpliterator)
 
 #define RESTRICT_JavaUtilFunctionIntConsumer 1
 #define INCLUDE_JavaUtilFunctionIntConsumer 1
-#include "java/util/function/IntConsumer.h"
+#include <JRE/java/util/function/IntConsumer.h>
 
 @interface JavaUtilSpliterators_AbstractIntSpliterator_HoldingIntConsumer : NSObject < JavaUtilFunctionIntConsumer > {
  @public
@@ -1167,7 +1167,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractIntSpliterator_HoldingIn
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1244,7 +1244,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractLongSpliterator)
 
 #define RESTRICT_JavaUtilFunctionLongConsumer 1
 #define INCLUDE_JavaUtilFunctionLongConsumer 1
-#include "java/util/function/LongConsumer.h"
+#include <JRE/java/util/function/LongConsumer.h>
 
 @interface JavaUtilSpliterators_AbstractLongSpliterator_HoldingLongConsumer : NSObject < JavaUtilFunctionLongConsumer > {
  @public
@@ -1278,7 +1278,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractLongSpliterator_HoldingL
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1355,7 +1355,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractDoubleSpliterator)
 
 #define RESTRICT_JavaUtilFunctionDoubleConsumer 1
 #define INCLUDE_JavaUtilFunctionDoubleConsumer 1
-#include "java/util/function/DoubleConsumer.h"
+#include <JRE/java/util/function/DoubleConsumer.h>
 
 @interface JavaUtilSpliterators_AbstractDoubleSpliterator_HoldingDoubleConsumer : NSObject < JavaUtilFunctionDoubleConsumer > {
  @public
@@ -1389,7 +1389,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_AbstractDoubleSpliterator_Holdin
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilComparator;
@@ -1495,7 +1495,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_IteratorSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1584,7 +1584,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_IntIteratorSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -1668,7 +1668,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilSpliterators_LongIteratorSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;

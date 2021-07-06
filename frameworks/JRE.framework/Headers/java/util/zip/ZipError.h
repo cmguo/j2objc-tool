@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/zip/ZipError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilZipZipError")
 #ifdef RESTRICT_JavaUtilZipZipError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangInternalError 1
 #define INCLUDE_JavaLangInternalError 1
-#include "java/lang/InternalError.h"
+#include <JRE/java/lang/InternalError.h>
 
 @class JavaLangThrowable;
 

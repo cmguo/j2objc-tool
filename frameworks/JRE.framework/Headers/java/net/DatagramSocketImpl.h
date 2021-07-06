@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/DatagramSocketImpl.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetDatagramSocketImpl")
 #ifdef RESTRICT_JavaNetDatagramSocketImpl
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetSocketOptions 1
 #define INCLUDE_JavaNetSocketOptions 1
-#include "java/net/SocketOptions.h"
+#include <JRE/java/net/SocketOptions.h>
 
 @class JavaIoFileDescriptor;
 @class JavaNetDatagramPacket;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/StandardCopyOption.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileStandardCopyOption")
 #ifdef RESTRICT_JavaNioFileStandardCopyOption
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 #define RESTRICT_JavaNioFileCopyOption 1
 #define INCLUDE_JavaNioFileCopyOption 1
-#include "java/nio/file/CopyOption.h"
+#include <JRE/java/nio/file/CopyOption.h>
 
 @class IOSObjectArray;
 

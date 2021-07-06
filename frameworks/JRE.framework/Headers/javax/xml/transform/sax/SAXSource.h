@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/sax/SAXSource.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformSaxSAXSource")
 #ifdef RESTRICT_JavaxXmlTransformSaxSAXSource
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformSource 1
 #define INCLUDE_JavaxXmlTransformSource 1
-#include "javax/xml/transform/Source.h"
+#include <JRE/javax/xml/transform/Source.h>
 
 @class OrgXmlSaxInputSource;
 @protocol OrgXmlSaxXMLReader;

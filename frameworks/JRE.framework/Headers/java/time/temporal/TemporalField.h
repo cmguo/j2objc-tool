@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/temporal/TemporalField.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeTemporalTemporalField")
 #ifdef RESTRICT_JavaTimeTemporalTemporalField

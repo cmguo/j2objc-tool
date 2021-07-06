@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/validation/ValidatorHandler.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlValidationValidatorHandler")
 #ifdef RESTRICT_JavaxXmlValidationValidatorHandler
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxContentHandler 1
 #define INCLUDE_OrgXmlSaxContentHandler 1
-#include "org/xml/sax/ContentHandler.h"
+#include <JRE/org/xml/sax/ContentHandler.h>
 
 @class JavaxXmlValidationTypeInfoProvider;
 @protocol OrgW3cDomLsLSResourceResolver;

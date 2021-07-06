@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/sun/misc/Unsafe.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_SunMiscUnsafe")
 #ifdef RESTRICT_SunMiscUnsafe

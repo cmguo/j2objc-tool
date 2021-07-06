@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/ResultSet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlResultSet")
 #ifdef RESTRICT_JavaSqlResultSet
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSqlWrapper 1
 #define INCLUDE_JavaSqlWrapper 1
-#include "java/sql/Wrapper.h"
+#include <JRE/java/sql/Wrapper.h>
 
 #define RESTRICT_JavaLangAutoCloseable 1
 #define INCLUDE_JavaLangAutoCloseable 1
-#include "java/lang/AutoCloseable.h"
+#include <JRE/java/lang/AutoCloseable.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

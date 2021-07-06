@@ -3,7 +3,7 @@
 //  source: apache_harmony/classlib/modules/beans/src/main/java/java/beans/FeatureDescriptor.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaBeansFeatureDescriptor")
 #ifdef RESTRICT_JavaBeansFeatureDescriptor

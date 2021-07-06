@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/LinkedList.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilLinkedList")
 #ifdef RESTRICT_JavaUtilLinkedList
@@ -27,19 +27,19 @@
 
 #define RESTRICT_JavaUtilAbstractSequentialList 1
 #define INCLUDE_JavaUtilAbstractSequentialList 1
-#include "java/util/AbstractSequentialList.h"
+#include <JRE/java/util/AbstractSequentialList.h>
 
 #define RESTRICT_JavaUtilList 1
 #define INCLUDE_JavaUtilList 1
-#include "java/util/List.h"
+#include <JRE/java/util/List.h>
 
 #define RESTRICT_JavaUtilDeque 1
 #define INCLUDE_JavaUtilDeque 1
-#include "java/util/Deque.h"
+#include <JRE/java/util/Deque.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @class JavaUtilLinkedList_Node;
@@ -624,7 +624,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedList_Node)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilLinkedList;
 @class JavaUtilLinkedList_Node;

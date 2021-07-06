@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/Editable.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextEditable")
 #ifdef RESTRICT_AndroidTextEditable
@@ -27,19 +27,19 @@
 
 #define RESTRICT_JavaLangCharSequence 1
 #define INCLUDE_JavaLangCharSequence 1
-#include "java/lang/CharSequence.h"
+#include <JRE/java/lang/CharSequence.h>
 
 #define RESTRICT_AndroidTextGetChars 1
 #define INCLUDE_AndroidTextGetChars 1
-#include "android/text/GetChars.h"
+#include <JRE/android/text/GetChars.h>
 
 #define RESTRICT_AndroidTextSpannable 1
 #define INCLUDE_AndroidTextSpannable 1
-#include "android/text/Spannable.h"
+#include <JRE/android/text/Spannable.h>
 
 #define RESTRICT_JavaLangAppendable 1
 #define INCLUDE_JavaLangAppendable 1
-#include "java/lang/Appendable.h"
+#include <JRE/java/lang/Appendable.h>
 
 @class IOSObjectArray;
 

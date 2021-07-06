@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/AbstractMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilAbstractMap")
 #ifdef RESTRICT_JavaUtilAbstractMap
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilFunctionBiConsumer;
@@ -236,11 +236,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilAbstractMap)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap_Entry 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 /*!
  @brief An Entry maintaining a key and a value.The value may be
@@ -371,11 +371,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilAbstractMap_SimpleEntry)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap_Entry 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 /*!
  @brief An Entry maintaining an immutable key and value.This class

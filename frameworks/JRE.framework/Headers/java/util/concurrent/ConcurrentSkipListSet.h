@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ConcurrentSkipListSet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentConcurrentSkipListSet")
 #ifdef RESTRICT_JavaUtilConcurrentConcurrentSkipListSet
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaUtilAbstractSet 1
 #define INCLUDE_JavaUtilAbstractSet 1
-#include "java/util/AbstractSet.h"
+#include <JRE/java/util/AbstractSet.h>
 
 #define RESTRICT_JavaUtilNavigableSet 1
 #define INCLUDE_JavaUtilNavigableSet 1
-#include "java/util/NavigableSet.h"
+#include <JRE/java/util/NavigableSet.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilComparator;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/Package.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangPackage")
 #ifdef RESTRICT_JavaLangPackage
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectAnnotatedElement 1
 #define INCLUDE_JavaLangReflectAnnotatedElement 1
-#include "java/lang/reflect/AnnotatedElement.h"
+#include <JRE/java/lang/reflect/AnnotatedElement.h>
 
 @class IOSClass;
 @class IOSObjectArray;

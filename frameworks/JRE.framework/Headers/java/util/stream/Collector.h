@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/Collector.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamCollector")
 #ifdef RESTRICT_JavaUtilStreamCollector
@@ -239,7 +239,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamCollector)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

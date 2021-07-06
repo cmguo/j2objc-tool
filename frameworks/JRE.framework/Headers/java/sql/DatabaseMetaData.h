@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/DatabaseMetaData.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlDatabaseMetaData")
 #ifdef RESTRICT_JavaSqlDatabaseMetaData
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlWrapper 1
 #define INCLUDE_JavaSqlWrapper 1
-#include "java/sql/Wrapper.h"
+#include <JRE/java/sql/Wrapper.h>
 
 @class IOSIntArray;
 @class IOSObjectArray;

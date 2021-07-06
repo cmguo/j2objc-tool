@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/WriteAbortedException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoWriteAbortedException")
 #ifdef RESTRICT_JavaIoWriteAbortedException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoObjectStreamException 1
 #define INCLUDE_JavaIoObjectStreamException 1
-#include "java/io/ObjectStreamException.h"
+#include <JRE/java/io/ObjectStreamException.h>
 
 @class JavaLangException;
 @class JavaLangThrowable;

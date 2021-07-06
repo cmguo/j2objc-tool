@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/ext/Locator2Impl.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxExtLocator2Impl")
 #ifdef RESTRICT_OrgXmlSaxExtLocator2Impl
@@ -27,11 +27,11 @@
 
 #define RESTRICT_OrgXmlSaxHelpersLocatorImpl 1
 #define INCLUDE_OrgXmlSaxHelpersLocatorImpl 1
-#include "org/xml/sax/helpers/LocatorImpl.h"
+#include <JRE/org/xml/sax/helpers/LocatorImpl.h>
 
 #define RESTRICT_OrgXmlSaxExtLocator2 1
 #define INCLUDE_OrgXmlSaxExtLocator2 1
-#include "org/xml/sax/ext/Locator2.h"
+#include <JRE/org/xml/sax/ext/Locator2.h>
 
 @protocol OrgXmlSaxLocator;
 

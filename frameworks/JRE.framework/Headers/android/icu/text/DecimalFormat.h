@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/DecimalFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextDecimalFormat")
 #ifdef RESTRICT_AndroidIcuTextDecimalFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextNumberFormat 1
 #define INCLUDE_AndroidIcuTextNumberFormat 1
-#include "android/icu/text/NumberFormat.h"
+#include <JRE/android/icu/text/NumberFormat.h>
 
 @class AndroidIcuMathBigDecimal;
 @class AndroidIcuMathMathContext;

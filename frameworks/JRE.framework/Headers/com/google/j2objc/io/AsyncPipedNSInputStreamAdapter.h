@@ -3,7 +3,7 @@
 //  source: Classes/com/google/j2objc/io/AsyncPipedNSInputStreamAdapter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_ComGoogleJ2objcIoAsyncPipedNSInputStreamAdapter")
 #ifdef RESTRICT_ComGoogleJ2objcIoAsyncPipedNSInputStreamAdapter
@@ -117,7 +117,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleJ2objcIoAsyncPipedNSInputStreamAdapter_Deleg
 
 #define RESTRICT_JavaIoOutputStream 1
 #define INCLUDE_JavaIoOutputStream 1
-#include "java/io/OutputStream.h"
+#include <JRE/java/io/OutputStream.h>
 
 @class IOSByteArray;
 @protocol ComGoogleJ2objcIoAsyncPipedNSInputStreamAdapter_Delegate;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ForkJoinTask.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentForkJoinTask")
 #ifdef RESTRICT_JavaUtilConcurrentForkJoinTask
@@ -39,11 +39,11 @@
 
 #define RESTRICT_JavaUtilConcurrentFuture 1
 #define INCLUDE_JavaUtilConcurrentFuture 1
-#include "java/util/concurrent/Future.h"
+#include <JRE/java/util/concurrent/Future.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @class JavaLangThrowable;
@@ -811,7 +811,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentForkJoinTask)
 
 #define RESTRICT_JavaLangRefWeakReference 1
 #define INCLUDE_JavaLangRefWeakReference 1
-#include "java/lang/ref/WeakReference.h"
+#include <JRE/java/lang/ref/WeakReference.h>
 
 @class JavaLangRefReferenceQueue;
 @class JavaLangThrowable;
@@ -878,7 +878,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentForkJoinTask_ExceptionNode)
 
 #define RESTRICT_JavaUtilConcurrentRunnableFuture 1
 #define INCLUDE_JavaUtilConcurrentRunnableFuture 1
-#include "java/util/concurrent/RunnableFuture.h"
+#include <JRE/java/util/concurrent/RunnableFuture.h>
 
 @protocol JavaLangRunnable;
 
@@ -934,7 +934,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentForkJoinTask_AdaptedRunnable)
 
 #define RESTRICT_JavaUtilConcurrentRunnableFuture 1
 #define INCLUDE_JavaUtilConcurrentRunnableFuture 1
-#include "java/util/concurrent/RunnableFuture.h"
+#include <JRE/java/util/concurrent/RunnableFuture.h>
 
 @class JavaLangVoid;
 @class JavaUtilConcurrentTimeUnit;
@@ -1055,7 +1055,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentForkJoinTask_RunnableExecuteAction)
 
 #define RESTRICT_JavaUtilConcurrentRunnableFuture 1
 #define INCLUDE_JavaUtilConcurrentRunnableFuture 1
-#include "java/util/concurrent/RunnableFuture.h"
+#include <JRE/java/util/concurrent/RunnableFuture.h>
 
 @protocol JavaUtilConcurrentCallable;
 

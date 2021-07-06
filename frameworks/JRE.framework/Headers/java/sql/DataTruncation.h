@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/DataTruncation.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlDataTruncation")
 #ifdef RESTRICT_JavaSqlDataTruncation
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlSQLWarning 1
 #define INCLUDE_JavaSqlSQLWarning 1
-#include "java/sql/SQLWarning.h"
+#include <JRE/java/sql/SQLWarning.h>
 
 @class JavaLangThrowable;
 

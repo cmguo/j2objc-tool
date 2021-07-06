@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/zone/ZoneRulesException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeZoneZoneRulesException")
 #ifdef RESTRICT_JavaTimeZoneZoneRulesException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTimeDateTimeException 1
 #define INCLUDE_JavaTimeDateTimeException 1
-#include "java/time/DateTimeException.h"
+#include <JRE/java/time/DateTimeException.h>
 
 @class JavaLangThrowable;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/ServerSocket.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetServerSocket")
 #ifdef RESTRICT_JavaNetServerSocket
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoCloseable 1
 #define INCLUDE_JavaIoCloseable 1
-#include "java/io/Closeable.h"
+#include <JRE/java/io/Closeable.h>
 
 @class JavaIoFileDescriptor;
 @class JavaNetInetAddress;

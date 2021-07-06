@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/AEADBadTagException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoAEADBadTagException")
 #ifdef RESTRICT_JavaxCryptoAEADBadTagException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxCryptoBadPaddingException 1
 #define INCLUDE_JavaxCryptoBadPaddingException 1
-#include "javax/crypto/BadPaddingException.h"
+#include <JRE/javax/crypto/BadPaddingException.h>
 
 /*!
  @brief This exception is thrown when a <code>Cipher</code> operating in

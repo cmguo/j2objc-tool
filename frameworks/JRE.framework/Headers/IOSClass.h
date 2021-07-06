@@ -22,12 +22,12 @@
 #ifndef _IOSClass_H_
 #define _IOSClass_H_
 
-#import "IOSMetadata.h"
-#import "J2ObjC_common.h"
-#import "java/io/Serializable.h"
-#import "java/lang/reflect/AnnotatedElement.h"
-#import "java/lang/reflect/GenericDeclaration.h"
-#import "java/lang/reflect/Type.h"
+#import <JRE/IOSMetadata.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/java/io/Serializable.h>
+#import <JRE/java/lang/reflect/AnnotatedElement.h>
+#import <JRE/java/lang/reflect/GenericDeclaration.h>
+#import <JRE/java/lang/reflect/Type.h>
 
 @class IOSObjectArray;
 @class JavaLangClassLoader;

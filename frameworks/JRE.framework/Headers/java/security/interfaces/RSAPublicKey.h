@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/interfaces/RSAPublicKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityInterfacesRSAPublicKey")
 #ifdef RESTRICT_JavaSecurityInterfacesRSAPublicKey
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityPublicKey 1
 #define INCLUDE_JavaSecurityPublicKey 1
-#include "java/security/PublicKey.h"
+#include <JRE/java/security/PublicKey.h>
 
 #define RESTRICT_JavaSecurityInterfacesRSAKey 1
 #define INCLUDE_JavaSecurityInterfacesRSAKey 1
-#include "java/security/interfaces/RSAKey.h"
+#include <JRE/java/security/interfaces/RSAKey.h>
 
 @class JavaMathBigInteger;
 

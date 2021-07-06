@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/ext/Locator2.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxExtLocator2")
 #ifdef RESTRICT_OrgXmlSaxExtLocator2
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxLocator 1
 #define INCLUDE_OrgXmlSaxLocator 1
-#include "org/xml/sax/Locator.h"
+#include <JRE/org/xml/sax/Locator.h>
 
 /*!
  @brief SAX2 extension to augment the entity information provided

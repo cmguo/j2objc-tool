@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/interfaces/DHPrivateKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoInterfacesDHPrivateKey")
 #ifdef RESTRICT_JavaxCryptoInterfacesDHPrivateKey
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaxCryptoInterfacesDHKey 1
 #define INCLUDE_JavaxCryptoInterfacesDHKey 1
-#include "javax/crypto/interfaces/DHKey.h"
+#include <JRE/javax/crypto/interfaces/DHKey.h>
 
 #define RESTRICT_JavaSecurityPrivateKey 1
 #define INCLUDE_JavaSecurityPrivateKey 1
-#include "java/security/PrivateKey.h"
+#include <JRE/java/security/PrivateKey.h>
 
 @class JavaMathBigInteger;
 

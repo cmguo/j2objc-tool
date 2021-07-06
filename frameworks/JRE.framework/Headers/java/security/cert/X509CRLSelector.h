@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/X509CRLSelector.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertX509CRLSelector")
 #ifdef RESTRICT_JavaSecurityCertX509CRLSelector
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCRLSelector 1
 #define INCLUDE_JavaSecurityCertCRLSelector 1
-#include "java/security/cert/CRLSelector.h"
+#include <JRE/java/security/cert/CRLSelector.h>
 
 @class IOSByteArray;
 @class JavaMathBigInteger;

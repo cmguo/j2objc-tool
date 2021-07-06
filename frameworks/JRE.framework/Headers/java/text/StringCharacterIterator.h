@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/text/StringCharacterIterator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextStringCharacterIterator")
 #ifdef RESTRICT_JavaTextStringCharacterIterator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextCharacterIterator 1
 #define INCLUDE_JavaTextCharacterIterator 1
-#include "java/text/CharacterIterator.h"
+#include <JRE/java/text/CharacterIterator.h>
 
 /*!
  @brief <code>StringCharacterIterator</code> implements the 

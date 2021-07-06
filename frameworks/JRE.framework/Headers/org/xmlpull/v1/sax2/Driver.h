@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/xml/src/main/java/org/xmlpull/v1/sax2/Driver.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlpullV1Sax2Driver")
 #ifdef RESTRICT_OrgXmlpullV1Sax2Driver
@@ -27,15 +27,15 @@
 
 #define RESTRICT_OrgXmlSaxLocator 1
 #define INCLUDE_OrgXmlSaxLocator 1
-#include "org/xml/sax/Locator.h"
+#include <JRE/org/xml/sax/Locator.h>
 
 #define RESTRICT_OrgXmlSaxXMLReader 1
 #define INCLUDE_OrgXmlSaxXMLReader 1
-#include "org/xml/sax/XMLReader.h"
+#include <JRE/org/xml/sax/XMLReader.h>
 
 #define RESTRICT_OrgXmlSaxAttributes 1
 #define INCLUDE_OrgXmlSaxAttributes 1
-#include "org/xml/sax/Attributes.h"
+#include <JRE/org/xml/sax/Attributes.h>
 
 @class OrgXmlSaxInputSource;
 @protocol OrgXmlSaxContentHandler;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/GregorianCalendar.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilGregorianCalendar")
 #ifdef RESTRICT_JavaUtilGregorianCalendar
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilCalendar 1
 #define INCLUDE_JavaUtilCalendar 1
-#include "java/util/Calendar.h"
+#include <JRE/java/util/Calendar.h>
 
 @class IOSIntArray;
 @class JavaUtilDate;

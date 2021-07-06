@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/awt/font/NumericShaper.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaAwtFontNumericShaper")
 #ifdef RESTRICT_JavaAwtFontNumericShaper
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSCharArray;
 @class JavaAwtFontNumericShaper_Range;
@@ -552,7 +552,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaAwtFontNumericShaper)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

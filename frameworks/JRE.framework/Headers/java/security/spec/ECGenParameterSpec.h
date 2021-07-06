@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/spec/ECGenParameterSpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecuritySpecECGenParameterSpec")
 #ifdef RESTRICT_JavaSecuritySpecECGenParameterSpec
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySpecAlgorithmParameterSpec 1
 #define INCLUDE_JavaSecuritySpecAlgorithmParameterSpec 1
-#include "java/security/spec/AlgorithmParameterSpec.h"
+#include <JRE/java/security/spec/AlgorithmParameterSpec.h>
 
 /*!
  @brief This immutable class specifies the set of parameters used for

@@ -1,6 +1,5 @@
-module JRE {
+framework module JRE {
   umbrella header "JRE.h"
-
   export *
   module * { export * }
 }

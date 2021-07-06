@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/reflect/WildcardType.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangReflectWildcardType")
 #ifdef RESTRICT_JavaLangReflectWildcardType
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectType 1
 #define INCLUDE_JavaLangReflectType 1
-#include "java/lang/reflect/Type.h"
+#include <JRE/java/lang/reflect/Type.h>
 
 @class IOSObjectArray;
 

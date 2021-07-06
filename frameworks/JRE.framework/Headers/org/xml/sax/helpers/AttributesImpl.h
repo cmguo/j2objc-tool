@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/helpers/AttributesImpl.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxHelpersAttributesImpl")
 #ifdef RESTRICT_OrgXmlSaxHelpersAttributesImpl
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxAttributes 1
 #define INCLUDE_OrgXmlSaxAttributes 1
-#include "org/xml/sax/Attributes.h"
+#include <JRE/org/xml/sax/Attributes.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/util/ArraySet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidUtilArraySet")
 #ifdef RESTRICT_AndroidUtilArraySet
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 #define RESTRICT_JavaUtilSet 1
 #define INCLUDE_JavaUtilSet 1
-#include "java/util/Set.h"
+#include <JRE/java/util/Set.h>
 
 @class AndroidUtilMapCollections;
 @class IOSIntArray;

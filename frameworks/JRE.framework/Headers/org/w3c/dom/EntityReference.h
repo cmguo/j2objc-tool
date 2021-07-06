@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/EntityReference.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomEntityReference")
 #ifdef RESTRICT_OrgW3cDomEntityReference
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgW3cDomNode 1
 #define INCLUDE_OrgW3cDomNode 1
-#include "org/w3c/dom/Node.h"
+#include <JRE/org/w3c/dom/Node.h>
 
 /*!
  @brief <code>EntityReference</code> nodes may be used to represent an entity

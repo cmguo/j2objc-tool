@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/TransferQueue.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentTransferQueue")
 #ifdef RESTRICT_JavaUtilConcurrentTransferQueue
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentBlockingQueue 1
 #define INCLUDE_JavaUtilConcurrentBlockingQueue 1
-#include "java/util/concurrent/BlockingQueue.h"
+#include <JRE/java/util/concurrent/BlockingQueue.h>
 
 @class JavaUtilConcurrentTimeUnit;
 

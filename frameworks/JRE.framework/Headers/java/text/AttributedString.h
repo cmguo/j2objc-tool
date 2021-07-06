@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/text/AttributedString.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextAttributedString")
 #ifdef RESTRICT_JavaTextAttributedString
@@ -282,7 +282,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTextAttributedString)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap_Entry 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 @class JavaTextAttributedCharacterIterator_Attribute;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/charset/MalformedInputException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioCharsetMalformedInputException")
 #ifdef RESTRICT_JavaNioCharsetMalformedInputException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioCharsetCharacterCodingException 1
 #define INCLUDE_JavaNioCharsetCharacterCodingException 1
-#include "java/nio/charset/CharacterCodingException.h"
+#include <JRE/java/nio/charset/CharacterCodingException.h>
 
 /*!
  @brief Checked exception thrown when an input byte sequence is not legal for given

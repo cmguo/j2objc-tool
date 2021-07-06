@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/LinkageError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangLinkageError")
 #ifdef RESTRICT_JavaLangLinkageError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangError 1
 #define INCLUDE_JavaLangError 1
-#include "java/lang/Error.h"
+#include <JRE/java/lang/Error.h>
 
 @class JavaLangThrowable;
 

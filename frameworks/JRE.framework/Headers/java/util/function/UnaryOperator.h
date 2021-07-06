@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/function/UnaryOperator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilFunctionUnaryOperator")
 #ifdef RESTRICT_JavaUtilFunctionUnaryOperator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilFunctionFunction 1
 #define INCLUDE_JavaUtilFunctionFunction 1
-#include "java/util/function/Function.h"
+#include <JRE/java/util/function/Function.h>
 
 /*!
  @brief Represents an operation on a single operand that produces a result of the

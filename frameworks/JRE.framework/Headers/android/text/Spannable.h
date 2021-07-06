@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/Spannable.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextSpannable")
 #ifdef RESTRICT_AndroidTextSpannable
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidTextSpanned 1
 #define INCLUDE_AndroidTextSpanned 1
-#include "android/text/Spanned.h"
+#include <JRE/android/text/Spanned.h>
 
 /*!
  @brief This is the interface for text to which markup objects can be

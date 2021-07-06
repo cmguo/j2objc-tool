@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/util/LruCache.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidUtilLruCache")
 #ifdef RESTRICT_AndroidUtilLruCache

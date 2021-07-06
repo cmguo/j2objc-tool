@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/GroupPrincipal.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeGroupPrincipal")
 #ifdef RESTRICT_JavaNioFileAttributeGroupPrincipal
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileAttributeUserPrincipal 1
 #define INCLUDE_JavaNioFileAttributeUserPrincipal 1
-#include "java/nio/file/attribute/UserPrincipal.h"
+#include <JRE/java/nio/file/attribute/UserPrincipal.h>
 
 /*!
  @brief A <code>UserPrincipal</code> representing a <em>group identity</em>, used to

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/StringWriter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoStringWriter")
 #ifdef RESTRICT_JavaIoStringWriter
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoWriter 1
 #define INCLUDE_JavaIoWriter 1
-#include "java/io/Writer.h"
+#include <JRE/java/io/Writer.h>
 
 @class IOSCharArray;
 @class JavaLangStringBuffer;

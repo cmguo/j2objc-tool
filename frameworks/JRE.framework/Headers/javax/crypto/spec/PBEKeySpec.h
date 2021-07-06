@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/spec/PBEKeySpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoSpecPBEKeySpec")
 #ifdef RESTRICT_JavaxCryptoSpecPBEKeySpec
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySpecKeySpec 1
 #define INCLUDE_JavaSecuritySpecKeySpec 1
-#include "java/security/spec/KeySpec.h"
+#include <JRE/java/security/spec/KeySpec.h>
 
 @class IOSByteArray;
 @class IOSCharArray;

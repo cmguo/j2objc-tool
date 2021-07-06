@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/IdentityHashMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilIdentityHashMap")
 #ifdef RESTRICT_JavaUtilIdentityHashMap
@@ -36,15 +36,15 @@
 
 #define RESTRICT_JavaUtilAbstractMap 1
 #define INCLUDE_JavaUtilAbstractMap 1
-#include "java/util/AbstractMap.h"
+#include <JRE/java/util/AbstractMap.h>
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilCollection;
@@ -535,7 +535,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilIdentityHashMap_IdentityHashMapSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilIdentityHashMap;
 @protocol JavaUtilComparator;
@@ -580,7 +580,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilIdentityHashMap_KeySpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilIdentityHashMap;
 @protocol JavaUtilComparator;
@@ -625,7 +625,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilIdentityHashMap_ValueSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilIdentityHashMap;
 @protocol JavaUtilComparator;

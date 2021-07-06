@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/Pipe.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsPipe")
 #ifdef RESTRICT_JavaNioChannelsPipe
@@ -95,15 +95,15 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaNioChannelsPipe)
 
 #define RESTRICT_JavaNioChannelsSpiAbstractSelectableChannel 1
 #define INCLUDE_JavaNioChannelsSpiAbstractSelectableChannel 1
-#include "java/nio/channels/spi/AbstractSelectableChannel.h"
+#include <JRE/java/nio/channels/spi/AbstractSelectableChannel.h>
 
 #define RESTRICT_JavaNioChannelsReadableByteChannel 1
 #define INCLUDE_JavaNioChannelsReadableByteChannel 1
-#include "java/nio/channels/ReadableByteChannel.h"
+#include <JRE/java/nio/channels/ReadableByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsScatteringByteChannel 1
 #define INCLUDE_JavaNioChannelsScatteringByteChannel 1
-#include "java/nio/channels/ScatteringByteChannel.h"
+#include <JRE/java/nio/channels/ScatteringByteChannel.h>
 
 @class JavaNioChannelsSpiSelectorProvider;
 
@@ -147,15 +147,15 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaNioChannelsPipe_SourceChannel)
 
 #define RESTRICT_JavaNioChannelsSpiAbstractSelectableChannel 1
 #define INCLUDE_JavaNioChannelsSpiAbstractSelectableChannel 1
-#include "java/nio/channels/spi/AbstractSelectableChannel.h"
+#include <JRE/java/nio/channels/spi/AbstractSelectableChannel.h>
 
 #define RESTRICT_JavaNioChannelsWritableByteChannel 1
 #define INCLUDE_JavaNioChannelsWritableByteChannel 1
-#include "java/nio/channels/WritableByteChannel.h"
+#include <JRE/java/nio/channels/WritableByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsGatheringByteChannel 1
 #define INCLUDE_JavaNioChannelsGatheringByteChannel 1
-#include "java/nio/channels/GatheringByteChannel.h"
+#include <JRE/java/nio/channels/GatheringByteChannel.h>
 
 @class JavaNioChannelsSpiSelectorProvider;
 

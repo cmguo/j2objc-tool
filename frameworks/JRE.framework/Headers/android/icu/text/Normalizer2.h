@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/Normalizer2.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextNormalizer2")
 #ifdef RESTRICT_AndroidIcuTextNormalizer2
@@ -374,7 +374,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextNormalizer2)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

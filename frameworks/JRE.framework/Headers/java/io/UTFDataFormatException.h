@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/UTFDataFormatException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoUTFDataFormatException")
 #ifdef RESTRICT_JavaIoUTFDataFormatException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoIOException 1
 #define INCLUDE_JavaIoIOException 1
-#include "java/io/IOException.h"
+#include <JRE/java/io/IOException.h>
 
 @class JavaLangThrowable;
 

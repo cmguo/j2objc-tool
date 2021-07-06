@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/Stream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamStream")
 #ifdef RESTRICT_JavaUtilStreamStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilStreamBaseStream 1
 #define INCLUDE_JavaUtilStreamBaseStream 1
-#include "java/util/stream/BaseStream.h"
+#include <JRE/java/util/stream/BaseStream.h>
 
 @class IOSObjectArray;
 @class JavaUtilOptional;
@@ -810,7 +810,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStream)
 
 #define RESTRICT_JavaUtilFunctionConsumer 1
 #define INCLUDE_JavaUtilFunctionConsumer 1
-#include "java/util/function/Consumer.h"
+#include <JRE/java/util/function/Consumer.h>
 
 @protocol JavaUtilStreamStream;
 

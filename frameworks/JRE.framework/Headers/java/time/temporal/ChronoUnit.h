@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/temporal/ChronoUnit.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeTemporalChronoUnit")
 #ifdef RESTRICT_JavaTimeTemporalChronoUnit
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 #define RESTRICT_JavaTimeTemporalTemporalUnit 1
 #define INCLUDE_JavaTimeTemporalTemporalUnit 1
-#include "java/time/temporal/TemporalUnit.h"
+#include <JRE/java/time/temporal/TemporalUnit.h>
 
 @class IOSObjectArray;
 @class JavaTimeDuration;

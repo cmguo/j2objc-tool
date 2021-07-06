@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/spec/ECFieldF2m.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecuritySpecECFieldF2m")
 #ifdef RESTRICT_JavaSecuritySpecECFieldF2m
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySpecECField 1
 #define INCLUDE_JavaSecuritySpecECField 1
-#include "java/security/spec/ECField.h"
+#include <JRE/java/security/spec/ECField.h>
 
 @class IOSIntArray;
 @class JavaMathBigInteger;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/AbstractSet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilAbstractSet")
 #ifdef RESTRICT_JavaUtilAbstractSet
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilAbstractCollection 1
 #define INCLUDE_JavaUtilAbstractCollection 1
-#include "java/util/AbstractCollection.h"
+#include <JRE/java/util/AbstractCollection.h>
 
 #define RESTRICT_JavaUtilSet 1
 #define INCLUDE_JavaUtilSet 1
-#include "java/util/Set.h"
+#include <JRE/java/util/Set.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilSpliterator;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/HttpsURLConnection.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslHttpsURLConnection")
 #ifdef RESTRICT_JavaxNetSslHttpsURLConnection
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetHttpURLConnection 1
 #define INCLUDE_JavaNetHttpURLConnection 1
-#include "java/net/HttpURLConnection.h"
+#include <JRE/java/net/HttpURLConnection.h>
 
 @class IOSObjectArray;
 @class JavaNetURL;

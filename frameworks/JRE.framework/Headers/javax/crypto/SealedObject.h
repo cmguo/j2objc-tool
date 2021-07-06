@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/SealedObject.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoSealedObject")
 #ifdef RESTRICT_JavaxCryptoSealedObject
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSByteArray;
 @class JavaxCryptoCipher;
@@ -234,7 +234,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaxCryptoSealedObject)
 
 #define RESTRICT_JavaIoObjectInputStream 1
 #define INCLUDE_JavaIoObjectInputStream 1
-#include "java/io/ObjectInputStream.h"
+#include <JRE/java/io/ObjectInputStream.h>
 
 @class IOSClass;
 @class JavaIoInputStream;

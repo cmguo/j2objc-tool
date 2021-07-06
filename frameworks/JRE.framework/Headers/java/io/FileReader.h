@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/FileReader.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoFileReader")
 #ifdef RESTRICT_JavaIoFileReader
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoInputStreamReader 1
 #define INCLUDE_JavaIoInputStreamReader 1
-#include "java/io/InputStreamReader.h"
+#include <JRE/java/io/InputStreamReader.h>
 
 @class JavaIoFile;
 @class JavaIoFileDescriptor;

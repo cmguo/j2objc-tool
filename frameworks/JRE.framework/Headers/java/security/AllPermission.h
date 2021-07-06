@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/AllPermission.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityAllPermission")
 #ifdef RESTRICT_JavaSecurityAllPermission
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityPermission 1
 #define INCLUDE_JavaSecurityPermission 1
-#include "java/security/Permission.h"
+#include <JRE/java/security/Permission.h>
 
 /*!
  @brief Legacy security code; do not use.

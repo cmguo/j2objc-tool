@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/LinkedBlockingDeque.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentLinkedBlockingDeque")
 #ifdef RESTRICT_JavaUtilConcurrentLinkedBlockingDeque
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaUtilAbstractQueue 1
 #define INCLUDE_JavaUtilAbstractQueue 1
-#include "java/util/AbstractQueue.h"
+#include <JRE/java/util/AbstractQueue.h>
 
 #define RESTRICT_JavaUtilConcurrentBlockingDeque 1
 #define INCLUDE_JavaUtilConcurrentBlockingDeque 1
-#include "java/util/concurrent/BlockingDeque.h"
+#include <JRE/java/util/concurrent/BlockingDeque.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @class JavaUtilConcurrentLinkedBlockingDeque_Node;
@@ -512,7 +512,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLinkedBlockingDeque_Node)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilConcurrentLinkedBlockingDeque;
 @class JavaUtilConcurrentLinkedBlockingDeque_Node;

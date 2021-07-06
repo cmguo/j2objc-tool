@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/OverlappingFileLockException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsOverlappingFileLockException")
 #ifdef RESTRICT_JavaNioChannelsOverlappingFileLockException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangIllegalStateException 1
 #define INCLUDE_JavaLangIllegalStateException 1
-#include "java/lang/IllegalStateException.h"
+#include <JRE/java/lang/IllegalStateException.h>
 
 @class JavaLangThrowable;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/security/auth/x500/X500Principal.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSecurityAuthX500X500Principal")
 #ifdef RESTRICT_JavaxSecurityAuthX500X500Principal
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityPrincipal 1
 #define INCLUDE_JavaSecurityPrincipal 1
-#include "java/security/Principal.h"
+#include <JRE/java/security/Principal.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

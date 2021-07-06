@@ -22,10 +22,10 @@
 #ifndef _JavaLangReflectField_H_
 #define _JavaLangReflectField_H_
 
-#import "IOSMetadata.h"
-#import "J2ObjC_common.h"
-#import "java/lang/reflect/AccessibleObject.h"
-#import "java/lang/reflect/Member.h"
+#import <JRE/IOSMetadata.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/java/lang/reflect/AccessibleObject.h>
+#import <JRE/java/lang/reflect/Member.h>
 #import <objc/runtime.h>
 
 @class IOSClass;

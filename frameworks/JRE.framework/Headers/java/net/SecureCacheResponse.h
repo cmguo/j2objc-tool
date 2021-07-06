@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/SecureCacheResponse.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetSecureCacheResponse")
 #ifdef RESTRICT_JavaNetSecureCacheResponse
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetCacheResponse 1
 #define INCLUDE_JavaNetCacheResponse 1
-#include "java/net/CacheResponse.h"
+#include <JRE/java/net/CacheResponse.h>
 
 @protocol JavaSecurityPrincipal;
 @protocol JavaUtilList;

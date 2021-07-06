@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/SSLHandshakeException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslSSLHandshakeException")
 #ifdef RESTRICT_JavaxNetSslSSLHandshakeException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxNetSslSSLException 1
 #define INCLUDE_JavaxNetSslSSLException 1
-#include "javax/net/ssl/SSLException.h"
+#include <JRE/javax/net/ssl/SSLException.h>
 
 @class JavaLangThrowable;
 

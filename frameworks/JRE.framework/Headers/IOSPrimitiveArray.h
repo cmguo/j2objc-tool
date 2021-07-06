@@ -31,7 +31,7 @@
 #ifndef IOSPrimitiveArray_H
 #define IOSPrimitiveArray_H
 
-#import "IOSArray.h"
+#import <JRE/IOSArray.h>
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wzero-length-array"

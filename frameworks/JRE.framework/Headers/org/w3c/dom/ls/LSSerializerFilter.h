@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/ls/LSSerializerFilter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomLsLSSerializerFilter")
 #ifdef RESTRICT_OrgW3cDomLsLSSerializerFilter
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgW3cDomTraversalNodeFilter 1
 #define INCLUDE_OrgW3cDomTraversalNodeFilter 1
-#include "org/w3c/dom/traversal/NodeFilter.h"
+#include <JRE/org/w3c/dom/traversal/NodeFilter.h>
 
 /*!
  @brief <code>LSSerializerFilter</code>s provide applications the ability to

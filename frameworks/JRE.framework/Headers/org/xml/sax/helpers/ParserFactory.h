@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/helpers/ParserFactory.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxHelpersParserFactory")
 #ifdef RESTRICT_OrgXmlSaxHelpersParserFactory

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/SimpleFileVisitor.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileSimpleFileVisitor")
 #ifdef RESTRICT_JavaNioFileSimpleFileVisitor
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileFileVisitor 1
 #define INCLUDE_JavaNioFileFileVisitor 1
-#include "java/nio/file/FileVisitor.h"
+#include <JRE/java/nio/file/FileVisitor.h>
 
 @class JavaIoIOException;
 @class JavaNioFileFileVisitResult;

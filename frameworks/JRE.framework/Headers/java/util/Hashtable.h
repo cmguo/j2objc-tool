@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Hashtable.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilHashtable")
 #ifdef RESTRICT_JavaUtilHashtable
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaUtilDictionary 1
 #define INCLUDE_JavaUtilDictionary 1
-#include "java/util/Dictionary.h"
+#include <JRE/java/util/Dictionary.h>
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilEnumeration;

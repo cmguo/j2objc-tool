@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/interfaces/RSAPrivateKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityInterfacesRSAPrivateKey")
 #ifdef RESTRICT_JavaSecurityInterfacesRSAPrivateKey
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityPrivateKey 1
 #define INCLUDE_JavaSecurityPrivateKey 1
-#include "java/security/PrivateKey.h"
+#include <JRE/java/security/PrivateKey.h>
 
 #define RESTRICT_JavaSecurityInterfacesRSAKey 1
 #define INCLUDE_JavaSecurityInterfacesRSAKey 1
-#include "java/security/interfaces/RSAKey.h"
+#include <JRE/java/security/interfaces/RSAKey.h>
 
 @class JavaMathBigInteger;
 

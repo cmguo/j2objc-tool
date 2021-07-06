@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/jar/JarEntry.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilJarJarEntry")
 #ifdef RESTRICT_JavaUtilJarJarEntry
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilZipZipEntry 1
 #define INCLUDE_JavaUtilZipZipEntry 1
-#include "java/util/zip/ZipEntry.h"
+#include <JRE/java/util/zip/ZipEntry.h>
 
 @class IOSByteArray;
 @class IOSObjectArray;

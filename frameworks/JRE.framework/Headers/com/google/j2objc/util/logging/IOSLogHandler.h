@@ -3,7 +3,7 @@
 //  source: Classes/com/google/j2objc/util/logging/IOSLogHandler.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_ComGoogleJ2objcUtilLoggingIOSLogHandler")
 #ifdef RESTRICT_ComGoogleJ2objcUtilLoggingIOSLogHandler
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilLoggingHandler 1
 #define INCLUDE_JavaUtilLoggingHandler 1
-#include "java/util/logging/Handler.h"
+#include <JRE/java/util/logging/Handler.h>
 
 @class JavaUtilLoggingLogRecord;
 
@@ -72,7 +72,7 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleJ2objcUtilLoggingIOSLogHandler)
 
 #define RESTRICT_JavaUtilLoggingFormatter 1
 #define INCLUDE_JavaUtilLoggingFormatter 1
-#include "java/util/logging/Formatter.h"
+#include <JRE/java/util/logging/Formatter.h>
 
 @class JavaUtilLoggingLogRecord;
 

@@ -25,7 +25,7 @@
 #define JNI_H_
 
 #include <stdarg.h>
-#include "J2ObjC_types.h"
+#include <JRE/J2ObjC_types.h>
 
 // OpenJDK conditionals for MacOS-specific code. However, we define for
 // iOS as well, since OpenJDK was never built for iOS and MacOSX and iOS

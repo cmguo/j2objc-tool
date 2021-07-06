@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ConcurrentNavigableMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentConcurrentNavigableMap")
 #ifdef RESTRICT_JavaUtilConcurrentConcurrentNavigableMap
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilConcurrentConcurrentMap 1
 #define INCLUDE_JavaUtilConcurrentConcurrentMap 1
-#include "java/util/concurrent/ConcurrentMap.h"
+#include <JRE/java/util/concurrent/ConcurrentMap.h>
 
 #define RESTRICT_JavaUtilNavigableMap 1
 #define INCLUDE_JavaUtilNavigableMap 1
-#include "java/util/NavigableMap.h"
+#include <JRE/java/util/NavigableMap.h>
 
 @protocol JavaUtilNavigableSet;
 

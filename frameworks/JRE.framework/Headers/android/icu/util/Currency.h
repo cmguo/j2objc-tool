@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/Currency.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilCurrency")
 #ifdef RESTRICT_AndroidIcuUtilCurrency
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilMeasureUnit 1
 #define INCLUDE_AndroidIcuUtilMeasureUnit 1
-#include "android/icu/util/MeasureUnit.h"
+#include <JRE/android/icu/util/MeasureUnit.h>
 
 @class AndroidIcuUtilCurrency_CurrencyUsage;
 @class AndroidIcuUtilULocale;
@@ -494,7 +494,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuUtilCurrency)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

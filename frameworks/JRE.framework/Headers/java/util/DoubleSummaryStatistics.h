@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/DoubleSummaryStatistics.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilDoubleSummaryStatistics")
 #ifdef RESTRICT_JavaUtilDoubleSummaryStatistics
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilFunctionDoubleConsumer 1
 #define INCLUDE_JavaUtilFunctionDoubleConsumer 1
-#include "java/util/function/DoubleConsumer.h"
+#include <JRE/java/util/function/DoubleConsumer.h>
 
 /*!
  @brief A state object for collecting statistics such as count, min, max, sum, and

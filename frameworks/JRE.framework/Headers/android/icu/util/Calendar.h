@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/Calendar.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilCalendar")
 #ifdef RESTRICT_AndroidIcuUtilCalendar
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 @class AndroidIcuTextDateFormat;
 @class AndroidIcuUtilCalendar_WeekData;

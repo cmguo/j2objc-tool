@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/TextUtils.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextTextUtils")
 #ifdef RESTRICT_AndroidTextTextUtils
@@ -667,7 +667,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidTextTextUtils)
 
 #define RESTRICT_JavaLangIterable 1
 #define INCLUDE_JavaLangIterable 1
-#include "java/lang/Iterable.h"
+#include <JRE/java/lang/Iterable.h>
 
 /*!
  @brief An interface for splitting strings according to rules that are opaque to the user of this
@@ -703,7 +703,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidTextTextUtils_StringSplitter)
 
 #define RESTRICT_JavaUtilIterator 1
 #define INCLUDE_JavaUtilIterator 1
-#include "java/util/Iterator.h"
+#include <JRE/java/util/Iterator.h>
 
 @protocol JavaUtilFunctionConsumer;
 @protocol JavaUtilSpliterator;
@@ -763,7 +763,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidTextTextUtils_SimpleStringSplitter)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/temporal/WeekFields.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeTemporalWeekFields")
 #ifdef RESTRICT_JavaTimeTemporalWeekFields
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeDayOfWeek;
 @class JavaUtilLocale;
@@ -453,7 +453,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeTemporalWeekFields)
 
 #define RESTRICT_JavaTimeTemporalTemporalField 1
 #define INCLUDE_JavaTimeTemporalTemporalField 1
-#include "java/time/temporal/TemporalField.h"
+#include <JRE/java/time/temporal/TemporalField.h>
 
 @class JavaTimeFormatResolverStyle;
 @class JavaTimeTemporalValueRange;

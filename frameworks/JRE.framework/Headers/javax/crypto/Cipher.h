@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/Cipher.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoCipher")
 #ifdef RESTRICT_JavaxCryptoCipher
@@ -1644,7 +1644,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaxCryptoCipher)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -1798,7 +1798,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaxCryptoCipher_InitParams)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

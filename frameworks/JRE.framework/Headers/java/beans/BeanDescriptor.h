@@ -3,7 +3,7 @@
 //  source: apache_harmony/classlib/modules/beans/src/main/java/java/beans/BeanDescriptor.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaBeansBeanDescriptor")
 #ifdef RESTRICT_JavaBeansBeanDescriptor
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaBeansFeatureDescriptor 1
 #define INCLUDE_JavaBeansFeatureDescriptor 1
-#include "java/beans/FeatureDescriptor.h"
+#include <JRE/java/beans/FeatureDescriptor.h>
 
 @class IOSClass;
 

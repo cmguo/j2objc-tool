@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/TimeZoneFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextTimeZoneFormat")
 #ifdef RESTRICT_AndroidIcuTextTimeZoneFormat
@@ -27,15 +27,15 @@
 
 #define RESTRICT_AndroidIcuTextUFormat 1
 #define INCLUDE_AndroidIcuTextUFormat 1
-#include "android/icu/text/UFormat.h"
+#include <JRE/android/icu/text/UFormat.h>
 
 #define RESTRICT_AndroidIcuUtilFreezable 1
 #define INCLUDE_AndroidIcuUtilFreezable 1
-#include "android/icu/util/Freezable.h"
+#include <JRE/android/icu/util/Freezable.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class AndroidIcuTextTimeZoneFormat_GMTOffsetPatternType;
 @class AndroidIcuTextTimeZoneFormat_Style;
@@ -480,7 +480,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextTimeZoneFormat)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -717,7 +717,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextTimeZoneFormat_Style)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -811,7 +811,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextTimeZoneFormat_GMTOffsetPatternType)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -880,7 +880,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextTimeZoneFormat_TimeType)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

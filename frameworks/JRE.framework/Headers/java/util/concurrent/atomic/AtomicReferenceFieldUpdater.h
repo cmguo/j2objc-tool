@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/atomic/AtomicReferenceFieldUpdater.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentAtomicAtomicReferenceFieldUpdater")
 #ifdef RESTRICT_JavaUtilConcurrentAtomicAtomicReferenceFieldUpdater

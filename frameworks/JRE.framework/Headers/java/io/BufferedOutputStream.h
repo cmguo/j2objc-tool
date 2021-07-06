@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/BufferedOutputStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoBufferedOutputStream")
 #ifdef RESTRICT_JavaIoBufferedOutputStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoFilterOutputStream 1
 #define INCLUDE_JavaIoFilterOutputStream 1
-#include "java/io/FilterOutputStream.h"
+#include <JRE/java/io/FilterOutputStream.h>
 
 @class IOSByteArray;
 @class JavaIoOutputStream;

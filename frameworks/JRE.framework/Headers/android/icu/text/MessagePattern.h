@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/MessagePattern.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextMessagePattern")
 #ifdef RESTRICT_AndroidIcuTextMessagePattern
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilFreezable 1
 #define INCLUDE_AndroidIcuUtilFreezable 1
-#include "android/icu/util/Freezable.h"
+#include <JRE/android/icu/util/Freezable.h>
 
 @class AndroidIcuTextMessagePattern_ApostropheMode;
 @class AndroidIcuTextMessagePattern_Part;
@@ -410,7 +410,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextMessagePattern)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -594,7 +594,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextMessagePattern_Part)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -791,7 +791,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextMessagePattern_Part_Type)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

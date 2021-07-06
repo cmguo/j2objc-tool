@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/InterruptibleChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsInterruptibleChannel")
 #ifdef RESTRICT_JavaNioChannelsInterruptibleChannel
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsChannel 1
 #define INCLUDE_JavaNioChannelsChannel 1
-#include "java/nio/channels/Channel.h"
+#include <JRE/java/nio/channels/Channel.h>
 
 /*!
  @brief A channel that can be asynchronously closed and interrupted.

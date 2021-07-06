@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/DirectoryIteratorException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileDirectoryIteratorException")
 #ifdef RESTRICT_JavaNioFileDirectoryIteratorException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentModificationException 1
 #define INCLUDE_JavaUtilConcurrentModificationException 1
-#include "java/util/ConcurrentModificationException.h"
+#include <JRE/java/util/ConcurrentModificationException.h>
 
 @class JavaIoIOException;
 @class JavaLangThrowable;

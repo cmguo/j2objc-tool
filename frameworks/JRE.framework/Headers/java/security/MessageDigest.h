@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/MessageDigest.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityMessageDigest")
 #ifdef RESTRICT_JavaSecurityMessageDigest
@@ -30,7 +30,7 @@
 
 #define RESTRICT_JavaSecurityMessageDigestSpi 1
 #define INCLUDE_JavaSecurityMessageDigestSpi 1
-#include "java/security/MessageDigestSpi.h"
+#include <JRE/java/security/MessageDigestSpi.h>
 
 @class IOSByteArray;
 @class JavaNioByteBuffer;

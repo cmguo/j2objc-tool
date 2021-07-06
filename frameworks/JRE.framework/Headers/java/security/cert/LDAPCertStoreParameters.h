@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/LDAPCertStoreParameters.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertLDAPCertStoreParameters")
 #ifdef RESTRICT_JavaSecurityCertLDAPCertStoreParameters
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCertStoreParameters 1
 #define INCLUDE_JavaSecurityCertCertStoreParameters 1
-#include "java/security/cert/CertStoreParameters.h"
+#include <JRE/java/security/cert/CertStoreParameters.h>
 
 /*!
  @brief Parameters used as input for the LDAP <code>CertStore</code> algorithm.

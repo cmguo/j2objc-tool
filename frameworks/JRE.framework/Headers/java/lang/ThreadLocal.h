@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/ThreadLocal.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangThreadLocal")
 #ifdef RESTRICT_JavaLangThreadLocal
@@ -287,7 +287,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaLangThreadLocal_ThreadLocalMap)
 
 #define RESTRICT_JavaLangRefWeakReference 1
 #define INCLUDE_JavaLangRefWeakReference 1
-#include "java/lang/ref/WeakReference.h"
+#include <JRE/java/lang/ref/WeakReference.h>
 
 @class JavaLangRefReferenceQueue;
 @class JavaLangThreadLocal;

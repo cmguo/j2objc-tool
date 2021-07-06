@@ -3,7 +3,7 @@
 //  source: openjdk/src/share/classes/java/lang/reflect/AnnotatedType.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangReflectAnnotatedType")
 #ifdef RESTRICT_JavaLangReflectAnnotatedType
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectAnnotatedElement 1
 #define INCLUDE_JavaLangReflectAnnotatedElement 1
-#include "java/lang/reflect/AnnotatedElement.h"
+#include <JRE/java/lang/reflect/AnnotatedElement.h>
 
 @protocol JavaLangReflectType;
 

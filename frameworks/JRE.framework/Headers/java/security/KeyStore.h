@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/KeyStore.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityKeyStore")
 #ifdef RESTRICT_JavaSecurityKeyStore
@@ -784,7 +784,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaSecurityKeyStore_ProtectionParameter)
 
 #define RESTRICT_JavaxSecurityAuthDestroyable 1
 #define INCLUDE_JavaxSecurityAuthDestroyable 1
-#include "javax/security/auth/Destroyable.h"
+#include <JRE/javax/security/auth/Destroyable.h>
 
 @class IOSCharArray;
 @protocol JavaSecuritySpecAlgorithmParameterSpec;

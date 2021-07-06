@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/ls/LSOutput.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomLsLSOutput")
 #ifdef RESTRICT_OrgW3cDomLsLSOutput

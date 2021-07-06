@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/sql/RowSet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSqlRowSet")
 #ifdef RESTRICT_JavaxSqlRowSet
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlResultSet 1
 #define INCLUDE_JavaSqlResultSet 1
-#include "java/sql/ResultSet.h"
+#include <JRE/java/sql/ResultSet.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

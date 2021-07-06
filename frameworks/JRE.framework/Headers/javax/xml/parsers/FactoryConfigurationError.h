@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/parsers/FactoryConfigurationError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlParsersFactoryConfigurationError")
 #ifdef RESTRICT_JavaxXmlParsersFactoryConfigurationError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangError 1
 #define INCLUDE_JavaLangError 1
-#include "java/lang/Error.h"
+#include <JRE/java/lang/Error.h>
 
 @class JavaLangException;
 @class JavaLangThrowable;

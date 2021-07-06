@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/VersionInfo.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilVersionInfo")
 #ifdef RESTRICT_AndroidIcuUtilVersionInfo
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/jar/Attributes.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilJarAttributes")
 #ifdef RESTRICT_JavaUtilJarAttributes
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 @class IOSByteArray;
 @class JavaIoDataOutputStream;

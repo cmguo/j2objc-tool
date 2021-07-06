@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/UnknownError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangUnknownError")
 #ifdef RESTRICT_JavaLangUnknownError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangVirtualMachineError 1
 #define INCLUDE_JavaLangVirtualMachineError 1
-#include "java/lang/VirtualMachineError.h"
+#include <JRE/java/lang/VirtualMachineError.h>
 
 @class JavaLangThrowable;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/ExtendedSSLSession.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslExtendedSSLSession")
 #ifdef RESTRICT_JavaxNetSslExtendedSSLSession
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxNetSslSSLSession 1
 #define INCLUDE_JavaxNetSslSSLSession 1
-#include "javax/net/ssl/SSLSession.h"
+#include <JRE/javax/net/ssl/SSLSession.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilList;

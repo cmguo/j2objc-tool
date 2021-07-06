@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/NoSuchMethodException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangNoSuchMethodException")
 #ifdef RESTRICT_JavaLangNoSuchMethodException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectiveOperationException 1
 #define INCLUDE_JavaLangReflectiveOperationException 1
-#include "java/lang/ReflectiveOperationException.h"
+#include <JRE/java/lang/ReflectiveOperationException.h>
 
 @class JavaLangThrowable;
 

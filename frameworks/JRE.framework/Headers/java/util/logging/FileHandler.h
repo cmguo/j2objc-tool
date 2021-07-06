@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/logging/FileHandler.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilLoggingFileHandler")
 #ifdef RESTRICT_JavaUtilLoggingFileHandler
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilLoggingStreamHandler 1
 #define INCLUDE_JavaUtilLoggingStreamHandler 1
-#include "java/util/logging/StreamHandler.h"
+#include <JRE/java/util/logging/StreamHandler.h>
 
 @class JavaIoOutputStream;
 @class JavaUtilLoggingFormatter;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/URLClassLoader.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetURLClassLoader")
 #ifdef RESTRICT_JavaNetURLClassLoader
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySecureClassLoader 1
 #define INCLUDE_JavaSecuritySecureClassLoader 1
-#include "java/security/SecureClassLoader.h"
+#include <JRE/java/security/SecureClassLoader.h>
 
 @class IOSObjectArray;
 @class JavaLangClassLoader;

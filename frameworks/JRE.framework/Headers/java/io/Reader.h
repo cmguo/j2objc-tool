@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/Reader.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoReader")
 #ifdef RESTRICT_JavaIoReader
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaLangReadable 1
 #define INCLUDE_JavaLangReadable 1
-#include "java/lang/Readable.h"
+#include <JRE/java/lang/Readable.h>
 
 #define RESTRICT_JavaIoCloseable 1
 #define INCLUDE_JavaIoCloseable 1
-#include "java/io/Closeable.h"
+#include <JRE/java/io/Closeable.h>
 
 @class IOSCharArray;
 @class JavaNioCharBuffer;

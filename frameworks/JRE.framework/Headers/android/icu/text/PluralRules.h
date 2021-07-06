@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/PluralRules.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextPluralRules")
 #ifdef RESTRICT_AndroidIcuTextPluralRules
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class AndroidIcuTextPluralRules_FixedDecimal;
 @class AndroidIcuTextPluralRules_FixedDecimalSamples;
@@ -744,7 +744,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextPluralRules_Factory)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -804,7 +804,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextPluralRules_PluralType)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -880,7 +880,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextPluralRules_Operand)
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 @class AndroidIcuTextPluralRules_Operand;
 
@@ -1092,7 +1092,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextPluralRules_FixedDecimal)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -1306,7 +1306,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextPluralRules_SimpleTokenizer)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

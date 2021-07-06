@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/NoSuchFileException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileNoSuchFileException")
 #ifdef RESTRICT_JavaNioFileNoSuchFileException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileFileSystemException 1
 #define INCLUDE_JavaNioFileFileSystemException 1
-#include "java/nio/file/FileSystemException.h"
+#include <JRE/java/nio/file/FileSystemException.h>
 
 /*!
  @brief Checked exception thrown when an attempt is made to access a file that does

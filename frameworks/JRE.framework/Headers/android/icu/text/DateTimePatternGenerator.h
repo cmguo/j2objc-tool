@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/DateTimePatternGenerator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextDateTimePatternGenerator")
 #ifdef RESTRICT_AndroidIcuTextDateTimePatternGenerator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilFreezable 1
 #define INCLUDE_AndroidIcuUtilFreezable 1
-#include "android/icu/util/Freezable.h"
+#include <JRE/android/icu/util/Freezable.h>
 
 @class AndroidIcuImplUResource_Key;
 @class AndroidIcuTextDateTimePatternGenerator_PatternInfo;

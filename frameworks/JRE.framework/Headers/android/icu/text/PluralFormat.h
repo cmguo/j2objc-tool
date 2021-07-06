@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/PluralFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextPluralFormat")
 #ifdef RESTRICT_AndroidIcuTextPluralFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextUFormat 1
 #define INCLUDE_AndroidIcuTextUFormat 1
-#include "android/icu/text/UFormat.h"
+#include <JRE/android/icu/text/UFormat.h>
 
 @class AndroidIcuTextMessagePattern;
 @class AndroidIcuTextNumberFormat;

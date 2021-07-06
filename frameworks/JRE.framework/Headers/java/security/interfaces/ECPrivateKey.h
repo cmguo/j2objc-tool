@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/interfaces/ECPrivateKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityInterfacesECPrivateKey")
 #ifdef RESTRICT_JavaSecurityInterfacesECPrivateKey
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityPrivateKey 1
 #define INCLUDE_JavaSecurityPrivateKey 1
-#include "java/security/PrivateKey.h"
+#include <JRE/java/security/PrivateKey.h>
 
 #define RESTRICT_JavaSecurityInterfacesECKey 1
 #define INCLUDE_JavaSecurityInterfacesECKey 1
-#include "java/security/interfaces/ECKey.h"
+#include <JRE/java/security/interfaces/ECKey.h>
 
 @class JavaMathBigInteger;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/ProviderException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityProviderException")
 #ifdef RESTRICT_JavaSecurityProviderException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRuntimeException 1
 #define INCLUDE_JavaLangRuntimeException 1
-#include "java/lang/RuntimeException.h"
+#include <JRE/java/lang/RuntimeException.h>
 
 @class JavaLangThrowable;
 

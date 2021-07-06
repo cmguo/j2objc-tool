@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/URLConnection.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetURLConnection")
 #ifdef RESTRICT_JavaNetURLConnection
@@ -1032,7 +1032,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaNetURLConnection)
 
 #define RESTRICT_JavaNetContentHandler 1
 #define INCLUDE_JavaNetContentHandler 1
-#include "java/net/ContentHandler.h"
+#include <JRE/java/net/ContentHandler.h>
 
 @class JavaNetURLConnection;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/format/DateTimeFormatter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeFormatDateTimeFormatter")
 #ifdef RESTRICT_JavaTimeFormatDateTimeFormatter
@@ -1622,7 +1622,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeFormatDateTimeFormatter)
 
 #define RESTRICT_JavaTextFormat 1
 #define INCLUDE_JavaTextFormat 1
-#include "java/text/Format.h"
+#include <JRE/java/text/Format.h>
 
 @class JavaLangStringBuffer;
 @class JavaTextFieldPosition;

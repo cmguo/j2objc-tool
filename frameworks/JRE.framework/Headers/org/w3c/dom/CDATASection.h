@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/CDATASection.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomCDATASection")
 #ifdef RESTRICT_OrgW3cDomCDATASection
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgW3cDomText 1
 #define INCLUDE_OrgW3cDomText 1
-#include "org/w3c/dom/Text.h"
+#include <JRE/org/w3c/dom/Text.h>
 
 /*!
  @brief CDATA sections are used to escape blocks of text containing characters that

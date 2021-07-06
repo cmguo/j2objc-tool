@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/xpath/XPathFactoryConfigurationException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlXpathXPathFactoryConfigurationException")
 #ifdef RESTRICT_JavaxXmlXpathXPathFactoryConfigurationException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlXpathXPathException 1
 #define INCLUDE_JavaxXmlXpathXPathException 1
-#include "javax/xml/xpath/XPathException.h"
+#include <JRE/javax/xml/xpath/XPathException.h>
 
 @class JavaLangThrowable;
 

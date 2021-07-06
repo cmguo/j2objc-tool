@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/interfaces/PBEKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoInterfacesPBEKey")
 #ifdef RESTRICT_JavaxCryptoInterfacesPBEKey
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxCryptoSecretKey 1
 #define INCLUDE_JavaxCryptoSecretKey 1
-#include "javax/crypto/SecretKey.h"
+#include <JRE/javax/crypto/SecretKey.h>
 
 @class IOSByteArray;
 @class IOSCharArray;

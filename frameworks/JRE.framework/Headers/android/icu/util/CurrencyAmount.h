@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/CurrencyAmount.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilCurrencyAmount")
 #ifdef RESTRICT_AndroidIcuUtilCurrencyAmount
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilMeasure 1
 #define INCLUDE_AndroidIcuUtilMeasure 1
-#include "android/icu/util/Measure.h"
+#include <JRE/android/icu/util/Measure.h>
 
 @class AndroidIcuUtilCurrency;
 @class AndroidIcuUtilMeasureUnit;

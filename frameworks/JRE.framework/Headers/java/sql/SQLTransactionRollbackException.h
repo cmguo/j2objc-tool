@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/SQLTransactionRollbackException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlSQLTransactionRollbackException")
 #ifdef RESTRICT_JavaSqlSQLTransactionRollbackException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlSQLTransientException 1
 #define INCLUDE_JavaSqlSQLTransientException 1
-#include "java/sql/SQLTransientException.h"
+#include <JRE/java/sql/SQLTransientException.h>
 
 @class JavaLangThrowable;
 

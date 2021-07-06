@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/AsynchronousCloseException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsAsynchronousCloseException")
 #ifdef RESTRICT_JavaNioChannelsAsynchronousCloseException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsClosedChannelException 1
 #define INCLUDE_JavaNioChannelsClosedChannelException 1
-#include "java/nio/channels/ClosedChannelException.h"
+#include <JRE/java/nio/channels/ClosedChannelException.h>
 
 /*!
  @brief Checked exception received by a thread when another thread closes the

@@ -3,7 +3,7 @@
 //  source: openjdk/src/share/classes/java/lang/reflect/AnnotatedParameterizedType.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangReflectAnnotatedParameterizedType")
 #ifdef RESTRICT_JavaLangReflectAnnotatedParameterizedType
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectAnnotatedType 1
 #define INCLUDE_JavaLangReflectAnnotatedType 1
-#include "java/lang/reflect/AnnotatedType.h"
+#include <JRE/java/lang/reflect/AnnotatedType.h>
 
 @class IOSObjectArray;
 

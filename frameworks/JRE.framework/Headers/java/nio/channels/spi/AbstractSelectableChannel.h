@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/spi/AbstractSelectableChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsSpiAbstractSelectableChannel")
 #ifdef RESTRICT_JavaNioChannelsSpiAbstractSelectableChannel
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsSelectableChannel 1
 #define INCLUDE_JavaNioChannelsSelectableChannel 1
-#include "java/nio/channels/SelectableChannel.h"
+#include <JRE/java/nio/channels/SelectableChannel.h>
 
 @class JavaNioChannelsSelectionKey;
 @class JavaNioChannelsSelector;

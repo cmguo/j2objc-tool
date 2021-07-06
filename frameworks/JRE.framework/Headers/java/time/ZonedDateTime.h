@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/ZonedDateTime.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeZonedDateTime")
 #ifdef RESTRICT_JavaTimeZonedDateTime
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaTimeTemporalTemporal 1
 #define INCLUDE_JavaTimeTemporalTemporal 1
-#include "java/time/temporal/Temporal.h"
+#include <JRE/java/time/temporal/Temporal.h>
 
 #define RESTRICT_JavaTimeChronoChronoZonedDateTime 1
 #define INCLUDE_JavaTimeChronoChronoZonedDateTime 1
-#include "java/time/chrono/ChronoZonedDateTime.h"
+#include <JRE/java/time/chrono/ChronoZonedDateTime.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeClock;
 @class JavaTimeDayOfWeek;

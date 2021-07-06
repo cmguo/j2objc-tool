@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/lambda/java/java/lang/invoke/MethodHandleInfo.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangInvokeMethodHandleInfo")
 #ifdef RESTRICT_JavaLangInvokeMethodHandleInfo

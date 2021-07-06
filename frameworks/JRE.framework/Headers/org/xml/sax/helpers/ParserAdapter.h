@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/helpers/ParserAdapter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxHelpersParserAdapter")
 #ifdef RESTRICT_OrgXmlSaxHelpersParserAdapter
@@ -27,11 +27,11 @@
 
 #define RESTRICT_OrgXmlSaxXMLReader 1
 #define INCLUDE_OrgXmlSaxXMLReader 1
-#include "org/xml/sax/XMLReader.h"
+#include <JRE/org/xml/sax/XMLReader.h>
 
 #define RESTRICT_OrgXmlSaxDocumentHandler 1
 #define INCLUDE_OrgXmlSaxDocumentHandler 1
-#include "org/xml/sax/DocumentHandler.h"
+#include <JRE/org/xml/sax/DocumentHandler.h>
 
 @class IOSCharArray;
 @class OrgXmlSaxInputSource;
@@ -364,7 +364,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgXmlSaxHelpersParserAdapter)
 
 #define RESTRICT_OrgXmlSaxAttributes 1
 #define INCLUDE_OrgXmlSaxAttributes 1
-#include "org/xml/sax/Attributes.h"
+#include <JRE/org/xml/sax/Attributes.h>
 
 @class OrgXmlSaxHelpersParserAdapter;
 @protocol OrgXmlSaxAttributeList;

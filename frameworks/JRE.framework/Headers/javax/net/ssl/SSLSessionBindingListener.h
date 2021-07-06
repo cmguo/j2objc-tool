@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/SSLSessionBindingListener.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslSSLSessionBindingListener")
 #ifdef RESTRICT_JavaxNetSslSSLSessionBindingListener
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilEventListener 1
 #define INCLUDE_JavaUtilEventListener 1
-#include "java/util/EventListener.h"
+#include <JRE/java/util/EventListener.h>
 
 @class JavaxNetSslSSLSessionBindingEvent;
 

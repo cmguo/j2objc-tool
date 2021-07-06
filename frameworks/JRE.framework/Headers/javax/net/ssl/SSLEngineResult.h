@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/SSLEngineResult.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslSSLEngineResult")
 #ifdef RESTRICT_JavaxNetSslSSLEngineResult
@@ -118,7 +118,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaxNetSslSSLEngineResult)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -214,7 +214,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaxNetSslSSLEngineResult_Status)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

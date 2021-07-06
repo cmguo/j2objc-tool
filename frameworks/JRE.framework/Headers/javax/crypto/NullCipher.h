@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/NullCipher.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoNullCipher")
 #ifdef RESTRICT_JavaxCryptoNullCipher
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxCryptoCipher 1
 #define INCLUDE_JavaxCryptoCipher 1
-#include "javax/crypto/Cipher.h"
+#include <JRE/javax/crypto/Cipher.h>
 
 @class JavaSecurityProvider;
 @class JavaxCryptoCipherSpi;

@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/lang/UCharacter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuLangUCharacter")
 #ifdef RESTRICT_AndroidIcuLangUCharacter
@@ -27,11 +27,11 @@
 
 #define RESTRICT_AndroidIcuLangUCharacterEnums 1
 #define INCLUDE_AndroidIcuLangUCharacterEnums_ECharacterCategory 1
-#include "android/icu/lang/UCharacterEnums.h"
+#include <JRE/android/icu/lang/UCharacterEnums.h>
 
 #define RESTRICT_AndroidIcuLangUCharacterEnums 1
 #define INCLUDE_AndroidIcuLangUCharacterEnums_ECharacterDirection 1
-#include "android/icu/lang/UCharacterEnums.h"
+#include <JRE/android/icu/lang/UCharacterEnums.h>
 
 @class AndroidIcuTextBreakIterator;
 @class AndroidIcuUtilULocale;
@@ -2104,7 +2104,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuLangUCharacter)
 
 #define RESTRICT_JavaLangCharacter 1
 #define INCLUDE_JavaLangCharacter_Subset 1
-#include "java/lang/Character.h"
+#include <JRE/java/lang/Character.h>
 
 /*!
  @brief <strong>[icu enhancement]</strong> ICU's replacement for <code>java.lang.Character.UnicodeBlock</code>.

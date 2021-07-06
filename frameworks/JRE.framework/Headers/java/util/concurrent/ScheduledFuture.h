@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ScheduledFuture.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentScheduledFuture")
 #ifdef RESTRICT_JavaUtilConcurrentScheduledFuture
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilConcurrentDelayed 1
 #define INCLUDE_JavaUtilConcurrentDelayed 1
-#include "java/util/concurrent/Delayed.h"
+#include <JRE/java/util/concurrent/Delayed.h>
 
 #define RESTRICT_JavaUtilConcurrentFuture 1
 #define INCLUDE_JavaUtilConcurrentFuture 1
-#include "java/util/concurrent/Future.h"
+#include <JRE/java/util/concurrent/Future.h>
 
 /*!
  @brief A delayed result-bearing action that can be cancelled.

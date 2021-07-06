@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/ListResourceBundle.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilListResourceBundle")
 #ifdef RESTRICT_JavaUtilListResourceBundle
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilResourceBundle 1
 #define INCLUDE_JavaUtilResourceBundle 1
-#include "java/util/ResourceBundle.h"
+#include <JRE/java/util/ResourceBundle.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilEnumeration;

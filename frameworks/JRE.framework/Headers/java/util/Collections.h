@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Collections.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilCollections")
 #ifdef RESTRICT_JavaUtilCollections
@@ -1906,11 +1906,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections)
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilFunctionConsumer;
@@ -1995,11 +1995,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableCollection)
 
 #define RESTRICT_JavaUtilSet 1
 #define INCLUDE_JavaUtilSet 1
-#include "java/util/Set.h"
+#include <JRE/java/util/Set.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilCollection;
 
@@ -2040,11 +2040,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableSet)
 
 #define RESTRICT_JavaUtilSortedSet 1
 #define INCLUDE_JavaUtilSortedSet 1
-#include "java/util/SortedSet.h"
+#include <JRE/java/util/SortedSet.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilSet;
@@ -2095,11 +2095,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableSortedSet)
 
 #define RESTRICT_JavaUtilNavigableSet 1
 #define INCLUDE_JavaUtilNavigableSet 1
-#include "java/util/NavigableSet.h"
+#include <JRE/java/util/NavigableSet.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilIterator;
 @protocol JavaUtilSortedSet;
@@ -2165,7 +2165,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableNavigableSet)
 
 #define RESTRICT_JavaUtilList 1
 #define INCLUDE_JavaUtilList 1
-#include "java/util/List.h"
+#include <JRE/java/util/List.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilComparator;
@@ -2242,7 +2242,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableList)
 
 #define RESTRICT_JavaUtilRandomAccess 1
 #define INCLUDE_JavaUtilRandomAccess 1
-#include "java/util/RandomAccess.h"
+#include <JRE/java/util/RandomAccess.h>
 
 @protocol JavaUtilList;
 
@@ -2278,11 +2278,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableRandomAccessList)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilFunctionBiConsumer;
@@ -2383,11 +2383,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableMap)
 
 #define RESTRICT_JavaUtilSortedMap 1
 #define INCLUDE_JavaUtilSortedMap 1
-#include "java/util/SortedMap.h"
+#include <JRE/java/util/SortedMap.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilMap;
@@ -2438,11 +2438,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableSortedMap)
 
 #define RESTRICT_JavaUtilNavigableMap 1
 #define INCLUDE_JavaUtilNavigableMap 1
-#include "java/util/NavigableMap.h"
+#include <JRE/java/util/NavigableMap.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilMap_Entry;
 @protocol JavaUtilNavigableSet;
@@ -2522,11 +2522,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_UnmodifiableNavigableMap)
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilFunctionConsumer;
@@ -2622,7 +2622,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedCollection)
 
 #define RESTRICT_JavaUtilSet 1
 #define INCLUDE_JavaUtilSet 1
-#include "java/util/Set.h"
+#include <JRE/java/util/Set.h>
 
 @protocol JavaUtilCollection;
 
@@ -2675,7 +2675,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedSet)
 
 #define RESTRICT_JavaUtilSortedSet 1
 #define INCLUDE_JavaUtilSortedSet 1
-#include "java/util/SortedSet.h"
+#include <JRE/java/util/SortedSet.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilSet;
@@ -2738,7 +2738,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedSortedSet)
 
 #define RESTRICT_JavaUtilNavigableSet 1
 #define INCLUDE_JavaUtilNavigableSet 1
-#include "java/util/NavigableSet.h"
+#include <JRE/java/util/NavigableSet.h>
 
 @protocol JavaUtilIterator;
 @protocol JavaUtilSortedSet;
@@ -2822,7 +2822,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedNavigableSet)
 
 #define RESTRICT_JavaUtilList 1
 #define INCLUDE_JavaUtilList 1
-#include "java/util/List.h"
+#include <JRE/java/util/List.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilComparator;
@@ -2911,7 +2911,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedList)
 
 #define RESTRICT_JavaUtilRandomAccess 1
 #define INCLUDE_JavaUtilRandomAccess 1
-#include "java/util/RandomAccess.h"
+#include <JRE/java/util/RandomAccess.h>
 
 @protocol JavaUtilList;
 
@@ -2956,11 +2956,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedRandomAccessList)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilCollection;
 @protocol JavaUtilFunctionBiConsumer;
@@ -3075,7 +3075,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedMap)
 
 #define RESTRICT_JavaUtilSortedMap 1
 #define INCLUDE_JavaUtilSortedMap 1
-#include "java/util/SortedMap.h"
+#include <JRE/java/util/SortedMap.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilMap;
@@ -3138,7 +3138,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedSortedMap)
 
 #define RESTRICT_JavaUtilNavigableMap 1
 #define INCLUDE_JavaUtilNavigableMap 1
-#include "java/util/NavigableMap.h"
+#include <JRE/java/util/NavigableMap.h>
 
 @protocol JavaUtilMap_Entry;
 @protocol JavaUtilNavigableSet;
@@ -3240,11 +3240,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_SynchronizedNavigableMap)
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @class IOSObjectArray;
@@ -3337,11 +3337,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedCollection)
 
 #define RESTRICT_JavaUtilQueue 1
 #define INCLUDE_JavaUtilQueue 1
-#include "java/util/Queue.h"
+#include <JRE/java/util/Queue.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilCollection;
@@ -3400,11 +3400,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedQueue)
 
 #define RESTRICT_JavaUtilSet 1
 #define INCLUDE_JavaUtilSet 1
-#include "java/util/Set.h"
+#include <JRE/java/util/Set.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilCollection;
@@ -3448,11 +3448,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedSet)
 
 #define RESTRICT_JavaUtilSortedSet 1
 #define INCLUDE_JavaUtilSortedSet 1
-#include "java/util/SortedSet.h"
+#include <JRE/java/util/SortedSet.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilComparator;
@@ -3506,11 +3506,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedSortedSet)
 
 #define RESTRICT_JavaUtilNavigableSet 1
 #define INCLUDE_JavaUtilNavigableSet 1
-#include "java/util/NavigableSet.h"
+#include <JRE/java/util/NavigableSet.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilIterator;
@@ -3585,7 +3585,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedNavigableSet)
 
 #define RESTRICT_JavaUtilList 1
 #define INCLUDE_JavaUtilList 1
-#include "java/util/List.h"
+#include <JRE/java/util/List.h>
 
 @class IOSClass;
 @protocol JavaUtilCollection;
@@ -3671,7 +3671,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedList)
 
 #define RESTRICT_JavaUtilRandomAccess 1
 #define INCLUDE_JavaUtilRandomAccess 1
-#include "java/util/RandomAccess.h"
+#include <JRE/java/util/RandomAccess.h>
 
 @class IOSClass;
 @protocol JavaUtilList;
@@ -3709,11 +3709,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedRandomAccessList)
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilCollection;
@@ -3821,11 +3821,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedMap)
 
 #define RESTRICT_JavaUtilSortedMap 1
 #define INCLUDE_JavaUtilSortedMap 1
-#include "java/util/SortedMap.h"
+#include <JRE/java/util/SortedMap.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilComparator;
@@ -3881,11 +3881,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedSortedMap)
 
 #define RESTRICT_JavaUtilNavigableMap 1
 #define INCLUDE_JavaUtilNavigableMap 1
-#include "java/util/NavigableMap.h"
+#include <JRE/java/util/NavigableMap.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSClass;
 @protocol JavaUtilComparator;
@@ -3986,15 +3986,15 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilCollections_CheckedNavigableMap)
 
 #define RESTRICT_JavaUtilAbstractQueue 1
 #define INCLUDE_JavaUtilAbstractQueue 1
-#include "java/util/AbstractQueue.h"
+#include <JRE/java/util/AbstractQueue.h>
 
 #define RESTRICT_JavaUtilQueue 1
 #define INCLUDE_JavaUtilQueue 1
-#include "java/util/Queue.h"
+#include <JRE/java/util/Queue.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilCollection;

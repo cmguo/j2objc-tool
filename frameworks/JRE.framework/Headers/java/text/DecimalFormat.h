@@ -3,7 +3,7 @@
 //  source: openjdk/src/share/classes/java/text/DecimalFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextDecimalFormat")
 #ifdef RESTRICT_JavaTextDecimalFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextNumberFormat 1
 #define INCLUDE_JavaTextNumberFormat 1
-#include "java/text/NumberFormat.h"
+#include <JRE/java/text/NumberFormat.h>
 
 @class JavaLangStringBuffer;
 @class JavaMathRoundingMode;

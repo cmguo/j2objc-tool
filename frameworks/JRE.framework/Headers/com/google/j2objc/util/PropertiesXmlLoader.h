@@ -3,7 +3,7 @@
 //  source: Classes/com/google/j2objc/util/PropertiesXmlLoader.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_ComGoogleJ2objcUtilPropertiesXmlLoader")
 #ifdef RESTRICT_ComGoogleJ2objcUtilPropertiesXmlLoader
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilProperties 1
 #define INCLUDE_JavaUtilProperties_XmlLoader 1
-#include "java/util/Properties.h"
+#include <JRE/java/util/Properties.h>
 
 @class JavaIoInputStream;
 @class JavaUtilProperties;

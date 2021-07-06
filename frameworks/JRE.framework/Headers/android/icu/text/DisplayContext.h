@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/DisplayContext.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextDisplayContext")
 #ifdef RESTRICT_AndroidIcuTextDisplayContext
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class AndroidIcuTextDisplayContext_Type;
 @class IOSObjectArray;
@@ -196,7 +196,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextDisplayContext)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

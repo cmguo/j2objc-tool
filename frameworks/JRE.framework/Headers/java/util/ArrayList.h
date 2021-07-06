@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/ArrayList.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilArrayList")
 #ifdef RESTRICT_JavaUtilArrayList
@@ -27,19 +27,19 @@
 
 #define RESTRICT_JavaUtilAbstractList 1
 #define INCLUDE_JavaUtilAbstractList 1
-#include "java/util/AbstractList.h"
+#include <JRE/java/util/AbstractList.h>
 
 #define RESTRICT_JavaUtilList 1
 #define INCLUDE_JavaUtilList 1
-#include "java/util/List.h"
+#include <JRE/java/util/List.h>
 
 #define RESTRICT_JavaUtilRandomAccess 1
 #define INCLUDE_JavaUtilRandomAccess 1
-#include "java/util/RandomAccess.h"
+#include <JRE/java/util/RandomAccess.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilCollection;
@@ -528,7 +528,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilArrayList)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilArrayList;
 @protocol JavaUtilComparator;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/jar/Manifest.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilJarManifest")
 #ifdef RESTRICT_JavaUtilJarManifest
@@ -196,7 +196,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilJarManifest)
 
 #define RESTRICT_JavaIoFilterInputStream 1
 #define INCLUDE_JavaIoFilterInputStream 1
-#include "java/io/FilterInputStream.h"
+#include <JRE/java/io/FilterInputStream.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

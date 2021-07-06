@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/SQLNonTransientException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlSQLNonTransientException")
 #ifdef RESTRICT_JavaSqlSQLNonTransientException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlSQLException 1
 #define INCLUDE_JavaSqlSQLException 1
-#include "java/sql/SQLException.h"
+#include <JRE/java/sql/SQLException.h>
 
 @class JavaLangThrowable;
 

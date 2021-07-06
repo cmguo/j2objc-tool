@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/text/SimpleDateFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextSimpleDateFormat")
 #ifdef RESTRICT_JavaTextSimpleDateFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextDateFormat 1
 #define INCLUDE_JavaTextDateFormat 1
-#include "java/text/DateFormat.h"
+#include <JRE/java/text/DateFormat.h>
 
 @class JavaLangStringBuffer;
 @class JavaTextDateFormatSymbols;

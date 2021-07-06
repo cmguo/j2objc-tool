@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/CookieManager.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetCookieManager")
 #ifdef RESTRICT_JavaNetCookieManager
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetCookieHandler 1
 #define INCLUDE_JavaNetCookieHandler 1
-#include "java/net/CookieHandler.h"
+#include <JRE/java/net/CookieHandler.h>
 
 @class JavaNetURI;
 @protocol JavaNetCookiePolicy;
@@ -187,7 +187,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaNetCookieManager)
 
 #define RESTRICT_JavaUtilComparator 1
 #define INCLUDE_JavaUtilComparator 1
-#include "java/util/Comparator.h"
+#include <JRE/java/util/Comparator.h>
 
 @class JavaNetHttpCookie;
 @protocol JavaUtilFunctionFunction;

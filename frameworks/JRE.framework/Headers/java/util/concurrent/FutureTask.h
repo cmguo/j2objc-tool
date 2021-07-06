@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/FutureTask.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentFutureTask")
 #ifdef RESTRICT_JavaUtilConcurrentFutureTask
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentRunnableFuture 1
 #define INCLUDE_JavaUtilConcurrentRunnableFuture 1
-#include "java/util/concurrent/RunnableFuture.h"
+#include <JRE/java/util/concurrent/RunnableFuture.h>
 
 @class JavaLangThrowable;
 @class JavaUtilConcurrentTimeUnit;

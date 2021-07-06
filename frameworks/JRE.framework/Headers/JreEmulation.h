@@ -18,16 +18,16 @@
 #define _JreEmulation_H_
 
 #ifdef __OBJC__
-#import "J2ObjC_common.h"
-#import "JavaObject.h"
-#import "IOSClass.h"
-#import "IOSMetadata.h"
-#import "IOSObjectArray.h"
-#import "IOSPrimitiveArray.h"
-#import "NSCopying+JavaCloneable.h"
-#import "NSNumber+JavaNumber.h"
-#import "NSObject+JavaObject.h"
-#import "NSString+JavaString.h"
+#import <JRE/J2ObjC_common.h>
+#import <JRE/JavaObject.h>
+#import <JRE/IOSClass.h>
+#import <JRE/IOSMetadata.h>
+#import <JRE/IOSObjectArray.h>
+#import <JRE/IOSPrimitiveArray.h>
+#import <JRE/NSCopying+JavaCloneable.h>
+#import <JRE/NSNumber+JavaNumber.h>
+#import <JRE/NSObject+JavaObject.h>
+#import <JRE/NSString+JavaString.h>
 #endif // __OBJC__
 
 #endif // _JreEmulation_H_

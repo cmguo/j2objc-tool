@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/List.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilList")
 #ifdef RESTRICT_JavaUtilList
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilComparator;

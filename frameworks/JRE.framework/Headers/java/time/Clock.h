@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/Clock.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeClock")
 #ifdef RESTRICT_JavaTimeClock
@@ -353,7 +353,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeClock)
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeClock;
 @class JavaTimeInstant;
@@ -408,7 +408,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeClock_SystemClock)
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeClock;
 @class JavaTimeInstant;
@@ -464,7 +464,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeClock_FixedClock)
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeClock;
 @class JavaTimeDuration;
@@ -520,7 +520,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTimeClock_OffsetClock)
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeClock;
 @class JavaTimeInstant;

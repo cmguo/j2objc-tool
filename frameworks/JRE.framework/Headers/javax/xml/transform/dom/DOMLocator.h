@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/dom/DOMLocator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformDomDOMLocator")
 #ifdef RESTRICT_JavaxXmlTransformDomDOMLocator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformSourceLocator 1
 #define INCLUDE_JavaxXmlTransformSourceLocator 1
-#include "javax/xml/transform/SourceLocator.h"
+#include <JRE/javax/xml/transform/SourceLocator.h>
 
 @protocol OrgW3cDomNode;
 

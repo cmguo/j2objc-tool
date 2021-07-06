@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/function/BinaryOperator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilFunctionBinaryOperator")
 #ifdef RESTRICT_JavaUtilFunctionBinaryOperator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilFunctionBiFunction 1
 #define INCLUDE_JavaUtilFunctionBiFunction 1
-#include "java/util/function/BiFunction.h"
+#include <JRE/java/util/function/BiFunction.h>
 
 @protocol JavaUtilComparator;
 

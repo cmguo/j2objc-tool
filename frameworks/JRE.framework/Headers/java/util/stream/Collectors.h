@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/Collectors.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamCollectors")
 #ifdef RESTRICT_JavaUtilStreamCollectors
@@ -834,7 +834,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamCollectors)
 
 #define RESTRICT_JavaUtilStreamCollector 1
 #define INCLUDE_JavaUtilStreamCollector 1
-#include "java/util/stream/Collector.h"
+#include <JRE/java/util/stream/Collector.h>
 
 @protocol JavaUtilFunctionBiConsumer;
 @protocol JavaUtilFunctionBinaryOperator;

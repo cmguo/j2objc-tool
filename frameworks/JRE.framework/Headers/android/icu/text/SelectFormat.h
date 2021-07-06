@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/SelectFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextSelectFormat")
 #ifdef RESTRICT_AndroidIcuTextSelectFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextFormat 1
 #define INCLUDE_JavaTextFormat 1
-#include "java/text/Format.h"
+#include <JRE/java/text/Format.h>
 
 @class AndroidIcuTextMessagePattern;
 @class JavaLangStringBuffer;

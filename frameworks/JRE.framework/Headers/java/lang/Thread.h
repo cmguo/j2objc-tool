@@ -3,7 +3,7 @@
 //  source: Classes/java/lang/Thread.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangThread")
 #ifdef RESTRICT_JavaLangThread
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class IOSObjectArray;
 @class JavaLangClassLoader;
@@ -630,7 +630,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaLangThread)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

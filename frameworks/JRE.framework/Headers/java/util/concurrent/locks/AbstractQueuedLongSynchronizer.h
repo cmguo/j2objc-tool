@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentLocksAbstractQueuedLongSynchronizer")
 #ifdef RESTRICT_JavaUtilConcurrentLocksAbstractQueuedLongSynchronizer
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilConcurrentLocksAbstractOwnableSynchronizer 1
 #define INCLUDE_JavaUtilConcurrentLocksAbstractOwnableSynchronizer 1
-#include "java/util/concurrent/locks/AbstractOwnableSynchronizer.h"
+#include <JRE/java/util/concurrent/locks/AbstractOwnableSynchronizer.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaLangThread;
 @class JavaUtilConcurrentLocksAbstractQueuedLongSynchronizer_ConditionObject;
@@ -601,11 +601,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentLocksAbstractQueuedLongSynchronizer
 
 #define RESTRICT_JavaUtilConcurrentLocksCondition 1
 #define INCLUDE_JavaUtilConcurrentLocksCondition 1
-#include "java/util/concurrent/locks/Condition.h"
+#include <JRE/java/util/concurrent/locks/Condition.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaUtilConcurrentLocksAbstractQueuedLongSynchronizer;
 @class JavaUtilConcurrentTimeUnit;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/PushbackReader.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoPushbackReader")
 #ifdef RESTRICT_JavaIoPushbackReader
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoFilterReader 1
 #define INCLUDE_JavaIoFilterReader 1
-#include "java/io/FilterReader.h"
+#include <JRE/java/io/FilterReader.h>
 
 @class IOSCharArray;
 @class JavaIoReader;

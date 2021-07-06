@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/PKIXRevocationChecker.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertPKIXRevocationChecker")
 #ifdef RESTRICT_JavaSecurityCertPKIXRevocationChecker
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertPKIXCertPathChecker 1
 #define INCLUDE_JavaSecurityCertPKIXCertPathChecker 1
-#include "java/security/cert/PKIXCertPathChecker.h"
+#include <JRE/java/security/cert/PKIXCertPathChecker.h>
 
 @class JavaNetURI;
 @class JavaSecurityCertX509Certificate;
@@ -218,7 +218,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaSecurityCertPKIXRevocationChecker)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

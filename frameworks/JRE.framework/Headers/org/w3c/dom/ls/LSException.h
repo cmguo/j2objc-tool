@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/ls/LSException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomLsLSException")
 #ifdef RESTRICT_OrgW3cDomLsLSException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRuntimeException 1
 #define INCLUDE_JavaLangRuntimeException 1
-#include "java/lang/RuntimeException.h"
+#include <JRE/java/lang/RuntimeException.h>
 
 @class JavaLangThrowable;
 

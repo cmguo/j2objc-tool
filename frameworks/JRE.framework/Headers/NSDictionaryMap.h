@@ -9,8 +9,8 @@
 #ifndef _NSDictionaryMap_H_
 #define _NSDictionaryMap_H_
 
-#import "java/util/AbstractMap.h"
-#import "java/util/Map.h"
+#import <JRE/java/util/AbstractMap.h>
+#import <JRE/java/util/Map.h>
 
 @protocol JavaUtilFunctionBiConsumer;
 

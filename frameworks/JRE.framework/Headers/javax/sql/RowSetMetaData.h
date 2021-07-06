@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/sql/RowSetMetaData.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSqlRowSetMetaData")
 #ifdef RESTRICT_JavaxSqlRowSetMetaData
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlResultSetMetaData 1
 #define INCLUDE_JavaSqlResultSetMetaData 1
-#include "java/sql/ResultSetMetaData.h"
+#include <JRE/java/sql/ResultSetMetaData.h>
 
 /*!
  @brief An object that contains information about the columns in a 

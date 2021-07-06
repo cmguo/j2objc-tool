@@ -15,17 +15,17 @@
 #ifndef _J2OBJC_SOURCE_H_
 #define _J2OBJC_SOURCE_H_
 
-#import "IOSClass.h"  // Type literal accessors.
-#import "IOSMetadata.h"
-#import "IOSObjectArray.h"
-#import "IOSPrimitiveArray.h"
-#import "J2ObjC_common.h"
-#import "JavaObject.h"
-#import "NSCopying+JavaCloneable.h"
-#import "NSNumber+JavaNumber.h"
-#import "NSObject+JavaObject.h"
-#import "NSString+JavaString.h"
-#import "jni.h"
+#import <JRE/IOSClass.h> // Type literal accessors.
+#import <JRE/IOSMetadata.h>
+#import <JRE/IOSObjectArray.h>
+#import <JRE/IOSPrimitiveArray.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/JavaObject.h>
+#import <JRE/NSCopying+JavaCloneable.h>
+#import <JRE/NSNumber+JavaNumber.h>
+#import <JRE/NSObject+JavaObject.h>
+#import <JRE/NSString+JavaString.h>
+#import <JRE/jni.h>
 #import "objc/runtime.h"
 
 #pragma clang system_header

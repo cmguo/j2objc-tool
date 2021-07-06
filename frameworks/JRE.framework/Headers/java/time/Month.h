@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/Month.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeMonth")
 #ifdef RESTRICT_JavaTimeMonth
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 #define RESTRICT_JavaTimeTemporalTemporalAccessor 1
 #define INCLUDE_JavaTimeTemporalTemporalAccessor 1
-#include "java/time/temporal/TemporalAccessor.h"
+#include <JRE/java/time/temporal/TemporalAccessor.h>
 
 #define RESTRICT_JavaTimeTemporalTemporalAdjuster 1
 #define INCLUDE_JavaTimeTemporalTemporalAdjuster 1
-#include "java/time/temporal/TemporalAdjuster.h"
+#include <JRE/java/time/temporal/TemporalAdjuster.h>
 
 @class IOSObjectArray;
 @class JavaTimeFormatTextStyle;

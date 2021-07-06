@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/helpers/AttributeListImpl.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxHelpersAttributeListImpl")
 #ifdef RESTRICT_OrgXmlSaxHelpersAttributeListImpl
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxAttributeList 1
 #define INCLUDE_OrgXmlSaxAttributeList 1
-#include "org/xml/sax/AttributeList.h"
+#include <JRE/org/xml/sax/AttributeList.h>
 
 /*!
  @brief Default implementation for AttributeList.

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Random.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilRandom")
 #ifdef RESTRICT_JavaUtilRandom
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class IOSByteArray;
 @protocol JavaUtilStreamDoubleStream;
@@ -776,7 +776,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilRandom)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilRandom;
 @protocol JavaUtilComparator;
@@ -846,7 +846,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilRandom_RandomIntsSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilRandom;
 @protocol JavaUtilComparator;
@@ -910,7 +910,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilRandom_RandomLongsSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilRandom;
 @protocol JavaUtilComparator;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/UserDefinedFileAttributeView.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeUserDefinedFileAttributeView")
 #ifdef RESTRICT_JavaNioFileAttributeUserDefinedFileAttributeView
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileAttributeFileAttributeView 1
 #define INCLUDE_JavaNioFileAttributeFileAttributeView 1
-#include "java/nio/file/attribute/FileAttributeView.h"
+#include <JRE/java/nio/file/attribute/FileAttributeView.h>
 
 @class JavaNioByteBuffer;
 @protocol JavaUtilList;

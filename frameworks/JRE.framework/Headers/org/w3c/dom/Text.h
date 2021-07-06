@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/w3c/dom/Text.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgW3cDomText")
 #ifdef RESTRICT_OrgW3cDomText
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgW3cDomCharacterData 1
 #define INCLUDE_OrgW3cDomCharacterData 1
-#include "org/w3c/dom/CharacterData.h"
+#include <JRE/org/w3c/dom/CharacterData.h>
 
 /*!
  @brief The <code>Text</code> interface inherits from <code>CharacterData</code>

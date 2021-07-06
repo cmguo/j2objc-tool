@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/util/ArrayMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidUtilArrayMap")
 #ifdef RESTRICT_AndroidUtilArrayMap
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 @class AndroidUtilMapCollections;
 @class IOSIntArray;

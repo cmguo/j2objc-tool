@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/Signature.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecuritySignature")
 #ifdef RESTRICT_JavaSecuritySignature
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySignatureSpi 1
 #define INCLUDE_JavaSecuritySignatureSpi 1
-#include "java/security/SignatureSpi.h"
+#include <JRE/java/security/SignatureSpi.h>
 
 @class IOSByteArray;
 @class JavaNioByteBuffer;

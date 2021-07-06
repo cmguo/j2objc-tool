@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/X509CertSelector.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertX509CertSelector")
 #ifdef RESTRICT_JavaSecurityCertX509CertSelector
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCertSelector 1
 #define INCLUDE_JavaSecurityCertCertSelector 1
-#include "java/security/cert/CertSelector.h"
+#include <JRE/java/security/cert/CertSelector.h>
 
 @class IOSBooleanArray;
 @class IOSByteArray;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/atomic/AtomicLong.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentAtomicAtomicLong")
 #ifdef RESTRICT_JavaUtilConcurrentAtomicAtomicLong
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilFunctionLongBinaryOperator;
 @protocol JavaUtilFunctionLongUnaryOperator;

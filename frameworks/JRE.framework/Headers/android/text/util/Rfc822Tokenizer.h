@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/util/Rfc822Tokenizer.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextUtilRfc822Tokenizer")
 #ifdef RESTRICT_AndroidTextUtilRfc822Tokenizer

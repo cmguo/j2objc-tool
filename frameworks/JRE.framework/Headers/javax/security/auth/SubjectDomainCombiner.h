@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/security/auth/SubjectDomainCombiner.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSecurityAuthSubjectDomainCombiner")
 #ifdef RESTRICT_JavaxSecurityAuthSubjectDomainCombiner
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityDomainCombiner 1
 #define INCLUDE_JavaSecurityDomainCombiner 1
-#include "java/security/DomainCombiner.h"
+#include <JRE/java/security/DomainCombiner.h>
 
 @class IOSObjectArray;
 @class JavaxSecurityAuthSubject;

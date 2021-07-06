@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/PKIXCertPathChecker.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertPKIXCertPathChecker")
 #ifdef RESTRICT_JavaSecurityCertPKIXCertPathChecker
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCertPathChecker 1
 #define INCLUDE_JavaSecurityCertCertPathChecker 1
-#include "java/security/cert/CertPathChecker.h"
+#include <JRE/java/security/cert/CertPathChecker.h>
 
 @class JavaSecurityCertCertificate;
 @protocol JavaUtilCollection;

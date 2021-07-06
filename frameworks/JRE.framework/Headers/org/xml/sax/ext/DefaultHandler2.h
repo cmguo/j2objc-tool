@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/ext/DefaultHandler2.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxExtDefaultHandler2")
 #ifdef RESTRICT_OrgXmlSaxExtDefaultHandler2
@@ -27,19 +27,19 @@
 
 #define RESTRICT_OrgXmlSaxHelpersDefaultHandler 1
 #define INCLUDE_OrgXmlSaxHelpersDefaultHandler 1
-#include "org/xml/sax/helpers/DefaultHandler.h"
+#include <JRE/org/xml/sax/helpers/DefaultHandler.h>
 
 #define RESTRICT_OrgXmlSaxExtLexicalHandler 1
 #define INCLUDE_OrgXmlSaxExtLexicalHandler 1
-#include "org/xml/sax/ext/LexicalHandler.h"
+#include <JRE/org/xml/sax/ext/LexicalHandler.h>
 
 #define RESTRICT_OrgXmlSaxExtDeclHandler 1
 #define INCLUDE_OrgXmlSaxExtDeclHandler 1
-#include "org/xml/sax/ext/DeclHandler.h"
+#include <JRE/org/xml/sax/ext/DeclHandler.h>
 
 #define RESTRICT_OrgXmlSaxExtEntityResolver2 1
 #define INCLUDE_OrgXmlSaxExtEntityResolver2 1
-#include "org/xml/sax/ext/EntityResolver2.h"
+#include <JRE/org/xml/sax/ext/EntityResolver2.h>
 
 @class IOSCharArray;
 @class OrgXmlSaxInputSource;

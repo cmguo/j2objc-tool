@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/PosixFileAttributeView.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributePosixFileAttributeView")
 #ifdef RESTRICT_JavaNioFileAttributePosixFileAttributeView
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaNioFileAttributeBasicFileAttributeView 1
 #define INCLUDE_JavaNioFileAttributeBasicFileAttributeView 1
-#include "java/nio/file/attribute/BasicFileAttributeView.h"
+#include <JRE/java/nio/file/attribute/BasicFileAttributeView.h>
 
 #define RESTRICT_JavaNioFileAttributeFileOwnerAttributeView 1
 #define INCLUDE_JavaNioFileAttributeFileOwnerAttributeView 1
-#include "java/nio/file/attribute/FileOwnerAttributeView.h"
+#include <JRE/java/nio/file/attribute/FileOwnerAttributeView.h>
 
 @protocol JavaNioFileAttributeGroupPrincipal;
 @protocol JavaNioFileAttributePosixFileAttributes;

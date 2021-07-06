@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/text/ChoiceFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextChoiceFormat")
 #ifdef RESTRICT_JavaTextChoiceFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextNumberFormat 1
 #define INCLUDE_JavaTextNumberFormat 1
-#include "java/text/NumberFormat.h"
+#include <JRE/java/text/NumberFormat.h>
 
 @class IOSDoubleArray;
 @class IOSObjectArray;

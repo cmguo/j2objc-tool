@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Queue.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilQueue")
 #ifdef RESTRICT_JavaUtilQueue
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilCollection 1
 #define INCLUDE_JavaUtilCollection 1
-#include "java/util/Collection.h"
+#include <JRE/java/util/Collection.h>
 
 /*!
  @brief A collection designed for holding elements prior to processing.

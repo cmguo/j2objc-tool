@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/spec/DSAParameterSpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecuritySpecDSAParameterSpec")
 #ifdef RESTRICT_JavaSecuritySpecDSAParameterSpec
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecuritySpecAlgorithmParameterSpec 1
 #define INCLUDE_JavaSecuritySpecAlgorithmParameterSpec 1
-#include "java/security/spec/AlgorithmParameterSpec.h"
+#include <JRE/java/security/spec/AlgorithmParameterSpec.h>
 
 #define RESTRICT_JavaSecurityInterfacesDSAParams 1
 #define INCLUDE_JavaSecurityInterfacesDSAParams 1
-#include "java/security/interfaces/DSAParams.h"
+#include <JRE/java/security/interfaces/DSAParams.h>
 
 @class JavaMathBigInteger;
 

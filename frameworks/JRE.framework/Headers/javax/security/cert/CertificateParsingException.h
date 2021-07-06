@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/security/cert/CertificateParsingException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSecurityCertCertificateParsingException")
 #ifdef RESTRICT_JavaxSecurityCertCertificateParsingException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxSecurityCertCertificateException 1
 #define INCLUDE_JavaxSecurityCertCertificateException 1
-#include "javax/security/cert/CertificateException.h"
+#include <JRE/javax/security/cert/CertificateException.h>
 
 /*!
  @brief Certificate Parsing Exception.This is thrown whenever

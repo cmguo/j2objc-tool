@@ -3,7 +3,7 @@
 //  source: openjdk/src/share/classes/java/lang/reflect/AnnotatedArrayType.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangReflectAnnotatedArrayType")
 #ifdef RESTRICT_JavaLangReflectAnnotatedArrayType
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangReflectAnnotatedType 1
 #define INCLUDE_JavaLangReflectAnnotatedType 1
-#include "java/lang/reflect/AnnotatedType.h"
+#include <JRE/java/lang/reflect/AnnotatedType.h>
 
 /*!
  @brief <code>AnnotatedArrayType</code> represents the potentially annotated use of an

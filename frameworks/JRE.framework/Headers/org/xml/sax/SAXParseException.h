@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/SAXParseException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxSAXParseException")
 #ifdef RESTRICT_OrgXmlSaxSAXParseException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxSAXException 1
 #define INCLUDE_OrgXmlSaxSAXException 1
-#include "org/xml/sax/SAXException.h"
+#include <JRE/org/xml/sax/SAXException.h>
 
 @class JavaLangException;
 @protocol OrgXmlSaxLocator;

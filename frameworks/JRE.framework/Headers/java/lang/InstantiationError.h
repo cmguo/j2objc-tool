@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/InstantiationError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangInstantiationError")
 #ifdef RESTRICT_JavaLangInstantiationError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangIncompatibleClassChangeError 1
 #define INCLUDE_JavaLangIncompatibleClassChangeError 1
-#include "java/lang/IncompatibleClassChangeError.h"
+#include <JRE/java/lang/IncompatibleClassChangeError.h>
 
 /*!
  @brief Thrown when an application tries to use the Java <code>new</code>

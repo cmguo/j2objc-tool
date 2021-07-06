@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/spec/X509EncodedKeySpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecuritySpecX509EncodedKeySpec")
 #ifdef RESTRICT_JavaSecuritySpecX509EncodedKeySpec
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySpecEncodedKeySpec 1
 #define INCLUDE_JavaSecuritySpecEncodedKeySpec 1
-#include "java/security/spec/EncodedKeySpec.h"
+#include <JRE/java/security/spec/EncodedKeySpec.h>
 
 @class IOSByteArray;
 

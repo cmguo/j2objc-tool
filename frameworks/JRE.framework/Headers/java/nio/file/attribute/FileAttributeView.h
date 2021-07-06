@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/FileAttributeView.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeFileAttributeView")
 #ifdef RESTRICT_JavaNioFileAttributeFileAttributeView
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileAttributeAttributeView 1
 #define INCLUDE_JavaNioFileAttributeAttributeView 1
-#include "java/nio/file/attribute/AttributeView.h"
+#include <JRE/java/nio/file/attribute/AttributeView.h>
 
 /*!
  @brief An attribute view that is a read-only or updatable view of non-opaque

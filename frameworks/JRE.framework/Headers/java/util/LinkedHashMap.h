@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/LinkedHashMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilLinkedHashMap")
 #ifdef RESTRICT_JavaUtilLinkedHashMap
@@ -36,11 +36,11 @@
 
 #define RESTRICT_JavaUtilHashMap 1
 #define INCLUDE_JavaUtilHashMap 1
-#include "java/util/HashMap.h"
+#include <JRE/java/util/HashMap.h>
 
 #define RESTRICT_JavaUtilMap 1
 #define INCLUDE_JavaUtilMap 1
-#include "java/util/Map.h"
+#include <JRE/java/util/Map.h>
 
 @class JavaIoObjectOutputStream;
 @class JavaUtilHashMap_Node;
@@ -472,7 +472,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap)
 
 #define RESTRICT_JavaUtilHashMap 1
 #define INCLUDE_JavaUtilHashMap_Node 1
-#include "java/util/HashMap.h"
+#include <JRE/java/util/HashMap.h>
 
 /*!
  @brief HashMap.Node subclass for normal LinkedHashMap entries.
@@ -509,7 +509,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedHashMapEntry)
 
 #define RESTRICT_JavaUtilAbstractSet 1
 #define INCLUDE_JavaUtilAbstractSet 1
-#include "java/util/AbstractSet.h"
+#include <JRE/java/util/AbstractSet.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;
@@ -561,7 +561,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedKeySet)
 
 #define RESTRICT_JavaUtilAbstractCollection 1
 #define INCLUDE_JavaUtilAbstractCollection 1
-#include "java/util/AbstractCollection.h"
+#include <JRE/java/util/AbstractCollection.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;
@@ -611,7 +611,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedValues)
 
 #define RESTRICT_JavaUtilAbstractSet 1
 #define INCLUDE_JavaUtilAbstractSet 1
-#include "java/util/AbstractSet.h"
+#include <JRE/java/util/AbstractSet.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;
@@ -705,7 +705,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedHashIterator)
 
 #define RESTRICT_JavaUtilIterator 1
 #define INCLUDE_JavaUtilIterator 1
-#include "java/util/Iterator.h"
+#include <JRE/java/util/Iterator.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;
@@ -739,7 +739,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedKeyIterator)
 
 #define RESTRICT_JavaUtilIterator 1
 #define INCLUDE_JavaUtilIterator 1
-#include "java/util/Iterator.h"
+#include <JRE/java/util/Iterator.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;
@@ -773,7 +773,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilLinkedHashMap_LinkedValueIterator)
 
 #define RESTRICT_JavaUtilIterator 1
 #define INCLUDE_JavaUtilIterator 1
-#include "java/util/Iterator.h"
+#include <JRE/java/util/Iterator.h>
 
 @class JavaUtilLinkedHashMap;
 @protocol JavaUtilFunctionConsumer;

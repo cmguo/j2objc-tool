@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/json/src/main/java/org/json/JSONException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgJsonJSONException")
 #ifdef RESTRICT_OrgJsonJSONException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangException 1
 #define INCLUDE_JavaLangException 1
-#include "java/lang/Exception.h"
+#include <JRE/java/lang/Exception.h>
 
 @class JavaLangThrowable;
 

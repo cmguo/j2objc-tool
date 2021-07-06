@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/SpannableStringInternal.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextSpannableStringInternal")
 #ifdef RESTRICT_AndroidTextSpannableStringInternal
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangCharSequence 1
 #define INCLUDE_JavaLangCharSequence 1
-#include "java/lang/CharSequence.h"
+#include <JRE/java/lang/CharSequence.h>
 
 @class IOSCharArray;
 @class IOSClass;

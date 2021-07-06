@@ -3,7 +3,7 @@
 //  source: Classes/java/text/IOSCollator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextIOSCollator")
 #ifdef RESTRICT_JavaTextIOSCollator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextCollator 1
 #define INCLUDE_JavaTextCollator 1
-#include "java/text/Collator.h"
+#include <JRE/java/text/Collator.h>
 
 @class JavaTextCollationKey;
 @class JavaUtilLocale;
@@ -93,7 +93,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTextIOSCollator)
 
 #define RESTRICT_JavaTextCollationKey 1
 #define INCLUDE_JavaTextCollationKey 1
-#include "java/text/CollationKey.h"
+#include <JRE/java/text/CollationKey.h>
 
 @class IOSByteArray;
 

@@ -15,10 +15,10 @@
 #ifndef _J2OBJC_HEADER_H_
 #define _J2OBJC_HEADER_H_
 
-#import "IOSObjectArray.h"
-#import "J2ObjC_common.h"
-#import "JavaObject.h"
-#import "NSObject+JavaObject.h"
+#import <JRE/IOSObjectArray.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/JavaObject.h>
+#import <JRE/NSObject+JavaObject.h>
 
 CF_EXTERN_C_BEGIN
 

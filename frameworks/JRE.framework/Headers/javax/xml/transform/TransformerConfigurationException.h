@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/TransformerConfigurationException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformTransformerConfigurationException")
 #ifdef RESTRICT_JavaxXmlTransformTransformerConfigurationException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformTransformerException 1
 #define INCLUDE_JavaxXmlTransformTransformerException 1
-#include "javax/xml/transform/TransformerException.h"
+#include <JRE/javax/xml/transform/TransformerException.h>
 
 @class JavaLangThrowable;
 @protocol JavaxXmlTransformSourceLocator;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Arrays.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilArrays")
 #ifdef RESTRICT_JavaUtilArrays
@@ -3497,7 +3497,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilArrays)
 
 #define RESTRICT_JavaUtilComparator 1
 #define INCLUDE_JavaUtilComparator 1
-#include "java/util/Comparator.h"
+#include <JRE/java/util/Comparator.h>
 
 @protocol JavaUtilFunctionFunction;
 @protocol JavaUtilFunctionToDoubleFunction;

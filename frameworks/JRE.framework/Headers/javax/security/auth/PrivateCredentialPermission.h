@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/security/auth/PrivateCredentialPermission.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSecurityAuthPrivateCredentialPermission")
 #ifdef RESTRICT_JavaxSecurityAuthPrivateCredentialPermission
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityPermission 1
 #define INCLUDE_JavaSecurityPermission 1
-#include "java/security/Permission.h"
+#include <JRE/java/security/Permission.h>
 
 @class IOSObjectArray;
 @protocol JavaUtilSet;

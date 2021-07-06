@@ -9,7 +9,7 @@
 #ifndef _NSDataInputStream_H_
 #define _NSDataInputStream_H_
 
-#import "java/io/InputStream.h"
+#import <JRE/java/io/InputStream.h>
 
 // A concrete subclass of java.io.InputStream that reads from
 // a given NSData instance. The NSData instance is copied at

@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/util/Base64.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidUtilBase64")
 #ifdef RESTRICT_AndroidUtilBase64

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/awt/font/TextAttribute.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaAwtFontTextAttribute")
 #ifdef RESTRICT_JavaAwtFontTextAttribute
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextAttributedCharacterIterator 1
 #define INCLUDE_JavaTextAttributedCharacterIterator_Attribute 1
-#include "java/text/AttributedCharacterIterator.h"
+#include <JRE/java/text/AttributedCharacterIterator.h>
 
 @class JavaLangBoolean;
 @class JavaLangFloat;

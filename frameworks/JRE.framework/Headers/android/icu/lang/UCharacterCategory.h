@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/lang/UCharacterCategory.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuLangUCharacterCategory")
 #ifdef RESTRICT_AndroidIcuLangUCharacterCategory
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuLangUCharacterEnums 1
 #define INCLUDE_AndroidIcuLangUCharacterEnums_ECharacterCategory 1
-#include "android/icu/lang/UCharacterEnums.h"
+#include <JRE/android/icu/lang/UCharacterEnums.h>
 
 /*!
  @brief Enumerated Unicode category types from the UnicodeData.txt file.

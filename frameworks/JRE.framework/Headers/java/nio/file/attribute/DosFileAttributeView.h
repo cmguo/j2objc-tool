@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/DosFileAttributeView.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeDosFileAttributeView")
 #ifdef RESTRICT_JavaNioFileAttributeDosFileAttributeView
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileAttributeBasicFileAttributeView 1
 #define INCLUDE_JavaNioFileAttributeBasicFileAttributeView 1
-#include "java/nio/file/attribute/BasicFileAttributeView.h"
+#include <JRE/java/nio/file/attribute/BasicFileAttributeView.h>
 
 @protocol JavaNioFileAttributeDosFileAttributes;
 

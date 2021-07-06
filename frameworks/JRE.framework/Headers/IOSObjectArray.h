@@ -22,7 +22,7 @@
 #ifndef IOSObjectArray_H
 #define IOSObjectArray_H
 
-#import "IOSArray.h"
+#import <JRE/IOSArray.h>
 
 #pragma clang system_header
 

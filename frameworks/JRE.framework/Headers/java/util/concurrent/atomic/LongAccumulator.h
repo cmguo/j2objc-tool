@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/atomic/LongAccumulator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentAtomicLongAccumulator")
 #ifdef RESTRICT_JavaUtilConcurrentAtomicLongAccumulator
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilConcurrentAtomicStriped64 1
 #define INCLUDE_JavaUtilConcurrentAtomicStriped64 1
-#include "java/util/concurrent/atomic/Striped64.h"
+#include <JRE/java/util/concurrent/atomic/Striped64.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @protocol JavaUtilFunctionLongBinaryOperator;
 

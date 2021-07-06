@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/ByteChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsByteChannel")
 #ifdef RESTRICT_JavaNioChannelsByteChannel
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaNioChannelsReadableByteChannel 1
 #define INCLUDE_JavaNioChannelsReadableByteChannel 1
-#include "java/nio/channels/ReadableByteChannel.h"
+#include <JRE/java/nio/channels/ReadableByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsWritableByteChannel 1
 #define INCLUDE_JavaNioChannelsWritableByteChannel 1
-#include "java/nio/channels/WritableByteChannel.h"
+#include <JRE/java/nio/channels/WritableByteChannel.h>
 
 /*!
  @brief A channel that can read and write bytes.This interface simply unifies 

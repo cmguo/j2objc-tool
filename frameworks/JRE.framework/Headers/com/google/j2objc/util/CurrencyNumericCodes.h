@@ -3,7 +3,7 @@
 //  source: Classes/com/google/j2objc/util/CurrencyNumericCodes.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_ComGoogleJ2objcUtilCurrencyNumericCodes")
 #ifdef RESTRICT_ComGoogleJ2objcUtilCurrencyNumericCodes

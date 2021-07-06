@@ -20,7 +20,7 @@
 #import <CoreFoundation/CoreFoundation.h>
 #import <Foundation/Foundation.h>
 
-#import "J2ObjC_types.h"
+#import <JRE/J2ObjC_types.h>
 
 @class IOSClass;
 @class JavaLangRefWeakReference;

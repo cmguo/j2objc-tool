@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/os/AsyncTask.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidOsAsyncTask")
 #ifdef RESTRICT_AndroidOsAsyncTask
@@ -440,7 +440,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidOsAsyncTask)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/X509KeyManager.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslX509KeyManager")
 #ifdef RESTRICT_JavaxNetSslX509KeyManager
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxNetSslKeyManager 1
 #define INCLUDE_JavaxNetSslKeyManager 1
-#include "javax/net/ssl/KeyManager.h"
+#include <JRE/javax/net/ssl/KeyManager.h>
 
 @class IOSObjectArray;
 @class JavaNetSocket;

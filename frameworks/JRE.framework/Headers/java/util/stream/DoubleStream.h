@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/DoubleStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamDoubleStream")
 #ifdef RESTRICT_JavaUtilStreamDoubleStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilStreamBaseStream 1
 #define INCLUDE_JavaUtilStreamBaseStream 1
-#include "java/util/stream/BaseStream.h"
+#include <JRE/java/util/stream/BaseStream.h>
 
 @class IOSDoubleArray;
 @class JavaUtilDoubleSummaryStatistics;
@@ -670,7 +670,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamDoubleStream)
 
 #define RESTRICT_JavaUtilFunctionDoubleConsumer 1
 #define INCLUDE_JavaUtilFunctionDoubleConsumer 1
-#include "java/util/function/DoubleConsumer.h"
+#include <JRE/java/util/function/DoubleConsumer.h>
 
 @protocol JavaUtilStreamDoubleStream;
 

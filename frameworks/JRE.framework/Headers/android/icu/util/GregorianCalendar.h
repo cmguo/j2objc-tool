@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/GregorianCalendar.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilGregorianCalendar")
 #ifdef RESTRICT_AndroidIcuUtilGregorianCalendar
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuUtilCalendar 1
 #define INCLUDE_AndroidIcuUtilCalendar 1
-#include "android/icu/util/Calendar.h"
+#include <JRE/android/icu/util/Calendar.h>
 
 @class AndroidIcuUtilTimeZone;
 @class AndroidIcuUtilULocale;

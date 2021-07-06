@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/Closeable.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoCloseable")
 #ifdef RESTRICT_JavaIoCloseable
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangAutoCloseable 1
 #define INCLUDE_JavaLangAutoCloseable 1
-#include "java/lang/AutoCloseable.h"
+#include <JRE/java/lang/AutoCloseable.h>
 
 /*!
  @brief A <code>Closeable</code> is a source or destination of data that can be closed.

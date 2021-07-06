@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/dom/DOMSource.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformDomDOMSource")
 #ifdef RESTRICT_JavaxXmlTransformDomDOMSource
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformSource 1
 #define INCLUDE_JavaxXmlTransformSource 1
-#include "javax/xml/transform/Source.h"
+#include <JRE/javax/xml/transform/Source.h>
 
 @protocol OrgW3cDomNode;
 

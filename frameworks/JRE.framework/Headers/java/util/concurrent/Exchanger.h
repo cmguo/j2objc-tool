@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/Exchanger.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentExchanger")
 #ifdef RESTRICT_JavaUtilConcurrentExchanger
@@ -237,7 +237,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentExchanger_Node)
 
 #define RESTRICT_JavaLangThreadLocal 1
 #define INCLUDE_JavaLangThreadLocal 1
-#include "java/lang/ThreadLocal.h"
+#include <JRE/java/lang/ThreadLocal.h>
 
 @class JavaUtilConcurrentExchanger_Node;
 

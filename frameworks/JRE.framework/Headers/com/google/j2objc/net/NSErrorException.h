@@ -3,7 +3,7 @@
 //  source: Classes/com/google/j2objc/net/NSErrorException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_ComGoogleJ2objcNetNSErrorException")
 #ifdef RESTRICT_ComGoogleJ2objcNetNSErrorException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRuntimeException 1
 #define INCLUDE_JavaLangRuntimeException 1
-#include "java/lang/RuntimeException.h"
+#include <JRE/java/lang/RuntimeException.h>
 
 @class JavaLangThrowable;
 

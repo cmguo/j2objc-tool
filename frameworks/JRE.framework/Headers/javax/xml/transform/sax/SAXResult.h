@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/javax/xml/transform/sax/SAXResult.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxXmlTransformSaxSAXResult")
 #ifdef RESTRICT_JavaxXmlTransformSaxSAXResult
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxXmlTransformResult 1
 #define INCLUDE_JavaxXmlTransformResult 1
-#include "javax/xml/transform/Result.h"
+#include <JRE/javax/xml/transform/Result.h>
 
 @protocol OrgXmlSaxContentHandler;
 @protocol OrgXmlSaxExtLexicalHandler;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/xml/src/main/java/org/xmlpull/v1/XmlPullParserException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlpullV1XmlPullParserException")
 #ifdef RESTRICT_OrgXmlpullV1XmlPullParserException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangException 1
 #define INCLUDE_JavaLangException 1
-#include "java/lang/Exception.h"
+#include <JRE/java/lang/Exception.h>
 
 @class JavaLangThrowable;
 @protocol OrgXmlpullV1XmlPullParser;

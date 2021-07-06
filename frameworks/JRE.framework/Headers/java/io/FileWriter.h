@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/FileWriter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoFileWriter")
 #ifdef RESTRICT_JavaIoFileWriter
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoOutputStreamWriter 1
 #define INCLUDE_JavaIoOutputStreamWriter 1
-#include "java/io/OutputStreamWriter.h"
+#include <JRE/java/io/OutputStreamWriter.h>
 
 @class JavaIoFile;
 @class JavaIoFileDescriptor;

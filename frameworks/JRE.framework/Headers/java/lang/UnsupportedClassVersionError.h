@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/UnsupportedClassVersionError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangUnsupportedClassVersionError")
 #ifdef RESTRICT_JavaLangUnsupportedClassVersionError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangClassFormatError 1
 #define INCLUDE_JavaLangClassFormatError 1
-#include "java/lang/ClassFormatError.h"
+#include <JRE/java/lang/ClassFormatError.h>
 
 /*!
  @brief Thrown when the Java Virtual Machine attempts to read a class

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/Exception.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangException")
 #ifdef RESTRICT_JavaLangException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangThrowable 1
 #define INCLUDE_JavaLangThrowable 1
-#include "java/lang/Throwable.h"
+#include <JRE/java/lang/Throwable.h>
 
 /*!
  @brief The class <code>Exception</code> and its subclasses are a form of 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/text/AttributedCharacterIterator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTextAttributedCharacterIterator")
 #ifdef RESTRICT_JavaTextAttributedCharacterIterator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTextCharacterIterator 1
 #define INCLUDE_JavaTextCharacterIterator 1
-#include "java/text/CharacterIterator.h"
+#include <JRE/java/text/CharacterIterator.h>
 
 @class JavaTextAttributedCharacterIterator_Attribute;
 @protocol JavaUtilMap;
@@ -159,7 +159,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaTextAttributedCharacterIterator)
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 /*!
  @brief Defines attribute keys that are used to identify text attributes.These

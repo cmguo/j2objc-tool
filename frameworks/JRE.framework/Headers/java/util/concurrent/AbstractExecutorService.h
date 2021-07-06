@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/AbstractExecutorService.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentAbstractExecutorService")
 #ifdef RESTRICT_JavaUtilConcurrentAbstractExecutorService
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentExecutorService 1
 #define INCLUDE_JavaUtilConcurrentExecutorService 1
-#include "java/util/concurrent/ExecutorService.h"
+#include <JRE/java/util/concurrent/ExecutorService.h>
 
 @class JavaUtilConcurrentTimeUnit;
 @protocol JavaLangRunnable;

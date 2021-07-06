@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/CollectionCertStoreParameters.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertCollectionCertStoreParameters")
 #ifdef RESTRICT_JavaSecurityCertCollectionCertStoreParameters
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCertStoreParameters 1
 #define INCLUDE_JavaSecurityCertCertStoreParameters 1
-#include "java/security/cert/CertStoreParameters.h"
+#include <JRE/java/security/cert/CertStoreParameters.h>
 
 @protocol JavaUtilCollection;
 

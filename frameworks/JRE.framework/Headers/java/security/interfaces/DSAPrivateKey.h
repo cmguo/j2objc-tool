@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/interfaces/DSAPrivateKey.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityInterfacesDSAPrivateKey")
 #ifdef RESTRICT_JavaSecurityInterfacesDSAPrivateKey
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityInterfacesDSAKey 1
 #define INCLUDE_JavaSecurityInterfacesDSAKey 1
-#include "java/security/interfaces/DSAKey.h"
+#include <JRE/java/security/interfaces/DSAKey.h>
 
 #define RESTRICT_JavaSecurityPrivateKey 1
 #define INCLUDE_JavaSecurityPrivateKey 1
-#include "java/security/PrivateKey.h"
+#include <JRE/java/security/PrivateKey.h>
 
 @class JavaMathBigInteger;
 

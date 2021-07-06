@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/MeasureUnit.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilMeasureUnit")
 #ifdef RESTRICT_AndroidIcuUtilMeasureUnit
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class AndroidIcuTextUnicodeSet;
 @class AndroidIcuUtilTimeUnit;
@@ -1451,7 +1451,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuUtilMeasureUnit_Factory)
 
 #define RESTRICT_JavaIoExternalizable 1
 #define INCLUDE_JavaIoExternalizable 1
-#include "java/io/Externalizable.h"
+#include <JRE/java/io/Externalizable.h>
 
 @protocol JavaIoObjectInput;
 @protocol JavaIoObjectOutput;

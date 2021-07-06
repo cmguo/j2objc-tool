@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ThreadLocalRandom.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentThreadLocalRandom")
 #ifdef RESTRICT_JavaUtilConcurrentThreadLocalRandom
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilRandom 1
 #define INCLUDE_JavaUtilRandom 1
-#include "java/util/Random.h"
+#include <JRE/java/util/Random.h>
 
 @protocol JavaUtilStreamDoubleStream;
 @protocol JavaUtilStreamIntStream;

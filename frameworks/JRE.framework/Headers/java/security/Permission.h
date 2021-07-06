@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/Permission.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityPermission")
 #ifdef RESTRICT_JavaSecurityPermission
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecurityGuard 1
 #define INCLUDE_JavaSecurityGuard 1
-#include "java/security/Guard.h"
+#include <JRE/java/security/Guard.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaSecurityPermissionCollection;
 

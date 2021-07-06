@@ -22,7 +22,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import "J2ObjC_types.h"
+#import <JRE/J2ObjC_types.h>
 
 // Current metadata structure version
 #define J2OBJC_METADATA_VERSION 7

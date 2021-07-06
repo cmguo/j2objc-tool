@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/PKIXCertPathValidatorResult.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertPKIXCertPathValidatorResult")
 #ifdef RESTRICT_JavaSecurityCertPKIXCertPathValidatorResult
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertCertPathValidatorResult 1
 #define INCLUDE_JavaSecurityCertCertPathValidatorResult 1
-#include "java/security/cert/CertPathValidatorResult.h"
+#include <JRE/java/security/cert/CertPathValidatorResult.h>
 
 @class JavaSecurityCertTrustAnchor;
 @protocol JavaSecurityCertPolicyNode;

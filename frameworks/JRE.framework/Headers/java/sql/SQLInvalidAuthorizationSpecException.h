@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/SQLInvalidAuthorizationSpecException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlSQLInvalidAuthorizationSpecException")
 #ifdef RESTRICT_JavaSqlSQLInvalidAuthorizationSpecException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSqlSQLNonTransientException 1
 #define INCLUDE_JavaSqlSQLNonTransientException 1
-#include "java/sql/SQLNonTransientException.h"
+#include <JRE/java/sql/SQLNonTransientException.h>
 
 @class JavaLangThrowable;
 

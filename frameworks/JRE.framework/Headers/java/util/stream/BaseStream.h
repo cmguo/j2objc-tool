@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/BaseStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamBaseStream")
 #ifdef RESTRICT_JavaUtilStreamBaseStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangAutoCloseable 1
 #define INCLUDE_JavaLangAutoCloseable 1
-#include "java/lang/AutoCloseable.h"
+#include <JRE/java/lang/AutoCloseable.h>
 
 @protocol JavaLangRunnable;
 @protocol JavaUtilIterator;

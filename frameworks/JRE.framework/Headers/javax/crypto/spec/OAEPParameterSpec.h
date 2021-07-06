@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/spec/OAEPParameterSpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoSpecOAEPParameterSpec")
 #ifdef RESTRICT_JavaxCryptoSpecOAEPParameterSpec
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecuritySpecAlgorithmParameterSpec 1
 #define INCLUDE_JavaSecuritySpecAlgorithmParameterSpec 1
-#include "java/security/spec/AlgorithmParameterSpec.h"
+#include <JRE/java/security/spec/AlgorithmParameterSpec.h>
 
 @class JavaxCryptoSpecPSource;
 

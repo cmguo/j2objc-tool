@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/BlockingDeque.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentBlockingDeque")
 #ifdef RESTRICT_JavaUtilConcurrentBlockingDeque
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilConcurrentBlockingQueue 1
 #define INCLUDE_JavaUtilConcurrentBlockingQueue 1
-#include "java/util/concurrent/BlockingQueue.h"
+#include <JRE/java/util/concurrent/BlockingQueue.h>
 
 #define RESTRICT_JavaUtilDeque 1
 #define INCLUDE_JavaUtilDeque 1
-#include "java/util/Deque.h"
+#include <JRE/java/util/Deque.h>
 
 @class JavaUtilConcurrentTimeUnit;
 @protocol JavaUtilIterator;

@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/DateFormatSymbols.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextDateFormatSymbols")
 #ifdef RESTRICT_AndroidIcuTextDateFormatSymbols
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class AndroidIcuImplICUResourceBundle;
 @class AndroidIcuUtilCalendar;
@@ -1276,7 +1276,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextDateFormatSymbols)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

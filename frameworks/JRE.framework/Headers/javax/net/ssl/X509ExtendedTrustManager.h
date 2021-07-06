@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/X509ExtendedTrustManager.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslX509ExtendedTrustManager")
 #ifdef RESTRICT_JavaxNetSslX509ExtendedTrustManager
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxNetSslX509TrustManager 1
 #define INCLUDE_JavaxNetSslX509TrustManager 1
-#include "javax/net/ssl/X509TrustManager.h"
+#include <JRE/javax/net/ssl/X509TrustManager.h>
 
 @class IOSObjectArray;
 @class JavaNetSocket;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/InputMismatchException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilInputMismatchException")
 #ifdef RESTRICT_JavaUtilInputMismatchException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilNoSuchElementException 1
 #define INCLUDE_JavaUtilNoSuchElementException 1
-#include "java/util/NoSuchElementException.h"
+#include <JRE/java/util/NoSuchElementException.h>
 
 /*!
  @brief Thrown by a <code>Scanner</code> to indicate that the token

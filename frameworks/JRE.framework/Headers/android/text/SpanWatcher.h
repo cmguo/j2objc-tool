@@ -3,7 +3,7 @@
 //  source: android/frameworks/base/core/java/android/text/SpanWatcher.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidTextSpanWatcher")
 #ifdef RESTRICT_AndroidTextSpanWatcher
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidTextNoCopySpan 1
 #define INCLUDE_AndroidTextNoCopySpan 1
-#include "android/text/NoCopySpan.h"
+#include <JRE/android/text/NoCopySpan.h>
 
 @protocol AndroidTextSpannable;
 

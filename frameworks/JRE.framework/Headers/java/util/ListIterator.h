@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/ListIterator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilListIterator")
 #ifdef RESTRICT_JavaUtilListIterator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilIterator 1
 #define INCLUDE_JavaUtilIterator 1
-#include "java/util/Iterator.h"
+#include <JRE/java/util/Iterator.h>
 
 /*!
  @brief An iterator for lists that allows the programmer

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/InvalidPropertiesFormatException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilInvalidPropertiesFormatException")
 #ifdef RESTRICT_JavaUtilInvalidPropertiesFormatException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoIOException 1
 #define INCLUDE_JavaIoIOException 1
-#include "java/io/IOException.h"
+#include <JRE/java/io/IOException.h>
 
 @class JavaLangThrowable;
 

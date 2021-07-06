@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/attribute/DosFileAttributes.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileAttributeDosFileAttributes")
 #ifdef RESTRICT_JavaNioFileAttributeDosFileAttributes
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileAttributeBasicFileAttributes 1
 #define INCLUDE_JavaNioFileAttributeBasicFileAttributes 1
-#include "java/nio/file/attribute/BasicFileAttributes.h"
+#include <JRE/java/nio/file/attribute/BasicFileAttributes.h>
 
 /*!
  @brief File attributes associated with a file in a file system that supports

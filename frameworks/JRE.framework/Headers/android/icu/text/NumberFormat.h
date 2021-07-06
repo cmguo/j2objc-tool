@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/NumberFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextNumberFormat")
 #ifdef RESTRICT_AndroidIcuTextNumberFormat
@@ -30,7 +30,7 @@
 
 #define RESTRICT_AndroidIcuTextUFormat 1
 #define INCLUDE_AndroidIcuTextUFormat 1
-#include "android/icu/text/UFormat.h"
+#include <JRE/android/icu/text/UFormat.h>
 
 @class AndroidIcuMathBigDecimal;
 @class AndroidIcuTextDisplayContext;
@@ -1218,7 +1218,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextNumberFormat_NumberFormatShim)
 
 #define RESTRICT_JavaTextFormat 1
 #define INCLUDE_JavaTextFormat_Field 1
-#include "java/text/Format.h"
+#include <JRE/java/text/Format.h>
 
 /*!
  @brief The instances of this inner class are used as attribute keys and values

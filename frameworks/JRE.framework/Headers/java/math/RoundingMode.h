@@ -3,7 +3,7 @@
 //  source: openjdk/src/share/classes/java/math/RoundingMode.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaMathRoundingMode")
 #ifdef RESTRICT_JavaMathRoundingMode
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

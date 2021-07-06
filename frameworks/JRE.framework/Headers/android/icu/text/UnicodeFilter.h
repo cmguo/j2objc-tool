@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/UnicodeFilter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextUnicodeFilter")
 #ifdef RESTRICT_AndroidIcuTextUnicodeFilter
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextUnicodeMatcher 1
 #define INCLUDE_AndroidIcuTextUnicodeMatcher 1
-#include "android/icu/text/UnicodeMatcher.h"
+#include <JRE/android/icu/text/UnicodeMatcher.h>
 
 @class IOSIntArray;
 @protocol AndroidIcuTextReplaceable;

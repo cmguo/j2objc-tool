@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/HandlerBase.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxHandlerBase")
 #ifdef RESTRICT_OrgXmlSaxHandlerBase
@@ -27,19 +27,19 @@
 
 #define RESTRICT_OrgXmlSaxEntityResolver 1
 #define INCLUDE_OrgXmlSaxEntityResolver 1
-#include "org/xml/sax/EntityResolver.h"
+#include <JRE/org/xml/sax/EntityResolver.h>
 
 #define RESTRICT_OrgXmlSaxDTDHandler 1
 #define INCLUDE_OrgXmlSaxDTDHandler 1
-#include "org/xml/sax/DTDHandler.h"
+#include <JRE/org/xml/sax/DTDHandler.h>
 
 #define RESTRICT_OrgXmlSaxDocumentHandler 1
 #define INCLUDE_OrgXmlSaxDocumentHandler 1
-#include "org/xml/sax/DocumentHandler.h"
+#include <JRE/org/xml/sax/DocumentHandler.h>
 
 #define RESTRICT_OrgXmlSaxErrorHandler 1
 #define INCLUDE_OrgXmlSaxErrorHandler 1
-#include "org/xml/sax/ErrorHandler.h"
+#include <JRE/org/xml/sax/ErrorHandler.h>
 
 @class IOSCharArray;
 @class OrgXmlSaxInputSource;

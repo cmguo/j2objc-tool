@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/ref/PhantomReference.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangRefPhantomReference")
 #ifdef RESTRICT_JavaLangRefPhantomReference
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRefReference 1
 #define INCLUDE_JavaLangRefReference 1
-#include "java/lang/ref/Reference.h"
+#include <JRE/java/lang/ref/Reference.h>
 
 @class JavaLangRefReferenceQueue;
 

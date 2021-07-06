@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/NavigableMap.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilNavigableMap")
 #ifdef RESTRICT_JavaUtilNavigableMap
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilSortedMap 1
 #define INCLUDE_JavaUtilSortedMap 1
-#include "java/util/SortedMap.h"
+#include <JRE/java/util/SortedMap.h>
 
 @protocol JavaUtilMap_Entry;
 @protocol JavaUtilNavigableSet;

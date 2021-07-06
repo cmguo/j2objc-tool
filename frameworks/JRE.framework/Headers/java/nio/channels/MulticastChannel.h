@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/MulticastChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsMulticastChannel")
 #ifdef RESTRICT_JavaNioChannelsMulticastChannel
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsNetworkChannel 1
 #define INCLUDE_JavaNioChannelsNetworkChannel 1
-#include "java/nio/channels/NetworkChannel.h"
+#include <JRE/java/nio/channels/NetworkChannel.h>
 
 @class JavaNetInetAddress;
 @class JavaNetNetworkInterface;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/StringIndexOutOfBoundsException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangStringIndexOutOfBoundsException")
 #ifdef RESTRICT_JavaLangStringIndexOutOfBoundsException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangIndexOutOfBoundsException 1
 #define INCLUDE_JavaLangIndexOutOfBoundsException 1
-#include "java/lang/IndexOutOfBoundsException.h"
+#include <JRE/java/lang/IndexOutOfBoundsException.h>
 
 /*!
  @brief Thrown by <code>String</code> methods to indicate that an index

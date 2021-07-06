@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/IllformedLocaleException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilIllformedLocaleException")
 #ifdef RESTRICT_AndroidIcuUtilIllformedLocaleException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRuntimeException 1
 #define INCLUDE_JavaLangRuntimeException 1
-#include "java/lang/RuntimeException.h"
+#include <JRE/java/lang/RuntimeException.h>
 
 @class JavaLangThrowable;
 

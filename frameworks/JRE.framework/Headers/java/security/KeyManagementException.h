@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/KeyManagementException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityKeyManagementException")
 #ifdef RESTRICT_JavaSecurityKeyManagementException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityKeyException 1
 #define INCLUDE_JavaSecurityKeyException 1
-#include "java/security/KeyException.h"
+#include <JRE/java/security/KeyException.h>
 
 @class JavaLangThrowable;
 

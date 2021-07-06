@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/AsynchronousSocketChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsAsynchronousSocketChannel")
 #ifdef RESTRICT_JavaNioChannelsAsynchronousSocketChannel
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaNioChannelsAsynchronousByteChannel 1
 #define INCLUDE_JavaNioChannelsAsynchronousByteChannel 1
-#include "java/nio/channels/AsynchronousByteChannel.h"
+#include <JRE/java/nio/channels/AsynchronousByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsNetworkChannel 1
 #define INCLUDE_JavaNioChannelsNetworkChannel 1
-#include "java/nio/channels/NetworkChannel.h"
+#include <JRE/java/nio/channels/NetworkChannel.h>
 
 @class IOSObjectArray;
 @class JavaNetSocketAddress;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/ObjectInputStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoObjectInputStream")
 #ifdef RESTRICT_JavaIoObjectInputStream
@@ -27,15 +27,15 @@
 
 #define RESTRICT_JavaIoInputStream 1
 #define INCLUDE_JavaIoInputStream 1
-#include "java/io/InputStream.h"
+#include <JRE/java/io/InputStream.h>
 
 #define RESTRICT_JavaIoObjectInput 1
 #define INCLUDE_JavaIoObjectInput 1
-#include "java/io/ObjectInput.h"
+#include <JRE/java/io/ObjectInput.h>
 
 #define RESTRICT_JavaIoObjectStreamConstants 1
 #define INCLUDE_JavaIoObjectStreamConstants 1
-#include "java/io/ObjectStreamConstants.h"
+#include <JRE/java/io/ObjectStreamConstants.h>
 
 @class IOSByteArray;
 @class IOSClass;

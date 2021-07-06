@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/spec/SecretKeySpec.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoSpecSecretKeySpec")
 #ifdef RESTRICT_JavaxCryptoSpecSecretKeySpec
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaSecuritySpecKeySpec 1
 #define INCLUDE_JavaSecuritySpecKeySpec 1
-#include "java/security/spec/KeySpec.h"
+#include <JRE/java/security/spec/KeySpec.h>
 
 #define RESTRICT_JavaxCryptoSecretKey 1
 #define INCLUDE_JavaxCryptoSecretKey 1
-#include "javax/crypto/SecretKey.h"
+#include <JRE/javax/crypto/SecretKey.h>
 
 @class IOSByteArray;
 

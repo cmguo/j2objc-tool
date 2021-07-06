@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/ext/EntityResolver2.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxExtEntityResolver2")
 #ifdef RESTRICT_OrgXmlSaxExtEntityResolver2
@@ -27,7 +27,7 @@
 
 #define RESTRICT_OrgXmlSaxEntityResolver 1
 #define INCLUDE_OrgXmlSaxEntityResolver 1
-#include "org/xml/sax/EntityResolver.h"
+#include <JRE/org/xml/sax/EntityResolver.h>
 
 @class OrgXmlSaxInputSource;
 

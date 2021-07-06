@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/PortUnreachableException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetPortUnreachableException")
 #ifdef RESTRICT_JavaNetPortUnreachableException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetSocketException 1
 #define INCLUDE_JavaNetSocketException 1
-#include "java/net/SocketException.h"
+#include <JRE/java/net/SocketException.h>
 
 @class JavaLangThrowable;
 

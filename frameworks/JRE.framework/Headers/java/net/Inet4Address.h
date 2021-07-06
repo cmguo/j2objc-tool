@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/Inet4Address.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetInet4Address")
 #ifdef RESTRICT_JavaNetInet4Address
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetInetAddress 1
 #define INCLUDE_JavaNetInetAddress 1
-#include "java/net/InetAddress.h"
+#include <JRE/java/net/InetAddress.h>
 
 @class IOSByteArray;
 

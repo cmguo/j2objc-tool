@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/UnicodeSet.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextUnicodeSet")
 #ifdef RESTRICT_AndroidIcuTextUnicodeSet
@@ -27,19 +27,19 @@
 
 #define RESTRICT_AndroidIcuTextUnicodeFilter 1
 #define INCLUDE_AndroidIcuTextUnicodeFilter 1
-#include "android/icu/text/UnicodeFilter.h"
+#include <JRE/android/icu/text/UnicodeFilter.h>
 
 #define RESTRICT_JavaLangIterable 1
 #define INCLUDE_JavaLangIterable 1
-#include "java/lang/Iterable.h"
+#include <JRE/java/lang/Iterable.h>
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 #define RESTRICT_AndroidIcuUtilFreezable 1
 #define INCLUDE_AndroidIcuUtilFreezable 1
-#include "android/icu/util/Freezable.h"
+#include <JRE/android/icu/util/Freezable.h>
 
 @class AndroidIcuTextUnicodeSet_ComparisonStyle;
 @class AndroidIcuTextUnicodeSet_SpanCondition;
@@ -1554,7 +1554,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextUnicodeSet)
 
 #define RESTRICT_AndroidIcuTextSymbolTable 1
 #define INCLUDE_AndroidIcuTextSymbolTable 1
-#include "android/icu/text/SymbolTable.h"
+#include <JRE/android/icu/text/SymbolTable.h>
 
 @class AndroidIcuTextUnicodeSet;
 @class IOSCharArray;
@@ -1667,7 +1667,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextUnicodeSet_EntryRange)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -1732,7 +1732,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextUnicodeSet_ComparisonStyle)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

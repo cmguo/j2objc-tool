@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/DateFormat.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextDateFormat")
 #ifdef RESTRICT_AndroidIcuTextDateFormat
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextUFormat 1
 #define INCLUDE_AndroidIcuTextUFormat 1
-#include "android/icu/text/UFormat.h"
+#include <JRE/android/icu/text/UFormat.h>
 
 @class AndroidIcuTextDateFormat_BooleanAttribute;
 @class AndroidIcuTextDisplayContext;
@@ -1987,7 +1987,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextDateFormat)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 
@@ -2074,7 +2074,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuTextDateFormat_BooleanAttribute)
 
 #define RESTRICT_JavaTextFormat 1
 #define INCLUDE_JavaTextFormat_Field 1
-#include "java/text/Format.h"
+#include <JRE/java/text/Format.h>
 
 /*!
  @brief The instances of this inner class are used as attribute keys and values

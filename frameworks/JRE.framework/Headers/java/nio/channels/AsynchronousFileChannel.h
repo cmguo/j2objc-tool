@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/AsynchronousFileChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsAsynchronousFileChannel")
 #ifdef RESTRICT_JavaNioChannelsAsynchronousFileChannel
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsAsynchronousChannel 1
 #define INCLUDE_JavaNioChannelsAsynchronousChannel 1
-#include "java/nio/channels/AsynchronousChannel.h"
+#include <JRE/java/nio/channels/AsynchronousChannel.h>
 
 @class IOSObjectArray;
 @class JavaNioByteBuffer;

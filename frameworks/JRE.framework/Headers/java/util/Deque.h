@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Deque.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilDeque")
 #ifdef RESTRICT_JavaUtilDeque
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilQueue 1
 #define INCLUDE_JavaUtilQueue 1
-#include "java/util/Queue.h"
+#include <JRE/java/util/Queue.h>
 
 @protocol JavaUtilIterator;
 

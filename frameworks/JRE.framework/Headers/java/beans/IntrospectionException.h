@@ -3,7 +3,7 @@
 //  source: apache_harmony/classlib/modules/beans/src/main/java/java/beans/IntrospectionException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaBeansIntrospectionException")
 #ifdef RESTRICT_JavaBeansIntrospectionException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangException 1
 #define INCLUDE_JavaLangException 1
-#include "java/lang/Exception.h"
+#include <JRE/java/lang/Exception.h>
 
 @class JavaLangThrowable;
 

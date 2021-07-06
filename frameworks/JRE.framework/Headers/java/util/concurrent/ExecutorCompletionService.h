@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/ExecutorCompletionService.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentExecutorCompletionService")
 #ifdef RESTRICT_JavaUtilConcurrentExecutorCompletionService
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentCompletionService 1
 #define INCLUDE_JavaUtilConcurrentCompletionService 1
-#include "java/util/concurrent/CompletionService.h"
+#include <JRE/java/util/concurrent/CompletionService.h>
 
 @class JavaUtilConcurrentTimeUnit;
 @protocol JavaLangRunnable;

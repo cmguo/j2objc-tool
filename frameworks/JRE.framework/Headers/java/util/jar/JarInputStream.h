@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/jar/JarInputStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilJarJarInputStream")
 #ifdef RESTRICT_JavaUtilJarJarInputStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilZipZipInputStream 1
 #define INCLUDE_JavaUtilZipZipInputStream 1
-#include "java/util/zip/ZipInputStream.h"
+#include <JRE/java/util/zip/ZipInputStream.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

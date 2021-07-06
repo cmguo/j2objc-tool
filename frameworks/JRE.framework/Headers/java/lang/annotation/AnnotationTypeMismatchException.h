@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/annotation/AnnotationTypeMismatchException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangAnnotationAnnotationTypeMismatchException")
 #ifdef RESTRICT_JavaLangAnnotationAnnotationTypeMismatchException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRuntimeException 1
 #define INCLUDE_JavaLangRuntimeException 1
-#include "java/lang/RuntimeException.h"
+#include <JRE/java/lang/RuntimeException.h>
 
 @class JavaLangReflectMethod;
 @class JavaLangThrowable;

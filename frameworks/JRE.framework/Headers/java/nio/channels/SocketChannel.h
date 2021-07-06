@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/SocketChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsSocketChannel")
 #ifdef RESTRICT_JavaNioChannelsSocketChannel
@@ -27,23 +27,23 @@
 
 #define RESTRICT_JavaNioChannelsSpiAbstractSelectableChannel 1
 #define INCLUDE_JavaNioChannelsSpiAbstractSelectableChannel 1
-#include "java/nio/channels/spi/AbstractSelectableChannel.h"
+#include <JRE/java/nio/channels/spi/AbstractSelectableChannel.h>
 
 #define RESTRICT_JavaNioChannelsByteChannel 1
 #define INCLUDE_JavaNioChannelsByteChannel 1
-#include "java/nio/channels/ByteChannel.h"
+#include <JRE/java/nio/channels/ByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsScatteringByteChannel 1
 #define INCLUDE_JavaNioChannelsScatteringByteChannel 1
-#include "java/nio/channels/ScatteringByteChannel.h"
+#include <JRE/java/nio/channels/ScatteringByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsGatheringByteChannel 1
 #define INCLUDE_JavaNioChannelsGatheringByteChannel 1
-#include "java/nio/channels/GatheringByteChannel.h"
+#include <JRE/java/nio/channels/GatheringByteChannel.h>
 
 #define RESTRICT_JavaNioChannelsNetworkChannel 1
 #define INCLUDE_JavaNioChannelsNetworkChannel 1
-#include "java/nio/channels/NetworkChannel.h"
+#include <JRE/java/nio/channels/NetworkChannel.h>
 
 @class IOSObjectArray;
 @class JavaNetSocket;

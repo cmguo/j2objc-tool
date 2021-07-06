@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/jar/JarFile.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilJarJarFile")
 #ifdef RESTRICT_JavaUtilJarJarFile
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilZipZipFile 1
 #define INCLUDE_JavaUtilZipZipFile 1
-#include "java/util/zip/ZipFile.h"
+#include <JRE/java/util/zip/ZipFile.h>
 
 @class JavaIoFile;
 @class JavaIoInputStream;

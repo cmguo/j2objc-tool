@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/AccessControlException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityAccessControlException")
 #ifdef RESTRICT_JavaSecurityAccessControlException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangSecurityException 1
 #define INCLUDE_JavaLangSecurityException 1
-#include "java/lang/SecurityException.h"
+#include <JRE/java/lang/SecurityException.h>
 
 @class JavaLangThrowable;
 @class JavaSecurityPermission;

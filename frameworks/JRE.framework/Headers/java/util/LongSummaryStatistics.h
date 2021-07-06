@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/LongSummaryStatistics.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilLongSummaryStatistics")
 #ifdef RESTRICT_JavaUtilLongSummaryStatistics
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaUtilFunctionLongConsumer 1
 #define INCLUDE_JavaUtilFunctionLongConsumer 1
-#include "java/util/function/LongConsumer.h"
+#include <JRE/java/util/function/LongConsumer.h>
 
 #define RESTRICT_JavaUtilFunctionIntConsumer 1
 #define INCLUDE_JavaUtilFunctionIntConsumer 1
-#include "java/util/function/IntConsumer.h"
+#include <JRE/java/util/function/IntConsumer.h>
 
 /*!
  @brief A state object for collecting statistics such as count, min, max, sum, and

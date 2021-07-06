@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/util/TimeZone.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuUtilTimeZone")
 #ifdef RESTRICT_AndroidIcuUtilTimeZone
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 #define RESTRICT_AndroidIcuUtilFreezable 1
 #define INCLUDE_AndroidIcuUtilFreezable 1
-#include "android/icu/util/Freezable.h"
+#include <JRE/android/icu/util/Freezable.h>
 
 @class AndroidIcuUtilBasicTimeZone;
 @class AndroidIcuUtilTimeZone_SystemTimeZoneType;
@@ -850,7 +850,7 @@ J2OBJC_TYPE_LITERAL_HEADER(AndroidIcuUtilTimeZone)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/SQLException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlSQLException")
 #ifdef RESTRICT_JavaSqlSQLException
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaLangException 1
 #define INCLUDE_JavaLangException 1
-#include "java/lang/Exception.h"
+#include <JRE/java/lang/Exception.h>
 
 #define RESTRICT_JavaLangIterable 1
 #define INCLUDE_JavaLangIterable 1
-#include "java/lang/Iterable.h"
+#include <JRE/java/lang/Iterable.h>
 
 @class JavaLangThrowable;
 @protocol JavaUtilFunctionConsumer;

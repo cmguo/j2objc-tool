@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/SerializablePermission.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoSerializablePermission")
 #ifdef RESTRICT_JavaIoSerializablePermission
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityBasicPermission 1
 #define INCLUDE_JavaSecurityBasicPermission 1
-#include "java/security/BasicPermission.h"
+#include <JRE/java/security/BasicPermission.h>
 
 /*!
  @brief This legacy security is not supported on Android.Do not use.

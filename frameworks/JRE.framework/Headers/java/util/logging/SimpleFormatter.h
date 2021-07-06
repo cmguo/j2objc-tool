@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/logging/SimpleFormatter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilLoggingSimpleFormatter")
 #ifdef RESTRICT_JavaUtilLoggingSimpleFormatter
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilLoggingFormatter 1
 #define INCLUDE_JavaUtilLoggingFormatter 1
-#include "java/util/logging/Formatter.h"
+#include <JRE/java/util/logging/Formatter.h>
 
 @class JavaUtilLoggingLogRecord;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/MappedByteBuffer.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioMappedByteBuffer")
 #ifdef RESTRICT_JavaNioMappedByteBuffer
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioByteBuffer 1
 #define INCLUDE_JavaNioByteBuffer 1
-#include "java/nio/ByteBuffer.h"
+#include <JRE/java/nio/ByteBuffer.h>
 
 @class IOSByteArray;
 @class JavaIoFileDescriptor;

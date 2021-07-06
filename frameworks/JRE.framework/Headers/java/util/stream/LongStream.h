@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/LongStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamLongStream")
 #ifdef RESTRICT_JavaUtilStreamLongStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilStreamBaseStream 1
 #define INCLUDE_JavaUtilStreamBaseStream 1
-#include "java/util/stream/BaseStream.h"
+#include <JRE/java/util/stream/BaseStream.h>
 
 @class IOSLongArray;
 @class JavaUtilLongSummaryStatistics;
@@ -669,7 +669,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamLongStream)
 
 #define RESTRICT_JavaUtilFunctionLongConsumer 1
 #define INCLUDE_JavaUtilFunctionLongConsumer 1
-#include "java/util/function/LongConsumer.h"
+#include <JRE/java/util/function/LongConsumer.h>
 
 @protocol JavaUtilStreamLongStream;
 

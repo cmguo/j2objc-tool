@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/io/SerialVersionUIDDigest.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaIoSerialVersionUIDDigest")
 #ifdef RESTRICT_JavaIoSerialVersionUIDDigest
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoObjectStreamClass 1
 #define INCLUDE_JavaIoObjectStreamClass_Digest 1
-#include "java/io/ObjectStreamClass.h"
+#include <JRE/java/io/ObjectStreamClass.h>
 
 @class IOSByteArray;
 

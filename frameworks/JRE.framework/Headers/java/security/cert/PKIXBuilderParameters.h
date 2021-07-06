@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/security/cert/PKIXBuilderParameters.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSecurityCertPKIXBuilderParameters")
 #ifdef RESTRICT_JavaSecurityCertPKIXBuilderParameters
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaSecurityCertPKIXParameters 1
 #define INCLUDE_JavaSecurityCertPKIXParameters 1
-#include "java/security/cert/PKIXParameters.h"
+#include <JRE/java/security/cert/PKIXParameters.h>
 
 @class JavaSecurityKeyStore;
 @protocol JavaSecurityCertCertSelector;

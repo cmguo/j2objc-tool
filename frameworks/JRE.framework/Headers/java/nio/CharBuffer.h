@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/CharBuffer.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioCharBuffer")
 #ifdef RESTRICT_JavaNioCharBuffer
@@ -27,23 +27,23 @@
 
 #define RESTRICT_JavaNioBuffer 1
 #define INCLUDE_JavaNioBuffer 1
-#include "java/nio/Buffer.h"
+#include <JRE/java/nio/Buffer.h>
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 #define RESTRICT_JavaLangAppendable 1
 #define INCLUDE_JavaLangAppendable 1
-#include "java/lang/Appendable.h"
+#include <JRE/java/lang/Appendable.h>
 
 #define RESTRICT_JavaLangCharSequence 1
 #define INCLUDE_JavaLangCharSequence 1
-#include "java/lang/CharSequence.h"
+#include <JRE/java/lang/CharSequence.h>
 
 #define RESTRICT_JavaLangReadable 1
 #define INCLUDE_JavaLangReadable 1
-#include "java/lang/Readable.h"
+#include <JRE/java/lang/Readable.h>
 
 @class IOSCharArray;
 @class JavaNioByteOrder;

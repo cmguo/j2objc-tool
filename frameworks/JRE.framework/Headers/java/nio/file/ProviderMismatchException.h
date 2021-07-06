@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/ProviderMismatchException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileProviderMismatchException")
 #ifdef RESTRICT_JavaNioFileProviderMismatchException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangIllegalArgumentException 1
 #define INCLUDE_JavaLangIllegalArgumentException 1
-#include "java/lang/IllegalArgumentException.h"
+#include <JRE/java/lang/IllegalArgumentException.h>
 
 @class JavaLangThrowable;
 

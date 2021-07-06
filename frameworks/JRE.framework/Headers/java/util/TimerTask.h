@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/TimerTask.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilTimerTask")
 #ifdef RESTRICT_JavaUtilTimerTask
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 /*!
  @brief A task that can be scheduled for one-time or repeated execution by a Timer.

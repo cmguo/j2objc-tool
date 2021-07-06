@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/security/cert/CertificateNotYetValidException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxSecurityCertCertificateNotYetValidException")
 #ifdef RESTRICT_JavaxSecurityCertCertificateNotYetValidException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaxSecurityCertCertificateException 1
 #define INCLUDE_JavaxSecurityCertCertificateException 1
-#include "javax/security/cert/CertificateException.h"
+#include <JRE/javax/security/cert/CertificateException.h>
 
 /*!
  @brief Certificate is not yet valid exception.This is thrown whenever

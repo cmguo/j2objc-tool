@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/zip/Adler32.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilZipAdler32")
 #ifdef RESTRICT_JavaUtilZipAdler32
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilZipChecksum 1
 #define INCLUDE_JavaUtilZipChecksum 1
-#include "java/util/zip/Checksum.h"
+#include <JRE/java/util/zip/Checksum.h>
 
 @class IOSByteArray;
 @class JavaNioByteBuffer;

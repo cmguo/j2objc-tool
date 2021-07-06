@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/chrono/ChronoZonedDateTime.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeChronoChronoZonedDateTime")
 #ifdef RESTRICT_JavaTimeChronoChronoZonedDateTime
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaTimeTemporalTemporal 1
 #define INCLUDE_JavaTimeTemporalTemporal 1
-#include "java/time/temporal/Temporal.h"
+#include <JRE/java/time/temporal/Temporal.h>
 
 #define RESTRICT_JavaLangComparable 1
 #define INCLUDE_JavaLangComparable 1
-#include "java/lang/Comparable.h"
+#include <JRE/java/lang/Comparable.h>
 
 @class JavaTimeFormatDateTimeFormatter;
 @class JavaTimeInstant;

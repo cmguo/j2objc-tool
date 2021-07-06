@@ -26,12 +26,12 @@
 #ifndef _NSString_JavaString_H_
 #define _NSString_JavaString_H_
 
-#import "IOSObjectArray.h"
-#import "IOSPrimitiveArray.h"
-#import "J2ObjC_header.h"
-#import "java/io/Serializable.h"
-#import "java/lang/CharSequence.h"
-#import "java/lang/Comparable.h"
+#import <JRE/IOSObjectArray.h>
+#import <JRE/IOSPrimitiveArray.h>
+#import <JRE/J2ObjC_header.h>
+#import <JRE/java/io/Serializable.h>
+#import <JRE/java/lang/CharSequence.h>
+#import <JRE/java/lang/Comparable.h>
 
 @class JavaLangStringBuffer;
 @class JavaLangStringBuilder;

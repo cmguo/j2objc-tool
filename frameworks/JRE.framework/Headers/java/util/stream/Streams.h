@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/stream/Streams.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilStreamStreams")
 #ifdef RESTRICT_JavaUtilStreamStreams
@@ -116,7 +116,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -170,7 +170,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_RangeIntSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -226,7 +226,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_RangeLongSpliterator)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -257,7 +257,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_AbstractStreamBuilderImpl)
 
 #define RESTRICT_JavaUtilStreamStream 1
 #define INCLUDE_JavaUtilStreamStream_Builder 1
-#include "java/util/stream/Stream.h"
+#include <JRE/java/util/stream/Stream.h>
 
 @class JavaUtilStreamSpinedBuffer;
 @protocol JavaUtilFunctionConsumer;
@@ -322,11 +322,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_StreamBuilderImpl)
 
 #define RESTRICT_JavaUtilStreamIntStream 1
 #define INCLUDE_JavaUtilStreamIntStream_Builder 1
-#include "java/util/stream/IntStream.h"
+#include <JRE/java/util/stream/IntStream.h>
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilStreamSpinedBuffer_OfInt;
 @protocol JavaUtilFunctionConsumer;
@@ -389,11 +389,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_IntStreamBuilderImpl)
 
 #define RESTRICT_JavaUtilStreamLongStream 1
 #define INCLUDE_JavaUtilStreamLongStream_Builder 1
-#include "java/util/stream/LongStream.h"
+#include <JRE/java/util/stream/LongStream.h>
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilStreamSpinedBuffer_OfLong;
 @protocol JavaUtilFunctionConsumer;
@@ -456,11 +456,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_LongStreamBuilderImpl)
 
 #define RESTRICT_JavaUtilStreamDoubleStream 1
 #define INCLUDE_JavaUtilStreamDoubleStream_Builder 1
-#include "java/util/stream/DoubleStream.h"
+#include <JRE/java/util/stream/DoubleStream.h>
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @class JavaUtilStreamSpinedBuffer_OfDouble;
 @protocol JavaUtilFunctionConsumer;
@@ -523,7 +523,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_DoubleStreamBuilderImpl)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @protocol JavaUtilComparator;
 @protocol JavaUtilFunctionConsumer;
@@ -601,7 +601,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_ConcatSpliterator_OfRef)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfPrimitive 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @interface JavaUtilStreamStreams_ConcatSpliterator_OfPrimitive : JavaUtilStreamStreams_ConcatSpliterator < JavaUtilSpliterator_OfPrimitive >
 
@@ -624,7 +624,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_ConcatSpliterator_OfPrimitive)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfInt 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @interface JavaUtilStreamStreams_ConcatSpliterator_OfInt : JavaUtilStreamStreams_ConcatSpliterator_OfPrimitive < JavaUtilSpliterator_OfInt >
 
@@ -652,7 +652,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_ConcatSpliterator_OfInt)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfLong 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @interface JavaUtilStreamStreams_ConcatSpliterator_OfLong : JavaUtilStreamStreams_ConcatSpliterator_OfPrimitive < JavaUtilSpliterator_OfLong >
 
@@ -680,7 +680,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilStreamStreams_ConcatSpliterator_OfLong)
 
 #define RESTRICT_JavaUtilSpliterator 1
 #define INCLUDE_JavaUtilSpliterator_OfDouble 1
-#include "java/util/Spliterator.h"
+#include <JRE/java/util/Spliterator.h>
 
 @interface JavaUtilStreamStreams_ConcatSpliterator_OfDouble : JavaUtilStreamStreams_ConcatSpliterator_OfPrimitive < JavaUtilSpliterator_OfDouble >
 

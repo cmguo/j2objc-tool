@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/xml/src/main/java/org/xmlpull/v1/XmlPullParser.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlpullV1XmlPullParser")
 #ifdef RESTRICT_OrgXmlpullV1XmlPullParser

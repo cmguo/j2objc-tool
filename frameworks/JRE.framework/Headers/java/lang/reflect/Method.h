@@ -22,11 +22,11 @@
 #ifndef _JavaLangReflectMethod_H_
 #define _JavaLangReflectMethod_H_
 
-#import "IOSMetadata.h"
-#import "J2ObjC_common.h"
-#import "java/lang/reflect/Executable.h"
-#import "java/lang/reflect/GenericDeclaration.h"
-#import "java/lang/reflect/Member.h"
+#import <JRE/IOSMetadata.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/java/lang/reflect/Executable.h>
+#import <JRE/java/lang/reflect/GenericDeclaration.h>
+#import <JRE/java/lang/reflect/Member.h>
 
 @class IOSClass;
 @class IOSObjectArray;

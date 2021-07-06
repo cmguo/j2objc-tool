@@ -22,11 +22,11 @@
 #ifndef _JAVA_LANG_REFLECT_CONSTRUCTOR_H
 #define _JAVA_LANG_REFLECT_CONSTRUCTOR_H
 
-#import "IOSMetadata.h"
-#import "J2ObjC_common.h"
-#import "java/lang/reflect/Executable.h"
-#import "java/lang/reflect/GenericDeclaration.h"
-#import "java/lang/reflect/Member.h"
+#import <JRE/IOSMetadata.h>
+#import <JRE/J2ObjC_common.h>
+#import <JRE/java/lang/reflect/Executable.h>
+#import <JRE/java/lang/reflect/GenericDeclaration.h>
+#import <JRE/java/lang/reflect/Member.h>
 
 // A native implementation of java.lang.reflect.Constructor.  Its methods are
 // limited to those that can be derived from an Objective-C Method instance,

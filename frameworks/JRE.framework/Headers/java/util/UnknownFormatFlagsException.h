@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/UnknownFormatFlagsException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilUnknownFormatFlagsException")
 #ifdef RESTRICT_JavaUtilUnknownFormatFlagsException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilIllegalFormatException 1
 #define INCLUDE_JavaUtilIllegalFormatException 1
-#include "java/util/IllegalFormatException.h"
+#include <JRE/java/util/IllegalFormatException.h>
 
 /*!
  @brief Unchecked exception thrown when an unknown flag is given.

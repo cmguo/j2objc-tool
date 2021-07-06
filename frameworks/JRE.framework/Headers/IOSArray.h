@@ -18,8 +18,8 @@
 #ifndef IOSARRAY_H
 #define IOSARRAY_H
 
-#import "J2ObjC_common.h"
-#import "NSObject+JavaObject.h"
+#import <JRE/J2ObjC_common.h>
+#import <JRE/NSObject+JavaObject.h>
 
 @class IOSClass;
 

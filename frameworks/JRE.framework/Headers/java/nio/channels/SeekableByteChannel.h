@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/channels/SeekableByteChannel.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioChannelsSeekableByteChannel")
 #ifdef RESTRICT_JavaNioChannelsSeekableByteChannel
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioChannelsByteChannel 1
 #define INCLUDE_JavaNioChannelsByteChannel 1
-#include "java/nio/channels/ByteChannel.h"
+#include <JRE/java/nio/channels/ByteChannel.h>
 
 @class JavaNioByteBuffer;
 

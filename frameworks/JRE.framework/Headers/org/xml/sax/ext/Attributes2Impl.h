@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/luni/src/main/java/org/xml/sax/ext/Attributes2Impl.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_OrgXmlSaxExtAttributes2Impl")
 #ifdef RESTRICT_OrgXmlSaxExtAttributes2Impl
@@ -27,11 +27,11 @@
 
 #define RESTRICT_OrgXmlSaxHelpersAttributesImpl 1
 #define INCLUDE_OrgXmlSaxHelpersAttributesImpl 1
-#include "org/xml/sax/helpers/AttributesImpl.h"
+#include <JRE/org/xml/sax/helpers/AttributesImpl.h>
 
 #define RESTRICT_OrgXmlSaxExtAttributes2 1
 #define INCLUDE_OrgXmlSaxExtAttributes2 1
-#include "org/xml/sax/ext/Attributes2.h"
+#include <JRE/org/xml/sax/ext/Attributes2.h>
 
 @protocol OrgXmlSaxAttributes;
 

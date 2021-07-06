@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/sql/Date.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaSqlDate")
 #ifdef RESTRICT_JavaSqlDate
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilDate 1
 #define INCLUDE_JavaUtilDate 1
-#include "java/util/Date.h"
+#include <JRE/java/util/Date.h>
 
 /*!
  @brief <P>A thin wrapper around a millisecond value that allows

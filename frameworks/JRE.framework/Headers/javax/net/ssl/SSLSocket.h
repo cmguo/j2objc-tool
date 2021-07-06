@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/net/ssl/SSLSocket.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxNetSslSSLSocket")
 #ifdef RESTRICT_JavaxNetSslSSLSocket
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetSocket 1
 #define INCLUDE_JavaNetSocket 1
-#include "java/net/Socket.h"
+#include <JRE/java/net/Socket.h>
 
 @class IOSObjectArray;
 @class JavaNetInetAddress;

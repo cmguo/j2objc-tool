@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/Period.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimePeriod")
 #ifdef RESTRICT_JavaTimePeriod
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaTimeChronoChronoPeriod 1
 #define INCLUDE_JavaTimeChronoChronoPeriod 1
-#include "java/time/chrono/ChronoPeriod.h"
+#include <JRE/java/time/chrono/ChronoPeriod.h>
 
 #define RESTRICT_JavaIoSerializable 1
 #define INCLUDE_JavaIoSerializable 1
-#include "java/io/Serializable.h"
+#include <JRE/java/io/Serializable.h>
 
 @class JavaTimeChronoIsoChronology;
 @class JavaTimeLocalDate;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/IntSummaryStatistics.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilIntSummaryStatistics")
 #ifdef RESTRICT_JavaUtilIntSummaryStatistics
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilFunctionIntConsumer 1
 #define INCLUDE_JavaUtilFunctionIntConsumer 1
-#include "java/util/function/IntConsumer.h"
+#include <JRE/java/util/function/IntConsumer.h>
 
 /*!
  @brief A state object for collecting statistics such as count, min, max, sum, and

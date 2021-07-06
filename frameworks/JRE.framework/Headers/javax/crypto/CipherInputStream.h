@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/javax/crypto/CipherInputStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaxCryptoCipherInputStream")
 #ifdef RESTRICT_JavaxCryptoCipherInputStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaIoFilterInputStream 1
 #define INCLUDE_JavaIoFilterInputStream 1
-#include "java/io/FilterInputStream.h"
+#include <JRE/java/io/FilterInputStream.h>
 
 @class IOSByteArray;
 @class JavaIoInputStream;

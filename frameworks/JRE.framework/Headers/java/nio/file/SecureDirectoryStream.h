@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/nio/file/SecureDirectoryStream.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNioFileSecureDirectoryStream")
 #ifdef RESTRICT_JavaNioFileSecureDirectoryStream
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNioFileDirectoryStream 1
 #define INCLUDE_JavaNioFileDirectoryStream 1
-#include "java/nio/file/DirectoryStream.h"
+#include <JRE/java/nio/file/DirectoryStream.h>
 
 @class IOSClass;
 @class IOSObjectArray;

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/net/ConnectException.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaNetConnectException")
 #ifdef RESTRICT_JavaNetConnectException
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaNetSocketException 1
 #define INCLUDE_JavaNetSocketException 1
-#include "java/net/SocketException.h"
+#include <JRE/java/net/SocketException.h>
 
 @class JavaLangThrowable;
 

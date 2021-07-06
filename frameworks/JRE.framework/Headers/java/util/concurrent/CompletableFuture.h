@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/CompletableFuture.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentCompletableFuture")
 #ifdef RESTRICT_JavaUtilConcurrentCompletableFuture
@@ -99,11 +99,11 @@
 
 #define RESTRICT_JavaUtilConcurrentFuture 1
 #define INCLUDE_JavaUtilConcurrentFuture 1
-#include "java/util/concurrent/Future.h"
+#include <JRE/java/util/concurrent/Future.h>
 
 #define RESTRICT_JavaUtilConcurrentCompletionStage 1
 #define INCLUDE_JavaUtilConcurrentCompletionStage 1
-#include "java/util/concurrent/CompletionStage.h"
+#include <JRE/java/util/concurrent/CompletionStage.h>
 
 @class IOSObjectArray;
 @class JavaLangThrowable;
@@ -1121,7 +1121,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_AsynchronousCompl
 
 #define RESTRICT_JavaUtilConcurrentExecutor 1
 #define INCLUDE_JavaUtilConcurrentExecutor 1
-#include "java/util/concurrent/Executor.h"
+#include <JRE/java/util/concurrent/Executor.h>
 
 @protocol JavaLangRunnable;
 
@@ -1157,11 +1157,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_ThreadPerTaskExec
 
 #define RESTRICT_JavaUtilConcurrentForkJoinTask 1
 #define INCLUDE_JavaUtilConcurrentForkJoinTask 1
-#include "java/util/concurrent/ForkJoinTask.h"
+#include <JRE/java/util/concurrent/ForkJoinTask.h>
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class JavaLangVoid;
 @class JavaUtilConcurrentCompletableFuture;
@@ -2282,11 +2282,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_OrRelay)
 
 #define RESTRICT_JavaUtilConcurrentForkJoinTask 1
 #define INCLUDE_JavaUtilConcurrentForkJoinTask 1
-#include "java/util/concurrent/ForkJoinTask.h"
+#include <JRE/java/util/concurrent/ForkJoinTask.h>
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class JavaLangVoid;
 @class JavaUtilConcurrentCompletableFuture;
@@ -2349,11 +2349,11 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_AsyncSupply)
 
 #define RESTRICT_JavaUtilConcurrentForkJoinTask 1
 #define INCLUDE_JavaUtilConcurrentForkJoinTask 1
-#include "java/util/concurrent/ForkJoinTask.h"
+#include <JRE/java/util/concurrent/ForkJoinTask.h>
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class JavaLangVoid;
 @class JavaUtilConcurrentCompletableFuture;
@@ -2415,7 +2415,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_AsyncRun)
 
 #define RESTRICT_JavaUtilConcurrentForkJoinPool 1
 #define INCLUDE_JavaUtilConcurrentForkJoinPool_ManagedBlocker 1
-#include "java/util/concurrent/ForkJoinPool.h"
+#include <JRE/java/util/concurrent/ForkJoinPool.h>
 
 @class JavaLangThread;
 @class JavaLangVoid;
@@ -2530,7 +2530,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_Delayer)
 
 #define RESTRICT_JavaUtilConcurrentThreadFactory 1
 #define INCLUDE_JavaUtilConcurrentThreadFactory 1
-#include "java/util/concurrent/ThreadFactory.h"
+#include <JRE/java/util/concurrent/ThreadFactory.h>
 
 @class JavaLangThread;
 @protocol JavaLangRunnable;
@@ -2564,7 +2564,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_Delayer_DaemonThr
 
 #define RESTRICT_JavaUtilConcurrentExecutor 1
 #define INCLUDE_JavaUtilConcurrentExecutor 1
-#include "java/util/concurrent/Executor.h"
+#include <JRE/java/util/concurrent/Executor.h>
 
 @class JavaUtilConcurrentTimeUnit;
 @protocol JavaLangRunnable;
@@ -2612,7 +2612,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_DelayedExecutor)
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @protocol JavaUtilConcurrentExecutor;
 
@@ -2660,7 +2660,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_TaskSubmitter)
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class JavaUtilConcurrentCompletableFuture;
 
@@ -2705,7 +2705,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_Timeout)
 
 #define RESTRICT_JavaLangRunnable 1
 #define INCLUDE_JavaLangRunnable 1
-#include "java/lang/Runnable.h"
+#include <JRE/java/lang/Runnable.h>
 
 @class JavaUtilConcurrentCompletableFuture;
 
@@ -2753,7 +2753,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilConcurrentCompletableFuture_DelayedCompleter)
 
 #define RESTRICT_JavaUtilFunctionBiConsumer 1
 #define INCLUDE_JavaUtilFunctionBiConsumer 1
-#include "java/util/function/BiConsumer.h"
+#include <JRE/java/util/function/BiConsumer.h>
 
 @class JavaLangThrowable;
 @protocol JavaUtilConcurrentFuture;

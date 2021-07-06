@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/concurrent/RecursiveTask.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilConcurrentRecursiveTask")
 #ifdef RESTRICT_JavaUtilConcurrentRecursiveTask
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaUtilConcurrentForkJoinTask 1
 #define INCLUDE_JavaUtilConcurrentForkJoinTask 1
-#include "java/util/concurrent/ForkJoinTask.h"
+#include <JRE/java/util/concurrent/ForkJoinTask.h>
 
 /*!
  @brief A recursive result-bearing <code>ForkJoinTask</code>.

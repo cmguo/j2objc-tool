@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/util/Formatter.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaUtilFormatter")
 #ifdef RESTRICT_JavaUtilFormatter
@@ -27,11 +27,11 @@
 
 #define RESTRICT_JavaIoCloseable 1
 #define INCLUDE_JavaIoCloseable 1
-#include "java/io/Closeable.h"
+#include <JRE/java/io/Closeable.h>
 
 #define RESTRICT_JavaIoFlushable 1
 #define INCLUDE_JavaIoFlushable 1
-#include "java/io/Flushable.h"
+#include <JRE/java/io/Flushable.h>
 
 @class IOSObjectArray;
 @class JavaIoFile;
@@ -2125,7 +2125,7 @@ J2OBJC_TYPE_LITERAL_HEADER(JavaUtilFormatter)
 
 #define RESTRICT_JavaLangEnum 1
 #define INCLUDE_JavaLangEnum 1
-#include "java/lang/Enum.h"
+#include <JRE/java/lang/Enum.h>
 
 @class IOSObjectArray;
 

@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/lang/NoSuchFieldError.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaLangNoSuchFieldError")
 #ifdef RESTRICT_JavaLangNoSuchFieldError
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaLangIncompatibleClassChangeError 1
 #define INCLUDE_JavaLangIncompatibleClassChangeError 1
-#include "java/lang/IncompatibleClassChangeError.h"
+#include <JRE/java/lang/IncompatibleClassChangeError.h>
 
 /*!
  @brief Thrown if an application tries to access or modify a specified

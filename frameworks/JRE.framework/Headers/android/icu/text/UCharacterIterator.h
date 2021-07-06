@@ -3,7 +3,7 @@
 //  source: android/platform/external/icu/android_icu4j/src/main/java/android/icu/text/UCharacterIterator.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_AndroidIcuTextUCharacterIterator")
 #ifdef RESTRICT_AndroidIcuTextUCharacterIterator
@@ -27,7 +27,7 @@
 
 #define RESTRICT_AndroidIcuTextUForwardCharacterIterator 1
 #define INCLUDE_AndroidIcuTextUForwardCharacterIterator 1
-#include "android/icu/text/UForwardCharacterIterator.h"
+#include <JRE/android/icu/text/UForwardCharacterIterator.h>
 
 @class IOSCharArray;
 @class JavaLangStringBuffer;

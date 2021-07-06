@@ -3,7 +3,7 @@
 //  source: android/platform/libcore/ojluni/src/main/java/java/time/chrono/AbstractChronology.java
 //
 
-#include "J2ObjC_header.h"
+#include <JRE/J2ObjC_header.h>
 
 #pragma push_macro("INCLUDE_ALL_JavaTimeChronoAbstractChronology")
 #ifdef RESTRICT_JavaTimeChronoAbstractChronology
@@ -27,7 +27,7 @@
 
 #define RESTRICT_JavaTimeChronoChronology 1
 #define INCLUDE_JavaTimeChronoChronology 1
-#include "java/time/chrono/Chronology.h"
+#include <JRE/java/time/chrono/Chronology.h>
 
 @class JavaTimeClock;
 @class JavaTimeFormatResolverStyle;
