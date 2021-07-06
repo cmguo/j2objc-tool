@@ -26,7 +26,7 @@
 #import <JRE/NSObject+JavaObject.h>
 #import <JRE/NSString+JavaString.h>
 #import <JRE/jni.h>
-#import "objc/runtime.h"
+#import <objc/runtime.h>
 
 #pragma clang system_header
 
