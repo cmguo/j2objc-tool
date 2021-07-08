@@ -20,7 +20,7 @@ do
       UPDATE_THIRDPARTY=true
       ;;
     -c)
-      CLEAN=true
+      CLEAN=clean
       ;;
     -sim)
       SDK=iphonesimulator
@@ -42,12 +42,6 @@ do
   esac
   shift
 done
-
-if [ ! -z $CLEAN ]
-then
-  xcrun xcodebuild SYMROOT=${PWD}/output -configuration ${CONFIGURATION} clean
-  exit 0
-fi
 
 if [ ! -z $UPDATE_THIRDPARTY ]
 then
@@ -76,8 +70,8 @@ mkdir -p Frameworks
 if [ -z $SDK ]
 then
 
-  ${COMMAND_IOS} build
-  ${COMMAND_SIM} ARCHS=x86_64 build
+  ${COMMAND_IOS} ${CLEAN} build
+  ${COMMAND_SIM} ARCHS=x86_64 ${CLEAN} build
 
   for SCHEME in $SCHEMES
   do
@@ -98,10 +92,10 @@ else
 
   if [ $SDK = iphonesimulator ]
   then
-    ${COMMAND_SIM} ARCHS=x86_64 build
+    ${COMMAND_SIM} ARCHS=x86_64 ${CLEAN} build
   elif [ $SDK = iphoneos ]
   then
-    ${COMMAND_IOS} build
+    ${COMMAND_IOS} ${CLEAN} build
   fi
 
   for SCHEME in $SCHEMES
