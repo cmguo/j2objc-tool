@@ -21,8 +21,12 @@ then
     git submodule init $*
   fi
   git submodule update
-  rm -f LogicBase/j2objc-2.7
-  ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
+
+  if [ -d LogicBase ]
+  then
+    rm -f LogicBase/j2objc-2.7
+    ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
+  fi
 
 elif [ "$1" == "update" ]
 then
@@ -35,6 +39,10 @@ then
     git submodule init $*
   fi
   git submodule update
+  for m in $*
+  do
+    git -C $m log -1
+  done
 
 elif [ "$1" == "publish" ]
 then
@@ -59,6 +67,7 @@ then
   TAG=$1
   shift
 
+  cd ThirdPartyiOS
   git push -f origin HEAD:refs/tags/$TAG
   for m in $*
   do
