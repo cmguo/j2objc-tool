@@ -52,6 +52,19 @@ then
   git pull --rebase
   git push
 
+elif [ "$1" == "mktag" ]
+then
+
+  shift
+  TAG=$1
+  shift
+
+  git push -f origin HEAD:refs/tags/$TAG
+  for m in $*
+  do
+    git -C $m push -f origin HEAD:refs/tags/$TAG
+  done
+
 else
 
   echo unkown command $1
