@@ -71,21 +71,30 @@ if [ -z $SDK ]
 then
 
   ${COMMAND_IOS} ${CLEAN} build
-  ${COMMAND_SIM} ARCHS=x86_64 ${CLEAN} build
 
   for SCHEME in $SCHEMES
   do
   
     OUTPUT_IOS=output/${CONFIGURATION}-iphoneos/${SCHEME}.framework
-    OUTPUT_SIM=output/${CONFIGURATION}-iphonesimulator/${SCHEME}.framework
     PUBLIC=Frameworks/${SCHEME}.framework
   
     rm -rf ${PUBLIC}
     mkdir -p $(dirname ${PUBLIC})
     cp -R ${OUTPUT_IOS} ${PUBLIC}
-    cp ${OUTPUT_SIM}/Modules/${SCHEME}.swiftmodule/x86_64* ${PUBLIC}/Modules/${SCHEME}.swiftmodule/
-    xcrun lipo -create ${OUTPUT_IOS}/${SCHEME} ${OUTPUT_SIM}/${SCHEME} -output ${PUBLIC}/${SCHEME}
   
+  done
+
+  ${COMMAND_SIM} ARCHS=x86_64 ${CLEAN} build
+
+  for SCHEME in $SCHEMES
+  do
+  
+    OUTPUT_SIM=output/${CONFIGURATION}-iphonesimulator/${SCHEME}.framework
+    PUBLIC=Frameworks/${SCHEME}.framework
+  
+    cp ${OUTPUT_SIM}/Modules/${SCHEME}.swiftmodule/x86_64* ${PUBLIC}/Modules/${SCHEME}.swiftmodule/
+    xcrun lipo -create ${PUBLIC}/${SCHEME} ${OUTPUT_SIM}/${SCHEME} -output ${PUBLIC}/${SCHEME}
+
   done
 
 else
