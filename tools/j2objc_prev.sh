@@ -16,11 +16,27 @@ LIBRARIES="${WORKSPACE}/Libraries"
 
 PUBLIC_HEADERS_FOLDER=${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}
 
+for i in ${PROTO_SOURCES-proto}
+do
+  if [[ ! $i =~ ^/ ]]
+  then
+    i=${SRCROOT}/$i
+  fi
+  if [ -d $i ]
+  then
+    PROTO_DIRS="$PROTO_DIRS $i"
+  fi
+done
+
 for i in ${JAVA_SOURCES-src/main/java $TARGET_NAME/java}
 do
-  if [ -d ${SRCROOT}/$i ]
+  if [[ ! $i =~ ^/ ]]
   then
-    JAVA_DIRS="$JAVA_DIRS ${SRCROOT}/$i"
+    i=${SRCROOT}/$i
+  fi
+  if [ -d $i ]
+  then
+    JAVA_DIRS="$JAVA_DIRS $i"
   fi
 done
 
@@ -28,13 +44,19 @@ done
 
 mkdir -p ${DERIVED_FILE_DIR}
 mkdir -p ${PUBLIC_HEADERS_FOLDER}
+if [ ! -z $PROTO_DIRS ]
+then
+find $PROTO_DIRS -name "*.proto" > ${DERIVED_FILE_DIR}/ProtoList
+else
+touch ${DERIVED_FILE_DIR}/ProtoList
+fi
 find $JAVA_DIRS -name "*.java" > ${DERIVED_FILE_DIR}/JavaList
 find ${SRCROOT} -name "*.txt" -depth 1 > ${DERIVED_FILE_DIR}/TxtList
-if [ ! -f ${DERIVED_FILE_DIR}/JavaList.d ]
+if [ ! -f ${DERIVED_FILE_DIR}/SourceList.d ]
 then
-  touch ${DERIVED_FILE_DIR}/JavaList.d
+  touch ${DERIVED_FILE_DIR}/SourceList.d
 fi
-if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/JavaList.d ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/TxtList > ${DERIVED_FILE_DIR}/JavaList.d1
+if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/SourceList.d ${DERIVED_FILE_DIR}/ProtoList ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/TxtList > ${DERIVED_FILE_DIR}/SourceList.d1
 then
   # Install headers to framework
   if [ ! -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h ]
@@ -81,6 +103,8 @@ do
   fi
 done
 
+JARS="$JARS -cp ${DERIVED_FILE_DIR}/classes"
+
 if [ -f ${SRCROOT}/prefixes.txt ]
 then
   PREFIXES="$PREFIXES ${SRCROOT}/prefixes.txt"
@@ -90,12 +114,29 @@ cat $PREFIXES > ${DERIVED_FILE_DIR}/prefixes.txt
 PREFIXES="--prefixes ${DERIVED_FILE_DIR}/prefixes.txt"
 
 
+# Compile proto with protoc
+
+if [ ! -z $PROTO_DIRS ]
+then
+  rm -rf ${DERIVED_FILE_DIR}/Protobuf/java
+  mkdir -p ${DERIVED_FILE_DIR}/Protobuf/java
+  ${TOOLS}/protobuf.sh compile ${PROTO_DIRS// /:} ${DERIVED_FILE_DIR}/Protobuf/java `< ${DERIVED_FILE_DIR}/ProtoList`
+fi
+
 # Compile java with j2objc
 
 rm -rf ${DERIVED_FILE_DIR}/classes
 rm -rf ${DERIVED_FILE_DIR}/objc
 rm -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h
 mkdir -p ${DERIVED_FILE_DIR}/classes
+
+if [ ! -z $PROTO_DIRS ]
+then
+  find ${DERIVED_FILE_DIR}/Protobuf/java -name "*.java" > ${DERIVED_FILE_DIR}/JavaList.protobuf
+  "${TOOLS}/j2objc.sh" -arc $J2OBJC_FLAGS \
+    -d ${DERIVED_FILE_DIR} -cp json.jar -cp jre_emul.jar -cp annotations-13.0.jar $JARS \
+    $PREFIXES -g @${DERIVED_FILE_DIR}/JavaList.protobuf
+fi
 
 "${TOOLS}/j2objc.sh" -arc $J2OBJC_FLAGS \
   -d ${DERIVED_FILE_DIR} -cp json.jar -cp jre_emul.jar -cp annotations-13.0.jar $JARS \
@@ -104,7 +145,6 @@ mkdir -p ${DERIVED_FILE_DIR}/classes
 if [ -f ${SRCROOT}/reflect.txt ]
 then
   awk "{ print \"${SRCROOT}/\" \$0 }" ${SRCROOT}/reflect.txt > ${DERIVED_FILE_DIR}/JavaList.reflect
-  JARS="$JARS -cp ${DERIVED_FILE_DIR}/classes"
   "${TOOLS}/j2objc.sh" -arc -reflect $J2OBJC_FLAGS \
     -d ${DERIVED_FILE_DIR} -cp json.jar -cp jre_emul.jar -cp annotations-13.0.jar $JARS \
     $PREFIXES -g @${DERIVED_FILE_DIR}/JavaList.reflect
@@ -152,4 +192,4 @@ source ${TOOLS}/j2objc_headers.sh
 
 # Update java state file
 
-mv ${DERIVED_FILE_DIR}/JavaList.d1 ${DERIVED_FILE_DIR}/JavaList.d
+mv ${DERIVED_FILE_DIR}/SourceList.d1 ${DERIVED_FILE_DIR}/SourceList.d
