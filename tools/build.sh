@@ -92,7 +92,7 @@ then
     OUTPUT_SIM=output/${CONFIGURATION}-iphonesimulator/${SCHEME}.framework
     PUBLIC=Frameworks/${SCHEME}.framework
   
-    if [ -d Modules/MessageTunnel.swiftmodule ]
+    if [ -d ${OUTPUT_SIM}/Modules/${SCHEME}.swiftmodule ]
     then
       cp ${OUTPUT_SIM}/Modules/${SCHEME}.swiftmodule/x86_64* ${PUBLIC}/Modules/${SCHEME}.swiftmodule/
     fi
