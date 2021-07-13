@@ -90,12 +90,9 @@ trap 'rm -rf Pods' ERR
 for i in `find . -name Podfile`
 do
   i=$(dirname $i)
-  if [ ! -d $i/Pods ]
-  then
-    cd $i
-    pod install
-    cd -
-  fi
+  cd $i
+  pod install
+  cd -
 done
 trap '' ERR
 
