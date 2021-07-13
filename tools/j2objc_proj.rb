@@ -69,6 +69,16 @@ def apply_target(proj, target)
 
   # read config
 
+  proto_dirs = target.build_configuration_list.get_setting("PROTO_SOURCES", true)["Debug"]
+  if proto_dirs == nil
+    proto_dirs = []
+    if File.exists? "proto"
+      proto_dirs << "proto"
+    end
+  else
+    proto_dirs = proto_dirs.split(" ").select{ |d| File.exists?(d) }
+  end
+
   java_dirs = target.build_configuration_list.get_setting("JAVA_SOURCES", true)["Debug"]
   if java_dirs == nil
     java_dirs = []
@@ -93,11 +103,28 @@ def apply_target(proj, target)
   end
 
 
-  # if not java sources, we can stop here
+  # if no proto/java sources, we can stop here
 
-  if java_dirs.empty?
+  if proto_dirs.empty? && java_dirs.empty?
     return false
   end
+
+
+  # Proto build rule
+
+  if !proto_dirs.empty? && target.build_rules.find { |rule| rule.file_type == "sourcecode.protobuf" } == nil
+    puts "Add Protobuf build rule"
+    rule = proj.new(Xcodeproj::Project::Object::PBXBuildRule)
+    rule.file_type = "sourcecode.protobuf"
+    rule.compiler_spec = "com.apple.compilers.proxy.script"
+    rule.is_editable = "0"
+    rule.run_once_per_architecture = "0"
+    (rule.input_files ||= []) << "$(INPUT_FILE_PATH)"
+    rule.add_output_file("$(DERIVED_FILE_DIR)/J2objc/${INPUT_FILE_BASE}.m")
+    rule.script = "echo $(INPUT_FILE_PATH)"
+    target.build_rules << rule
+  end
+
 
   # Java build rule
 
@@ -152,11 +179,14 @@ def apply_target(proj, target)
     end
   end
 
-  # Java sources
+
+  # Proto/Java sources
+  
+  exts = { ".proto" => "protobuf", ".java" => "java" }
 
   # add
   files = []
-  java_dirs.each { |dir| 
+  (proto_dirs | java_dirs).each { |dir| 
     if dir.end_with?("/")
       dir = dir[0..-2]
     end
@@ -164,7 +194,8 @@ def apply_target(proj, target)
     # group.clear()
     dirlen = dir.size + 1
     Find.find(dir) { |f|
-      if f.end_with?(".java")
+      ext = File.extname(f)
+      if exts.key?(ext)
         f = f[dirlen..-1]
         d = File.dirname(f)
         f = File.basename(f)
@@ -174,7 +205,7 @@ def apply_target(proj, target)
           puts "File +++ #{dir}/#{f}"
           file = subGroup.new_reference(f)
           file.include_in_index = "0"
-          file.last_known_file_type = "sourcecode.java"
+          file.last_known_file_type = "sourcecode.#{exts[ext]}"
           file.fileEncoding = "4"
         end
         files << file
@@ -184,7 +215,8 @@ def apply_target(proj, target)
   # remove
   files2 = []
   target.source_build_phase.files.each { |f| 
-    if !f.file_ref.path.end_with?(".java")
+    ext = File.extname(f.file_ref.path)
+    if !exts.key?(ext)
       true
     else
       index = files.find_index(f.file_ref)
