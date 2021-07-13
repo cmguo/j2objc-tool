@@ -22,7 +22,7 @@ then
   fi
   git submodule update
 
-  if [ -d LogicBase ]
+  if [ -e LogicBase/.git ]
   then
     rm -f LogicBase/j2objc-2.7
     ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
