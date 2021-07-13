@@ -167,8 +167,8 @@ awk "{ print \"#include <${TARGET_NAME}/\" \$0 \">\" }" ${DERIVED_FILE_DIR}/J2Ob
 
 # make dependancy files
 
-mkdir -p ${DERIVED_FILE_DIR}/J2objc.d
-awk "{ name = \$0; sub(\".*/\", \"\", name); sub(\".java\", \"\", name); path = \"${DERIVED_FILE_DIR}/J2objc.d/\" name \".d\"; print \"${DERIVED_FILE_DIR}/J2objc/\" name \".m: \" \$0 > path }" ${DERIVED_FILE_DIR}/JavaList
+# mkdir -p ${DERIVED_FILE_DIR}/J2objc.d
+# awk "{ name = \$0; sub(\".*/\", \"\", name); sub(\".java\", \"\", name); path = \"${DERIVED_FILE_DIR}/J2objc.d/\" name \".d\"; print \"${DERIVED_FILE_DIR}/J2objc/\" name \".m: \" \$0 > path }" ${DERIVED_FILE_DIR}/JavaList
 
 # Java classes & jar
 

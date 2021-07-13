@@ -121,7 +121,7 @@ def apply_target(proj, target)
     rule.run_once_per_architecture = "0"
     (rule.input_files ||= []) << "$(INPUT_FILE_PATH)"
     rule.add_output_file("$(DERIVED_FILE_DIR)/J2objc/${INPUT_FILE_BASE}.m")
-    rule.script = "echo $(INPUT_FILE_PATH)"
+    rule.script = "${J2OBJC_HOME}/tools/protobuf.sh copyobjc"
     target.build_rules << rule
   end
 
