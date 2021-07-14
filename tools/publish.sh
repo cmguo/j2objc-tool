@@ -54,7 +54,7 @@ git push -f $ORIGIN $COMMIT:refs/tags/$V
 if [ ! -z $SYNC ]
 then
   # update to reduce conflict
-  $(dirname $0)/thirdparty.sh update ${PUBLISH_NAME-$1}
+  $(dirname $0)/thirdparty.sh update ${PUBLISH_NAME-$1} || true
   git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
   export ORIGIN=${ORIGIN}
   export VERSION=${V}
