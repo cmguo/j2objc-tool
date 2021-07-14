@@ -49,7 +49,7 @@ then
 
   shift
 
-  if [ ! git submodule init $1 ]
+  if ! git submodule init $1
   then
     git submodule add -b publish/$VERSION $ORIGIN $1
   fi
