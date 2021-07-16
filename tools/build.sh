@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-#set -x
 
 # default settings
 
@@ -42,6 +41,8 @@ do
   esac
   shift
 done
+
+set -x
 
 if [ ! -z $UPDATE_THIRDPARTY ]
 then

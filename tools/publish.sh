@@ -1,13 +1,20 @@
 #!/bin/bash
 
-set -x
 set -e
 
+TAG=
 SYNC=
 
 while [[ $1 =~ ^-.+ ]]
 do
   case $1 in
+    -v)
+      V=$2
+      shift
+      ;;
+    -t)
+      TAG=true
+      ;;
     -s)
       SYNC=true
       ;;
@@ -17,6 +24,8 @@ do
         echo $0: unknown option $1 !!
       fi
       echo Usage $0 [flags...]
+      echo " -v:" Use specific version for publish "branch/tag"
+      echo " -t:" Also publish with tag "(force overwrite)"
       echo " -s:" Sync to ThirdPartyiOS
       exit 0
       ;;
@@ -24,16 +33,21 @@ do
   shift
 done
 
+set -x
+
 if [ ! -d Frameworks ]
 then
   echo Directory "'Frameworks'" not exists
   exit 1
 fi
 
-V=`grep ".version " $1.podspec | cut -d "'" -f 2`
-if [[ $V =~ "\"" ]]
+if [ -z $V ]
 then
-  V=`echo $V  | cut -d '"' -f 2`
+  V=`grep ".version " $1.podspec | cut -d "'" -f 2`
+  if [[ $V =~ "\"" ]]
+  then
+    V=`echo $V  | cut -d '"' -f 2`
+  fi
 fi
 
 trap 'git rm -r --quiet --cached Frameworks' EXIT
@@ -49,7 +63,10 @@ then
   ORIGIN=git@${ORIGIN#*@}
   ORIGIN=${ORIGIN/\//:}
 fi
-git push -f $ORIGIN $COMMIT:refs/tags/$V
+
+if [ ! -z $TAG ]
+  git push -f $ORIGIN $COMMIT:refs/tags/$V
+fi
 
 if [ ! -z $SYNC ]
 then
@@ -59,4 +76,6 @@ then
   export ORIGIN=${ORIGIN}
   export VERSION=${V}
   $(dirname $0)/thirdparty.sh publish ${PUBLISH_NAME-$1} "$REV"
+else
+  git push -f $ORIGIN $COMMIT:refs/heads/publish/$V
 fi

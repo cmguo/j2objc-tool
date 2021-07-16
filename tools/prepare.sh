@@ -1,7 +1,6 @@
 #!/bin/bash
 
 set -e
-set -x
 
 if [ -z $J2OBJC_HOME ]
 then
@@ -52,6 +51,8 @@ do
   esac
   shift
 done
+
+set -x
 
 $(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
 
