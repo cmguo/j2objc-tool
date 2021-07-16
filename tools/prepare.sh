@@ -45,20 +45,42 @@ do
         echo $0: unknown option $1 !!
       fi
       echo Usage $0 [flags...] [Scheme]
-      echo " -u:" Force update ThirdParty ...
+      echo " -u:" Force update Pods in ThirdParty ...
       exit 0
       ;;
   esac
   shift
 done
 
-set -x
+# set -x
+
+POD_FILES=`find . -maxdepth 2 -name Podfile`
+DEPENDS=`awk -F ' ' "BEGINFILE { f=FILENAME; sub(\\"/Podfile\\", \\"\\", f) } { if (\\$4 == \\"=>\\") { gsub(/[\\"\\']/, \\"\\", \\$5); print f \\"/\\" \\$5 } }" $POD_FILES | grep "\.\." | sort -u`
+for d in $DEPENDS
+do
+  if [[ $d =~ \.\./ThirdPartyiOS ]]
+  then
+    DEPEND_THIRDPARTIES="$DEPEND_THIRDPARTIES ${d#*ThirdPartyiOS/}"
+  else
+    if [ ! -d $d/.git ]
+    then
+      echo "Depends $d not exists, clone it first"
+    else
+      DEPEND_MOUDLES="$DEPEND_MOUDLES $d"
+    fi
+  fi
+done
 
 $(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
 
 if [ ! -z $FORCE_UPDATE ]
 then
   $(dirname $0)/thirdparty.sh update ${DEPEND_THIRDPARTIES}
+  for d in $DEPEND_MOUDLES
+  do
+    git -C $d pull --rebase
+    git -C $d log -1
+  done
   rm -f j2objc-2.7
   rm -f jdk
   rm -rf ThirdParty/classes

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+# set -x
 set -e
 
 cd ..
@@ -41,7 +41,10 @@ then
   git submodule update
   for m in $*
   do
-    git -C $m log -1
+    if [ -f $m/.git ]
+    then
+      git -C $m log -1
+    fi
   done
 
 elif [ "$1" == "publish" ]
