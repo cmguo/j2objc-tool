@@ -45,7 +45,7 @@ do
         echo $0: unknown option $1 !!
       fi
       echo Usage $0 [flags...] [Scheme]
-      echo " -u:" Force update Pods ...
+      echo " -u:" Force update ThirdParty ...
       exit 0
       ;;
   esac
@@ -62,7 +62,7 @@ then
   rm -f j2objc-2.7
   rm -f jdk
   rm -rf ThirdParty/classes
-  rm -rf */Pods
+  # rm -rf */Pods
 fi
 
 if [ -f build.gradle ]
