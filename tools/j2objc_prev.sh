@@ -12,7 +12,6 @@ set -e
 
 WORKSPACE=$(dirname ${PROJECT_DIR})
 THIRDPARTY="${WORKSPACE}/ThirdParty"
-LIBRARIES="${WORKSPACE}/Libraries"
 
 PUBLIC_HEADERS_FOLDER=${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}
 
@@ -69,17 +68,41 @@ fi
 
 # Analyze depends 
 
-for d in ${J2OBJC_DEPENDS} JRE
+set +x
+
+if [ -z $J2OBJC_DEPENDS ]
+then
+  LAST_LDFLAG=-
+  for i in ${OTHER_LDFLAGS}
+  do
+    if [ $LAST_LDFLAG == -framework ]
+    then
+      J2OBJC_DEPENDS="$J2OBJC_DEPENDS ${i//\"/}"
+    fi
+    LAST_LDFLAG=$i
+  done
+  if [ -d ${THIRDPARTY} ]
+  then
+    J2OBJC_DEPENDS="$J2OBJC_DEPENDS ThirdParty"
+  fi
+else
+  J2OBJC_DEPENDS="$J2OBJC_DEPENDS JRE"
+fi
+
+J2OBJC_DEPENDS=`echo ${J2OBJC_DEPENDS} | tr " " "\n" | sort -u`
+echo J2OBJC_DEPENDS=$J2OBJC_DEPENDS
+
+for d in ${J2OBJC_DEPENDS}
 do
   if [ "$d" == "ThirdParty" ]
   then
     # Headers from StaticLibraries
     find ${THIRDPARTY}/objc -name "*.h" | awk "{ sub(\"${THIRDPARTY}/objc/\", \"\", \$0); print \$0 }" > ${DERIVED_FILE_DIR}/J2ObjcHeader1
     STATIC_CLASSES="-C ${THIRDPARTY}/classes ."
-    JARS="-cp ${THIRDPARTY}/classes"
+    JARS="$JARS -cp ${THIRDPARTY}/classes"
     if [ -f ${THIRDPARTY}/sources/prefixes.txt ]
     then
-      PREFIXES="${THIRDPARTY}/sources/prefixes.txt"
+      PREFIXES="$PREFIXES ${THIRDPARTY}/sources/prefixes.txt"
     fi
     FRMS="$FRMS ${TARGET_NAME}=${DERIVED_FILE_DIR}/J2ObjcHeader1"
   else
@@ -89,11 +112,16 @@ do
       p=${p%\"}
       if [ -d $p/$d.framework ]
       then
+        echo Framework: $p/$d.framework
         if [ -f $p/$d.framework/classes.jar ]
         then
           JARS="$JARS -cp $p/$d.framework/classes.jar"
+          FRMS="$FRMS $p/$d.framework"
         fi
-        FRMS="$FRMS $p/$d.framework"
+        if [ "$d" == "JRE" ] # JRE has not classes.jar
+        then
+          FRMS="$FRMS $p/$d.framework"
+        fi
         if [ -f $p/$d.framework/prefixes.txt ]
         then
           PREFIXES="$PREFIXES $p/$d.framework/prefixes.txt"
@@ -103,6 +131,12 @@ do
   fi
 done
 
+echo FRMS=$FRMS
+echo JARS=$JARS
+echo PREFIXES=$PREFIXES
+
+set -x
+
 JARS="$JARS -cp ${DERIVED_FILE_DIR}/classes"
 
 if [ -f ${SRCROOT}/prefixes.txt ]
@@ -110,7 +144,7 @@ then
   PREFIXES="$PREFIXES ${SRCROOT}/prefixes.txt"
 fi
 
-cat $PREFIXES > ${DERIVED_FILE_DIR}/prefixes.txt
+cat $PREFIXES | sort -u > ${DERIVED_FILE_DIR}/prefixes.txt
 PREFIXES="--prefixes ${DERIVED_FILE_DIR}/prefixes.txt"
 
 

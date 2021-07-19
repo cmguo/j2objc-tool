@@ -92,17 +92,6 @@ def apply_target(proj, target)
     java_dirs = java_dirs.split(" ").select{ |d| File.exists?(d) }
   end
 
-  j2objc_deps = target.build_configuration_list.get_setting("J2OBJC_DEPENDS", true)["Debug"]
-  if j2objc_deps == nil
-    if java_dirs.empty?
-      return false
-    end
-    j2objc_deps = []
-  else
-    j2objc_deps = j2objc_deps.split(" ")
-  end
-
-
   # if no proto/java sources, we can stop here
 
   if proto_dirs.empty? && java_dirs.empty?

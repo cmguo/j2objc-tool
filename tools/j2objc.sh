@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 TOOLS=$(dirname $0)
 
@@ -75,6 +75,8 @@ do
   esac
   shift
 done
+
+set -x
 
 javac \
 	-classpath "${CLASS_PATH}" \
