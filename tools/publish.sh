@@ -65,6 +65,7 @@ then
 fi
 
 if [ ! -z $TAG ]
+then
   git push -f $ORIGIN $COMMIT:refs/tags/$V
 fi
 
