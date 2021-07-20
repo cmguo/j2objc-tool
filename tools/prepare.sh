@@ -32,12 +32,16 @@ then
 fi
 
 FORCE_UPDATE= 
+SOURCE_LINK=
 
 while [[ $1 =~ ^-.+ ]]
 do
   case $1 in
     -u)
       FORCE_UPDATE=true
+      ;;
+    -sl)
+      SOURCE_LINK=true
       ;;
     *)
       if [ $1 != -h ]
@@ -46,16 +50,14 @@ do
       fi
       echo Usage $0 [flags...] [Scheme]
       echo " -u:" Force update Pods in ThirdParty ...
+      echo " -sl:" Symbol link source directory for debug
       exit 0
       ;;
   esac
   shift
 done
 
-# set -x
-
-POD_FILES=`find . -maxdepth 2 -name Podfile`
-DEPENDS=`awk -F ' ' "BEGINFILE { f=FILENAME; sub(\\"/Podfile\\", \\"\\", f) } { if (\\$4 == \\"=>\\") { gsub(/[\\"\\']/, \\"\\", \\$5); print f \\"/\\" \\$5 } }" $POD_FILES | grep "\.\." | sort -u`
+DEPENDS=`${J2OBJC_HOME}/tools/pods.sh depends`
 for d in $DEPENDS
 do
   if [[ $d =~ \.\./ThirdPartyiOS ]]
@@ -64,18 +66,21 @@ do
   else
     if [ ! -d $d/.git ]
     then
-      echo "Depends $d not exists, clone it first"
+      echo "Depends $d not exists, clone it first, and checkout to branch publish/xxx"
+      exit 1
     else
       DEPEND_MOUDLES="$DEPEND_MOUDLES $d"
     fi
   fi
 done
 
-$(dirname $0)/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
+set -x
+
+${J2OBJC_HOME}/tools/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
 
 if [ ! -z $FORCE_UPDATE ]
 then
-  $(dirname $0)/thirdparty.sh update ${DEPEND_THIRDPARTIES}
+  ${J2OBJC_HOME}/tools/thirdparty.sh update ${DEPEND_THIRDPARTIES}
   for d in $DEPEND_MOUDLES
   do
     git -C $d pull --rebase
@@ -85,6 +90,21 @@ then
   rm -f jdk
   rm -rf ThirdParty/classes
   # rm -rf */Pods
+fi
+
+if [ ! -z $SOURCE_LINK ]
+then
+  
+  for m in $DEPENDS
+  do
+    if [ -f $m/Frameworks/BUILD_PATH ]
+    then
+      BUILD_PATH=`cat $m/Frameworks/BUILD_PATH`
+      sudo mkdir -p $(dirname $BUILD_PATH)
+      sudo ln -s $(pwd)/$m $BUILD_PATH
+    fi
+  done
+
 fi
 
 if [ -f build.gradle ]
@@ -109,15 +129,7 @@ then
 
 fi
 
-trap 'rm -rf Pods' ERR
-for i in `find . -name Podfile`
-do
-  i=$(dirname $i)
-  cd $i
-  pod install
-  cd -
-done
-trap '' ERR
+${J2OBJC_HOME}/tools/pods.sh install
 
 if [ -f build.gradle ]
 then

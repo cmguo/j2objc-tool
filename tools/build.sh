@@ -121,4 +121,6 @@ else
 
 fi
 
+pwd > Frameworks/BUILD_PATH
+
 rm -rf output
