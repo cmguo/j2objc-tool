@@ -98,11 +98,12 @@ def apply_target(proj, target)
     return false
   end
 
+  puts "  Java sources: #{java_dirs}"
 
   # Proto build rule
 
   if !proto_dirs.empty? && target.build_rules.find { |rule| rule.file_type == "sourcecode.protobuf" } == nil
-    puts "Add Protobuf build rule"
+    puts "  Add Protobuf build rule"
     rule = proj.new(Xcodeproj::Project::Object::PBXBuildRule)
     rule.file_type = "sourcecode.protobuf"
     rule.compiler_spec = "com.apple.compilers.proxy.script"
@@ -118,7 +119,7 @@ def apply_target(proj, target)
   # Java build rule
 
   if target.build_rules.find { |rule| rule.file_type == "sourcecode.java" } == nil
-    puts "Add Java build rule"
+    puts "  Add Java build rule"
     rule = proj.new(Xcodeproj::Project::Object::PBXBuildRule)
     rule.file_type = "sourcecode.java"
     rule.compiler_spec = "com.apple.compilers.proxy.script"
@@ -134,7 +135,7 @@ def apply_target(proj, target)
   # J2objc prev phase
   
   if target.build_phases.find { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[J2objc Prev]" } == nil
-    puts "Add J2objc prev phase"
+    puts "  Add J2objc prev phase"
     phase = proj.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase)
     phase.name = "[J2objc Prev]"
     phase.shell_path = "/bin/sh"
@@ -147,8 +148,8 @@ def apply_target(proj, target)
 
   # J2objc post phase
 
-  if target.build_phases.find { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[J2objc Post]" } == nil
-    puts "Add J2objc post phase"
+  if target.symbol_type == :framework && target.build_phases.find { |phase| phase.is_a?(Xcodeproj::Project::Object::PBXShellScriptBuildPhase) && phase.name == "[J2objc Post]" } == nil
+    puts "  Add J2objc post phase"
     phase = proj.new(Xcodeproj::Project::Object::PBXShellScriptBuildPhase)
     phase.name = "[J2objc Post]"
     phase.shell_path = "/bin/sh"
@@ -191,7 +192,7 @@ def apply_target(proj, target)
         subGroup = d == "." ? group : find_subpath(group, d.split("/"), true)
         file = subGroup.find_file_by_path(f)
         if file == nil
-          puts "File +++ #{dir}/#{f}"
+          puts "  File +++ #{dir}/#{f}"
           file = subGroup.new_reference(f)
           file.include_in_index = "0"
           file.last_known_file_type = "sourcecode.#{exts[ext]}"
@@ -204,23 +205,22 @@ def apply_target(proj, target)
   # remove
   files2 = []
   target.source_build_phase.files.each { |f| 
+    if f.file_ref == nil
+       next
+    end
     ext = File.extname(f.file_ref.path)
-    if !exts.key?(ext)
-      true
-    else
+    if exts.key?(ext)
       index = files.find_index(f.file_ref)
       if index == nil
         files2 << f
-        false
       else
         files.delete_at(index)
-        true
       end
     end
   }
   target.add_file_references(files)
   files2.each { |f| 
-    puts "File --- #{f.file_ref.full_path}"
+    puts "  File --- #{f.file_ref.full_path}"
     target.source_build_phase.files.delete(f)
     remove_from_group(f.file_ref)
     f.file_ref.remove_from_project

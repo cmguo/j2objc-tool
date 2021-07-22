@@ -13,6 +13,11 @@ set -e
 WORKSPACE=$(dirname ${PROJECT_DIR})
 THIRDPARTY="${WORKSPACE}/ThirdParty"
 
+if [ $PRODUCT_TYPE == com.apple.product-type.application ]
+then
+  APPLICATION=true
+fi
+
 PUBLIC_HEADERS_FOLDER=${BUILT_PRODUCTS_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}
 
 for i in ${PROTO_SOURCES-proto}
@@ -58,7 +63,7 @@ fi
 if ${TOOLS}/check_diff.awk ${DERIVED_FILE_DIR}/SourceList.d ${DERIVED_FILE_DIR}/ProtoList ${DERIVED_FILE_DIR}/JavaList ${DERIVED_FILE_DIR}/TxtList > ${DERIVED_FILE_DIR}/SourceList.d1
 then
   # Install headers to framework
-  if [ ! -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h ]
+  if [ -z "$APPLICATION" -a ! -f ${PUBLIC_HEADERS_FOLDER}/${TARGET_NAME}-J2objc.h ]
   then
     source ${TOOLS}/j2objc_headers.sh
   fi
@@ -70,7 +75,7 @@ fi
 
 set +x
 
-if [ -z $J2OBJC_DEPENDS ]
+if [ -z "$J2OBJC_DEPENDS" ]
 then
   LAST_LDFLAG=-
   for i in ${OTHER_LDFLAGS}
@@ -113,6 +118,10 @@ do
       if [ -d $p/$d.framework ]
       then
         echo Framework: $p/$d.framework
+        if [[ ! $p =~ ^/ ]]
+        then
+          p=${SRCROOT}/$p
+        fi
         if [ -f $p/$d.framework/classes.jar ]
         then
           JARS="$JARS -cp $p/$d.framework/classes.jar"
@@ -186,7 +195,12 @@ fi
 
 # Fix modular include
 
-${TOOLS}/fix_include.sh -s ${TARGET_NAME} ${DERIVED_FILE_DIR}/objc $FRMS
+if [ -z $APPLICATION ]
+then
+  ${TOOLS}/fix_include.sh -s ${TARGET_NAME} ${DERIVED_FILE_DIR}/objc $FRMS
+else
+  ${TOOLS}/fix_include.sh -s objc ${DERIVED_FILE_DIR}/objc $FRMS
+fi
 
 
 # Headers from Project java
@@ -196,7 +210,12 @@ find ${DERIVED_FILE_DIR}/objc -name "*.h" | awk "{ sub(\"${DERIVED_FILE_DIR}/obj
 
 # collect includes
 
-awk "{ print \"#include <${TARGET_NAME}/\" \$0 \">\" }" ${DERIVED_FILE_DIR}/J2ObjcHeader? > ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h
+if [ -z $APPLICATION ]
+then
+  awk "{ print \"#include <${TARGET_NAME}/\" \$0 \">\" }" ${DERIVED_FILE_DIR}/J2ObjcHeader? > ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h
+else
+  awk '{ print "#include <objc/" $0 ">" }' ${DERIVED_FILE_DIR}/J2ObjcHeader? > ${DERIVED_FILE_DIR}/${TARGET_NAME}-J2objc.h
+fi
 
 
 # make dependancy files
@@ -206,23 +225,29 @@ awk "{ print \"#include <${TARGET_NAME}/\" \$0 \">\" }" ${DERIVED_FILE_DIR}/J2Ob
 
 # Java classes & jar
 
-rm -f ${DERIVED_FILE_DIR}/classes.jar
-if [[ $(java --version) =~ 11\. ]]
+if [ -z $APPLICATION ]
 then
-  jar cf ${DERIVED_FILE_DIR}/classes.jar -C ${DERIVED_FILE_DIR}/classes . ${STATIC_CLASSES}
-else
-  if [ ! -z "${STATIC_CLASSES}" ]
-  then
-    cp -rf ${THIRDPARTY}/classes ${DERIVED_FILE_DIR}
-  fi
-  jar cf ${DERIVED_FILE_DIR}/classes.jar -C ${DERIVED_FILE_DIR}/classes .
-fi
 
+  rm -f ${DERIVED_FILE_DIR}/classes.jar
+  if [[ $(java --version) =~ 11\. ]]
+  then
+    jar cf ${DERIVED_FILE_DIR}/classes.jar -C ${DERIVED_FILE_DIR}/classes . ${STATIC_CLASSES}
+  else
+    if [ ! -z "${STATIC_CLASSES}" ]
+    then
+      cp -rf ${THIRDPARTY}/classes ${DERIVED_FILE_DIR}
+    fi
+    jar cf ${DERIVED_FILE_DIR}/classes.jar -C ${DERIVED_FILE_DIR}/classes .
+  fi
+
+fi
 
 # Install headers to framework
 
-source ${TOOLS}/j2objc_headers.sh
-
+if [ -z $APPLICATION ]
+then
+  source ${TOOLS}/j2objc_headers.sh
+fi
 
 # Update java state file
 
