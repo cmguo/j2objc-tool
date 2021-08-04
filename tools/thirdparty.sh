@@ -16,14 +16,11 @@ then
   shift
   git clone -b develop --depth 1 git@gitlab.xiaoheiban.cn:xhb_base/thirdpartyios.git ThirdPartyiOS
   cd ThirdPartyiOS
-  if [ ! -z "$*" ]
-  then
-    git submodule init $*
-  fi
-  git submodule update
-
   rm -f j2objc-2.7
   ln -s $J2OBJC_HOME j2objc-2.7
+ 
+  # goto update
+  UPDATE=true
 
 elif [ "$1" == "update" ]
 then
@@ -31,18 +28,9 @@ then
   shift
   cd ThirdPartyiOS
   git pull --rebase
-  if [ ! -z "$*" ]
-  then
-    git submodule init $*
-  fi
-  git submodule update
-  for m in $*
-  do
-    if [ -f $m/.git ]
-    then
-      git -C $m log -1
-    fi
-  done
+
+  # goto update
+  UPDATE=true
 
 elif [ "$1" == "publish" ]
 then
@@ -80,4 +68,35 @@ else
   echo unkown command $1
   exit 1
 
+fi
+
+# update
+
+if [ "$UPDATE" == "true" ]
+then
+  
+  for m in $*
+  do
+    if [ -d $m -a ! -h $m ]
+    then 
+      MODULES="$MODULES $m"
+    fi
+  done
+
+  if [ ! -z "$MODULES" ]
+  then
+    git submodule init $MODULES
+  fi
+  git submodule update
+
+  for m in $MODULES
+  do
+    if [ -f $m/.git ]
+    then
+      echo "--------------------------- $m ---------------------------"
+      git -C $m log -1
+      echo "--------------------------- $m ---------------------------"
+      echo
+    fi
+  done
 fi

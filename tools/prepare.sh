@@ -1,4 +1,3 @@
-#!/bin/bash
 
 set -e
 
@@ -76,15 +75,19 @@ done
 
 set -x
 
-${J2OBJC_HOME}/tools/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
-
-if [ ! -z $FORCE_UPDATE ]
+if [ -z $FORCE_UPDATE ]
 then
+  ${J2OBJC_HOME}/tools/thirdparty.sh prepare ${DEPEND_THIRDPARTIES}
+else
+  ${J2OBJC_HOME}/tools/thirdparty.sh prepare
   ${J2OBJC_HOME}/tools/thirdparty.sh update ${DEPEND_THIRDPARTIES}
   for d in $DEPEND_MOUDLES
   do
     git -C $d pull --rebase
+    echo "--------------------------- $d ---------------------------"
     git -C $d log -1
+    echo "--------------------------- $d ---------------------------"
+    echo
   done
   rm -f j2objc-2.7
   rm -f jdk
