@@ -22,11 +22,8 @@ then
   fi
   git submodule update
 
-  if [ -e LogicBase/.git ]
-  then
-    rm -f LogicBase/j2objc-2.7
-    ln -s $J2OBJC_HOME LogicBase/j2objc-2.7
-  fi
+  rm -f j2objc-2.7
+  ln -s $J2OBJC_HOME j2objc-2.7
 
 elif [ "$1" == "update" ]
 then
@@ -53,13 +50,14 @@ then
   shift
   cd ThirdPartyiOS
 
-  if ! git submodule init $1
+  M=$1/$VERSION
+  if ! git submodule init $M
   then
-    git submodule add -b publish/$VERSION $ORIGIN $1
+    git submodule add -b publish/$VERSION $ORIGIN $M
   fi
-  git submodule update --remote $1
-  git add -u $1
-  git commit -m "Update $1 to $2"
+  git submodule update --remote $M
+  git add -u $M
+  git commit -m "Update $1($VERSION) to $2"
   git pull --rebase
   git push
 
