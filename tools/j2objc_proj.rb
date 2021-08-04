@@ -257,16 +257,11 @@ end
 
 proj.build_configurations.each { |c|
   bs = c.build_settings
-  frameworks = []
-  if File.exists?("../Libraries")
-    frameworks << "../Libraries"
-  end
   if has_j2objc
     #bs["JAVA_HOME"] = ENV["JAVA_HOME"]
     #bs["J2OBJC_HOME"] = ENV["J2OBJC_HOME"]
     bs["JAVA_HOME"] = "${PROJECT_DIR}/../jdk"
     bs["J2OBJC_HOME"] = "${PROJECT_DIR}/../j2objc-2.7"
-    bs["FRAMEWORK_SEARCH_PATHS"] = merge_array(frameworks, bs["FRAMEWORK_SEARCH_PATHS"])
   end
 }
 
