@@ -19,7 +19,10 @@ then
     JAVA_CLASSNAME=$(basename ${INPUT_FILE_BASE})
   fi
   
-  mv -f ${DERIVED_FILE_DIR}/objc/$JAVA_PACKAGE/$JAVA_CLASSNAME.m ${DERIVED_FILE_DIR}/J2objc/${INPUT_FILE_BASE}.m
+  if [ -f ${DERIVED_FILE_DIR}/objc/$JAVA_PACKAGE/$JAVA_CLASSNAME.m ]
+  then
+    mv -f ${DERIVED_FILE_DIR}/objc/$JAVA_PACKAGE/$JAVA_CLASSNAME.m ${DERIVED_FILE_DIR}/J2objc/${INPUT_FILE_BASE}.m
+  fi
 
 elif [ "$1" == "compile" ]
 then

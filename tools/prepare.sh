@@ -103,7 +103,7 @@ then
     if [ -f $m/Frameworks/BUILD_PATH ]
     then
       BUILD_PATH=`cat $m/Frameworks/BUILD_PATH`
-      if [ ! -d $BUILD_PATH ]
+      if [ ! -d $BUILD_PATH -o -h $BUILD_PATH ]
       then
         sudo mkdir -p $(dirname $BUILD_PATH)
         sudo rm -f $BUILD_PATH
