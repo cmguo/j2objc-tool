@@ -8,7 +8,7 @@
 - 安装 JDK 环境（建议 jdk11）
 - 配置环境变量 JAVA_HOME=/path/to/jdk （建议编辑 ~/.bash_profile)
 - 安装 gawk （brew install gawk）
-- 安装 [xcodeproj](gem install xcodeproj) (gem install xcodeproj)
+- 安装 [xcodeproj](https://github.com/CocoaPods/Xcodeproj) (gem install xcodeproj)
 
 ## Xcode 项目配置
 - Xcode 中 java 代码一般放在 src/main/java 目录，如果不是，需要配置 Xcode 增加用户变量 JAVA_SOURCES
