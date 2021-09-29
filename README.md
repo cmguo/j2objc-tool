@@ -3,7 +3,7 @@
 
 # 使用方法：
 ## 工具链配置
-- Clone 本仓库到 /path/to/j2objc-2.7
+- Clone 本仓库到 /path/to/j2objc-2.7 （因为超过 100M 限制，本仓库不包含 JRE 二进制文件，想要下载 [j2objc-2.7](https://github.com/google/j2objc/releases/tag/2.7)，通过 lipo 工具合并 library 生成，选择需要的平台）
 - 配置环境变量 J2OBJC_HOME=/path/to/j2objc-2.7 （建议编辑 ~/.bash_profile)
 - 安装 JDK 环境（建议 jdk11）
 - 配置环境变量 JAVA_HOME=/path/to/jdk （建议编辑 ~/.bash_profile)
